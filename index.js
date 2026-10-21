@@ -60,6 +60,13 @@ const updates = [
   ],
 ];
 
+const deletions = [
+  ["TT_JUAL_DETAIL", "NO_FAKTUR_JUAL"],
+  ["TT_JUAL_HEAD", "NO_FAKTUR_JUAL"],
+  ["TH_CASH_DAILY", "DESKRIPSI"],
+  ["TT_JUAL_SALES", "NO_FAKTUR_JUAL"],
+];
+
 const main = async () => {
   if (!filePath) {
     console.error(
@@ -73,7 +80,7 @@ const main = async () => {
 
   connection.connect();
 
-  const summary = { updated: 0, notFound: 0, failed: 0, skipped: 0 };
+  const summary = { updated: 0, deleted: 0, notFound: 0, failed: 0, skipped: 0 };
 
   for (const row of rows) {
     if (Number.isNaN(row.price)) {
@@ -97,9 +104,32 @@ const main = async () => {
     }
   }
 
+  const invoiceNumbers = [...new Set(rows.map(({ no_faktur }) => no_faktur))];
+  if (invoiceNumbers.length === 0) {
+    console.log(color.yellow("Skipping deletion: no invoice numbers found in Excel"));
+  } else {
+    const placeholders = invoiceNumbers.map(() => "?").join(", ");
+    for (const [table, column] of deletions) {
+      try {
+        const result = await query(
+          `DELETE FROM ${table} WHERE ${column} IS NULL OR ${column} NOT IN (${placeholders})`,
+          invoiceNumbers,
+        );
+        summary.deleted += result.affectedRows;
+        console.log(
+          color.green(`[DELETE] ${table}: removed=${result.affectedRows}`),
+        );
+      } catch (err) {
+        summary.failed++;
+        console.error(color.red(`[FAIL] deleting from ${table}: ${err.message}`));
+      }
+    }
+  }
+
   console.log(color.cyan("\n===== Summary ====="));
   console.log(`Rows read        : ${rows.length}`);
   console.log(color.green(`Updates applied  : ${summary.updated}`));
+  console.log(color.green(`Rows deleted     : ${summary.deleted}`));
   console.log(color.yellow(`No row matched   : ${summary.notFound}`));
   console.log(color.yellow(`Rows skipped     : ${summary.skipped}`));
   console.log(color.red(`Updates failed   : ${summary.failed}`));
