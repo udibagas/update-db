@@ -1,5 +1,6 @@
 import mysql from "mysql";
 import XLSX from "xlsx";
+import { createInterface } from "node:readline/promises";
 
 const args = process.argv.slice(2);
 const dryRun = args.includes("--dry-run");
@@ -39,6 +40,24 @@ const readExcel = (path) => {
       price: Number(price),
     }))
     .filter((r) => r.no_faktur);
+};
+
+const confirmChanges = async () => {
+  const readline = createInterface({
+    input: process.stdin,
+    output: process.stdout,
+  });
+  let answer;
+  try {
+    answer = await readline.question(
+      color.red(
+        `WARNING: This will update and delete data in database "${database}". Type YES to continue: `,
+      ),
+    );
+  } finally {
+    readline.close();
+  }
+  return answer.trim() === "YES";
 };
 
 const updates = [
@@ -87,6 +106,9 @@ const main = async () => {
   console.log(color.cyan(`Read ${rows.length} rows from ${filePath}`));
   if (dryRun) {
     console.log(color.yellow("DRY RUN: no database changes will be made"));
+  } else if (!(await confirmChanges())) {
+    console.log(color.yellow("Cancelled. No database changes were made."));
+    return;
   }
 
   connection.connect();

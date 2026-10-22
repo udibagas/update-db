@@ -48,6 +48,11 @@ For example:
 node index.js app_user 'your-password' sales_db ./invoices.xlsx
 ```
 
+Before a normal run, the script displays a warning naming the target database
+and asks you to type `YES` to continue. Any other response, including an empty
+response, cancels the run before it connects to MySQL. Dry-run mode does not ask
+for confirmation because it does not execute database changes.
+
 To inspect the matching and deletion counts without changing the database, add
 `--dry-run`:
 
@@ -91,6 +96,7 @@ the spreadsheet contains no invoice numbers, deletion is skipped.
 > **Warning:** A normal run can make substantial, irreversible changes to your
 > database. Dry-run counts are only a preview; they do not lock the database
 > or guarantee the later update/delete will affect the same records. A normal
-> run does not use a transaction. Back up the database, verify the workbook and
-> target database, and test with a non-production database before running it.
-> A short or incomplete workbook can cause records to be deleted.
+> run does not use a transaction. The confirmation prompt is an extra safeguard,
+> not a replacement for backing up the database, verifying the workbook and
+> target database, and testing with a non-production database. A short or
+> incomplete workbook can cause records to be deleted.
