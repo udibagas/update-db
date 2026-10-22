@@ -1,7 +1,11 @@
 import mysql from "mysql";
 import XLSX from "xlsx";
 
-const [user, password, database, filePath] = process.argv.slice(2);
+const args = process.argv.slice(2);
+const dryRun = args.includes("--dry-run");
+const [user, password, database, filePath] = args.filter(
+  (arg) => arg !== "--dry-run",
+);
 
 const connection = mysql.createConnection({
   host: "localhost",
@@ -38,26 +42,30 @@ const readExcel = (path) => {
 };
 
 const updates = [
-  [
-    "TT_JUAL_DETAIL",
-    "UPDATE TT_JUAL_DETAIL SET HARGA_JUAL=?, DPP_DETAIL=? WHERE NO_FAKTUR_JUAL=?",
-    ({ no_faktur, price }) => [price, price, no_faktur],
-  ],
-  [
-    "TT_JUAL_HEAD",
-    "UPDATE TT_JUAL_HEAD SET DPP_BRUTO_RP=?, DPP_NETTO_RP=?, JML_JUAL_RP=?, DIBAYAR_RP=? WHERE NO_FAKTUR_JUAL=?",
-    ({ no_faktur, price }) => [price, price, price, price, no_faktur],
-  ],
-  [
-    "TH_CASH_DAILY",
-    "UPDATE TH_CASH_DAILY SET JUMLAH_RP=? WHERE DESKRIPSI=?",
-    ({ no_faktur, price }) => [price, no_faktur],
-  ],
-  [
-    "TT_JUAL_SALES",
-    "UPDATE TT_JUAL_SALES SET JML_JUAL_RP=? WHERE NO_FAKTUR_JUAL=?",
-    ({ no_faktur, price }) => [price, no_faktur],
-  ],
+  {
+    table: "TT_JUAL_DETAIL",
+    matchColumn: "NO_FAKTUR_JUAL",
+    sql: "UPDATE TT_JUAL_DETAIL SET HARGA_JUAL=?, DPP_DETAIL=? WHERE NO_FAKTUR_JUAL=?",
+    getParams: ({ no_faktur, price }) => [price, price, no_faktur],
+  },
+  {
+    table: "TT_JUAL_HEAD",
+    matchColumn: "NO_FAKTUR_JUAL",
+    sql: "UPDATE TT_JUAL_HEAD SET DPP_BRUTO_RP=?, DPP_NETTO_RP=?, JML_JUAL_RP=?, DIBAYAR_RP=? WHERE NO_FAKTUR_JUAL=?",
+    getParams: ({ no_faktur, price }) => [price, price, price, price, no_faktur],
+  },
+  {
+    table: "TH_CASH_DAILY",
+    matchColumn: "DESKRIPSI",
+    sql: "UPDATE TH_CASH_DAILY SET JUMLAH_RP=? WHERE DESKRIPSI=?",
+    getParams: ({ no_faktur, price }) => [price, no_faktur],
+  },
+  {
+    table: "TT_JUAL_SALES",
+    matchColumn: "NO_FAKTUR_JUAL",
+    sql: "UPDATE TT_JUAL_SALES SET JML_JUAL_RP=? WHERE NO_FAKTUR_JUAL=?",
+    getParams: ({ no_faktur, price }) => [price, no_faktur],
+  },
 ];
 
 const deletions = [
@@ -68,15 +76,18 @@ const deletions = [
 ];
 
 const main = async () => {
-  if (!filePath) {
+  if (!user || !password || !database || !filePath) {
     console.error(
-      "Usage: node index.js <user> <password> <database> <excelFile>",
+      "Usage: node index.js [--dry-run] <user> <password> <database> <excelFile>",
     );
     process.exit(1);
   }
 
   const rows = readExcel(filePath);
   console.log(color.cyan(`Read ${rows.length} rows from ${filePath}`));
+  if (dryRun) {
+    console.log(color.yellow("DRY RUN: no database changes will be made"));
+  }
 
   connection.connect();
 
@@ -88,13 +99,25 @@ const main = async () => {
       console.log(color.yellow(`[SKIP] ${row.no_faktur}: invalid price`));
       continue;
     }
-    for (const [table, sql, getParams] of updates) {
+    for (const { table, matchColumn, sql, getParams } of updates) {
       try {
-        const result = await query(sql, getParams(row));
-        const msg = `[OK] ${row.no_faktur} -> ${table}: price=${row.price}, affected=${result.affectedRows}`;
-        if (result.affectedRows) summary.updated++;
-        else summary.notFound++;
-        console.log(result.affectedRows ? color.green(msg) : color.yellow(msg));
+        if (dryRun) {
+          const result = await query(
+            `SELECT COUNT(*) AS count FROM ${table} WHERE ${matchColumn}=?`,
+            [row.no_faktur],
+          );
+          const matchedRows = Number(result[0].count);
+          const msg = `[DRY RUN] ${row.no_faktur} -> ${table}: price=${row.price}, matching rows=${matchedRows}`;
+          if (matchedRows) summary.updated++;
+          else summary.notFound++;
+          console.log(matchedRows ? color.green(msg) : color.yellow(msg));
+        } else {
+          const result = await query(sql, getParams(row));
+          const msg = `[OK] ${row.no_faktur} -> ${table}: price=${row.price}, affected=${result.affectedRows}`;
+          if (result.affectedRows) summary.updated++;
+          else summary.notFound++;
+          console.log(result.affectedRows ? color.green(msg) : color.yellow(msg));
+        }
       } catch (err) {
         summary.failed++;
         console.error(
@@ -111,14 +134,26 @@ const main = async () => {
     const placeholders = invoiceNumbers.map(() => "?").join(", ");
     for (const [table, column] of deletions) {
       try {
-        const result = await query(
-          `DELETE FROM ${table} WHERE ${column} IS NULL OR ${column} NOT IN (${placeholders})`,
-          invoiceNumbers,
-        );
-        summary.deleted += result.affectedRows;
-        console.log(
-          color.green(`[DELETE] ${table}: removed=${result.affectedRows}`),
-        );
+        if (dryRun) {
+          const result = await query(
+            `SELECT COUNT(*) AS count FROM ${table} WHERE ${column} IS NULL OR ${column} NOT IN (${placeholders})`,
+            invoiceNumbers,
+          );
+          const count = Number(result[0].count);
+          summary.deleted += count;
+          console.log(
+            color.yellow(`[DRY RUN] ${table}: rows that would be removed=${count}`),
+          );
+        } else {
+          const result = await query(
+            `DELETE FROM ${table} WHERE ${column} IS NULL OR ${column} NOT IN (${placeholders})`,
+            invoiceNumbers,
+          );
+          summary.deleted += result.affectedRows;
+          console.log(
+            color.green(`[DELETE] ${table}: removed=${result.affectedRows}`),
+          );
+        }
       } catch (err) {
         summary.failed++;
         console.error(color.red(`[FAIL] deleting from ${table}: ${err.message}`));
@@ -128,8 +163,12 @@ const main = async () => {
 
   console.log(color.cyan("\n===== Summary ====="));
   console.log(`Rows read        : ${rows.length}`);
-  console.log(color.green(`Updates applied  : ${summary.updated}`));
-  console.log(color.green(`Rows deleted     : ${summary.deleted}`));
+  const updateLabel = dryRun ? "Updates planned  " : "Updates applied  ";
+  const deletionLabel = dryRun ? "Rows to delete   " : "Rows deleted     ";
+  console.log(
+    color.green(`${updateLabel}: ${summary.updated}`),
+  );
+  console.log(color.green(`${deletionLabel}: ${summary.deleted}`));
   console.log(color.yellow(`No row matched   : ${summary.notFound}`));
   console.log(color.yellow(`Rows skipped     : ${summary.skipped}`));
   console.log(color.red(`Updates failed   : ${summary.failed}`));
