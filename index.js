@@ -15,6 +15,7 @@ const connection = mysql.createConnection({
   database: database,
   insecureAuth: true,
   ssl: {
+    disable: true,
     rejectUnauthorized: false,
   },
 });
