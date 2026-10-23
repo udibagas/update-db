@@ -11,7 +11,7 @@
   "license": "ISC",
   "type": "module",
   "dependencies": {
-    "mysql": "^2.18.1",
+    "mysql2": "^3.24.6",
     "xlsx": "^0.18.5"
   }
 }
