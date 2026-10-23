@@ -16,27 +16,29 @@ const updates = [
   {
     table: "TT_JUAL_HEAD",
     matchColumn: "NO_FAKTUR_JUAL",
-    sql: "UPDATE TT_JUAL_HEAD SET DPP_BRUTO_RP=?, DPP_NETTO_RP=?, JML_JUAL_RP=?, DIBAYAR_RP=?, BERAT=? WHERE NO_FAKTUR_JUAL=?",
-    getParams: ({ no_faktur, berat, price }) => [
+    sql: "UPDATE TT_JUAL_HEAD SET DPP_BRUTO_RP=?, DPP_NETTO_RP=?, JML_JUAL_RP=?, DIBAYAR_RP=?, BERAT=?, TGL_SYSTEM=?, TGL_FAKTUR_JUAL=? WHERE NO_FAKTUR_JUAL=?",
+    getParams: ({ no_faktur, berat, price, tgl }) => [
       price,
       price,
       price,
       price,
       berat,
+      tgl,
+      tgl,
       no_faktur,
     ],
   },
   {
     table: "TH_CASH_DAILY",
     matchColumn: "DESKRIPSI",
-    sql: "UPDATE TH_CASH_DAILY SET JUMLAH_RP=? WHERE DESKRIPSI=?",
-    getParams: ({ no_faktur, price }) => [price, no_faktur],
+    sql: "UPDATE TH_CASH_DAILY SET JUMLAH_RP=?, TANGGAL=? WHERE DESKRIPSI=?",
+    getParams: ({ no_faktur, price, tgl }) => [price, tgl, no_faktur],
   },
   {
     table: "TT_JUAL_SALES",
     matchColumn: "NO_FAKTUR_JUAL",
-    sql: "UPDATE TT_JUAL_SALES SET JML_JUAL_RP=? WHERE NO_FAKTUR_JUAL=?",
-    getParams: ({ no_faktur, price }) => [price, no_faktur],
+    sql: "UPDATE TT_JUAL_SALES SET JML_JUAL_RP=?, TGL_SYSTEM=?, TGL_FAKTUR_JUAL=? WHERE NO_FAKTUR_JUAL=?",
+    getParams: ({ no_faktur, price, tgl }) => [price, tgl, tgl, no_faktur],
   },
 ];
 
