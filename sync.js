@@ -98,11 +98,12 @@ export const synchronize = async ({ connection, rows, dryRun, log }) => {
   } else {
     const placeholders = invoiceNumbers.map(() => "?").join(", ");
     for (const [table, column] of deletions) {
+      const predicate = `(${column} NOT IN (${placeholders}) OR ${column} IS NULL)`;
       try {
         if (dryRun) {
           const result = await query(
             connection,
-            `SELECT COUNT(*) AS count FROM ${table} WHERE ${column} NOT IN (${placeholders})`,
+            `SELECT COUNT(*) AS count FROM ${table} WHERE ${predicate}`,
             invoiceNumbers,
           );
           const count = Number(result[0].count);
@@ -114,7 +115,7 @@ export const synchronize = async ({ connection, rows, dryRun, log }) => {
         } else {
           const result = await query(
             connection,
-            `DELETE FROM ${table} WHERE ${column} NOT IN (${placeholders})`,
+            `DELETE FROM ${table} WHERE ${predicate}`,
             invoiceNumbers,
           );
           summary.deleted += result.affectedRows;
