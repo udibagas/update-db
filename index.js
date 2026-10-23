@@ -242,6 +242,7 @@ const main = async () => {
             `DELETE FROM ${table} WHERE ${column} IS NULL OR ${column} NOT IN (${placeholders})`,
             invoiceNumbers,
           );
+          console.log(invoiceNumbers);
           summary.deleted += result.affectedRows;
           console.log(
             color.green(`[DELETE] ${table}: removed=${result.affectedRows}`),
