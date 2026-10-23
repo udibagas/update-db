@@ -45,10 +45,10 @@ export const connect = (user, password, database) =>
     user,
     password,
     database,
-    // authPlugins: {
-    //   "": oldPasswordPlugin,
-    //   mysql_old_password: oldPasswordPlugin,
-    // },
+    authPlugins: {
+      "": oldPasswordPlugin,
+      mysql_old_password: oldPasswordPlugin,
+    },
   });
 
 export const query = async (connection, sql, params = []) => {
