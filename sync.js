@@ -1,4 +1,5 @@
 import { query } from "./db.js";
+import { deleteNonexistentInvoices } from "./delete-nonexistent-loop.js";
 
 const updates = [
   {
@@ -37,13 +38,6 @@ const updates = [
     sql: "UPDATE TT_JUAL_SALES SET JML_JUAL_RP=? WHERE NO_FAKTUR_JUAL=?",
     getParams: ({ no_faktur, price }) => [price, no_faktur],
   },
-];
-
-const deletions = [
-  ["TT_JUAL_DETAIL", "NO_FAKTUR_JUAL"],
-  ["TT_JUAL_HEAD", "NO_FAKTUR_JUAL"],
-  ["TH_CASH_DAILY", "DESKRIPSI"],
-  ["TT_JUAL_SALES", "NO_FAKTUR_JUAL"],
 ];
 
 export const synchronize = async ({ connection, rows, dryRun, log }) => {
@@ -92,41 +86,14 @@ export const synchronize = async ({ connection, rows, dryRun, log }) => {
     }
   }
 
-  const invoiceNumbers = [...new Set(rows.map(({ no_faktur }) => no_faktur))];
-  if (invoiceNumbers.length === 0) {
-    log("yellow", "Skipping deletion: no invoice numbers found in Excel");
-  } else {
-    const placeholders = invoiceNumbers.map(() => "?").join(", ");
-    for (const [table, column] of deletions) {
-      const predicate = `(${column} NOT IN (${placeholders}) OR ${column} IS NULL)`;
-      try {
-        if (dryRun) {
-          const result = await query(
-            connection,
-            `SELECT COUNT(*) AS count FROM ${table} WHERE ${predicate}`,
-            invoiceNumbers,
-          );
-          const count = Number(result[0].count);
-          summary.deleted += count;
-          log(
-            "yellow",
-            `[DRY RUN] ${table}: rows that would be removed=${count}`,
-          );
-        } else {
-          const result = await query(
-            connection,
-            `DELETE FROM ${table} WHERE ${predicate}`,
-            invoiceNumbers,
-          );
-          summary.deleted += result.affectedRows;
-          log("green", `[DELETE] ${table}: removed=${result.affectedRows}`);
-        }
-      } catch (err) {
-        summary.failed++;
-        log("red", `[FAIL] deleting from ${table}: ${err.message}`);
-      }
-    }
-  }
+  const deletion = await deleteNonexistentInvoices({
+    connection,
+    rows,
+    dryRun,
+    log,
+  });
+  summary.deleted += deletion.deleted;
+  summary.failed += deletion.failed;
 
   return summary;
 };
