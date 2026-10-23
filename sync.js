@@ -58,6 +58,12 @@ export const synchronize = async ({ connection, rows, dryRun, log }) => {
       continue;
     }
 
+    if (!row.tgl) {
+      summary.skipped++;
+      log("yellow", `[SKIP] ${row.no_faktur}: invalid date`);
+      continue;
+    }
+
     for (const { table, matchColumn, sql, getParams } of updates) {
       try {
         if (dryRun) {
