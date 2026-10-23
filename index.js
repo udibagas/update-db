@@ -35,9 +35,11 @@ const readExcel = (path) => {
   return XLSX.utils
     .sheet_to_json(sheet, { header: 1 })
     .slice(1)
-    .map(([no_faktur, price]) => ({
-      no_faktur: String(no_faktur ?? "").trim(),
-      price: Number(price),
+    .map(([no_faktur, tgl, berat, price]) => ({
+      no_faktur: String(no_faktur || "").trim(),
+      tgl: String(tgl || "").trim(),
+      berat: Number(berat),
+      price: price,
     }))
     .filter((r) => r.no_faktur);
 };
@@ -64,14 +66,26 @@ const updates = [
   {
     table: "TT_JUAL_DETAIL",
     matchColumn: "NO_FAKTUR_JUAL",
-    sql: "UPDATE TT_JUAL_DETAIL SET HARGA_JUAL=?, DPP_DETAIL=? WHERE NO_FAKTUR_JUAL=?",
-    getParams: ({ no_faktur, price }) => [price, price, no_faktur],
+    sql: "UPDATE TT_JUAL_DETAIL SET HARGA_JUAL=?, DPP_DETAIL=?, BERAT=? WHERE NO_FAKTUR_JUAL=?",
+    getParams: ({ no_faktur, berat, price }) => [
+      price,
+      price,
+      berat,
+      no_faktur,
+    ],
   },
   {
     table: "TT_JUAL_HEAD",
     matchColumn: "NO_FAKTUR_JUAL",
-    sql: "UPDATE TT_JUAL_HEAD SET DPP_BRUTO_RP=?, DPP_NETTO_RP=?, JML_JUAL_RP=?, DIBAYAR_RP=? WHERE NO_FAKTUR_JUAL=?",
-    getParams: ({ no_faktur, price }) => [price, price, price, price, no_faktur],
+    sql: "UPDATE TT_JUAL_HEAD SET DPP_BRUTO_RP=?, DPP_NETTO_RP=?, JML_JUAL_RP=?, DIBAYAR_RP=?, BERAT=? WHERE NO_FAKTUR_JUAL=?",
+    getParams: ({ no_faktur, berat, price }) => [
+      price,
+      price,
+      price,
+      price,
+      berat,
+      no_faktur,
+    ],
   },
   {
     table: "TH_CASH_DAILY",
@@ -113,7 +127,13 @@ const main = async () => {
 
   connection.connect();
 
-  const summary = { updated: 0, deleted: 0, notFound: 0, failed: 0, skipped: 0 };
+  const summary = {
+    updated: 0,
+    deleted: 0,
+    notFound: 0,
+    failed: 0,
+    skipped: 0,
+  };
 
   for (const row of rows) {
     if (Number.isNaN(row.price)) {
@@ -138,12 +158,16 @@ const main = async () => {
           const msg = `[OK] ${row.no_faktur} -> ${table}: price=${row.price}, affected=${result.affectedRows}`;
           if (result.affectedRows) summary.updated++;
           else summary.notFound++;
-          console.log(result.affectedRows ? color.green(msg) : color.yellow(msg));
+          console.log(
+            result.affectedRows ? color.green(msg) : color.yellow(msg),
+          );
         }
       } catch (err) {
         summary.failed++;
         console.error(
-          color.red(`[FAIL] ${row.no_faktur} -> ${table}: ${err.message}`),
+          color.red(
+            `[FAIL] ${row.no_faktur} -> ${table}: ${err.message} ${row.berat}`,
+          ),
         );
       }
     }
@@ -151,7 +175,9 @@ const main = async () => {
 
   const invoiceNumbers = [...new Set(rows.map(({ no_faktur }) => no_faktur))];
   if (invoiceNumbers.length === 0) {
-    console.log(color.yellow("Skipping deletion: no invoice numbers found in Excel"));
+    console.log(
+      color.yellow("Skipping deletion: no invoice numbers found in Excel"),
+    );
   } else {
     const placeholders = invoiceNumbers.map(() => "?").join(", ");
     for (const [table, column] of deletions) {
@@ -164,7 +190,9 @@ const main = async () => {
           const count = Number(result[0].count);
           summary.deleted += count;
           console.log(
-            color.yellow(`[DRY RUN] ${table}: rows that would be removed=${count}`),
+            color.yellow(
+              `[DRY RUN] ${table}: rows that would be removed=${count}`,
+            ),
           );
         } else {
           const result = await query(
@@ -178,7 +206,9 @@ const main = async () => {
         }
       } catch (err) {
         summary.failed++;
-        console.error(color.red(`[FAIL] deleting from ${table}: ${err.message}`));
+        console.error(
+          color.red(`[FAIL] deleting from ${table}: ${err.message}`),
+        );
       }
     }
   }
@@ -187,9 +217,7 @@ const main = async () => {
   console.log(`Rows read        : ${rows.length}`);
   const updateLabel = dryRun ? "Updates planned  " : "Updates applied  ";
   const deletionLabel = dryRun ? "Rows to delete   " : "Rows deleted     ";
-  console.log(
-    color.green(`${updateLabel}: ${summary.updated}`),
-  );
+  console.log(color.green(`${updateLabel}: ${summary.updated}`));
   console.log(color.green(`${deletionLabel}: ${summary.deleted}`));
   console.log(color.yellow(`No row matched   : ${summary.notFound}`));
   console.log(color.yellow(`Rows skipped     : ${summary.skipped}`));

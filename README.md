@@ -33,7 +33,8 @@ data in columns A and B:
 
 The first row is always skipped as a header. Invoice numbers are trimmed and
 treated as text; store them as text in Excel to preserve leading zeros. Prices
-must be parseable as numbers. Rows without an invoice number are ignored, and
+must be parseable as numbers; prices are rounded to the nearest whole number
+before they are used for updates. Rows without an invoice number are ignored, and
 rows with an invalid price are skipped for updates.
 
 ## Run
