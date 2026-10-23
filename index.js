@@ -223,6 +223,7 @@ const main = async () => {
     );
   } else {
     const placeholders = invoiceNumbers.map(() => "?").join(", ");
+    console.log(placeholders);
     for (const [table, column] of deletions) {
       try {
         if (dryRun) {
