@@ -13,6 +13,7 @@ const connection = mysql.createConnection({
   user: user,
   password: password,
   database: database,
+  insecureAuth: true,
 });
 
 const color = {
