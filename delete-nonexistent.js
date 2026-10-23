@@ -58,6 +58,12 @@ export const deleteNonexistentInvoices = async ({
   for (const [table, column] of deletions) {
     const predicate = `(${column} NOT IN (${placeholders}) OR ${column} IS NULL)`;
     try {
+      const total = await query(
+        connection,
+        `SELECT COUNT(*) AS count FROM ${table}`,
+      );
+      writeLog("cyan", `[COUNT] ${table}: current rows=${Number(total[0].count)}`);
+
       if (dryRun) {
         const result = await query(
           connection,
