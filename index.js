@@ -227,7 +227,7 @@ const main = async () => {
       try {
         if (dryRun) {
           const result = await query(
-            `SELECT COUNT(*) AS count FROM ${table} WHERE ${column} IS NULL OR ${column} NOT IN (${placeholders})`,
+            `SELECT COUNT(*) AS count FROM ${table} WHERE ${column} ${column} NOT IN (${placeholders})`,
             invoiceNumbers,
           );
           const count = Number(result[0].count);
@@ -239,7 +239,7 @@ const main = async () => {
           );
         } else {
           const result = await query(
-            `DELETE FROM ${table} WHERE ${column} IS NULL OR ${column} NOT IN (${placeholders})`,
+            `DELETE FROM ${table} WHERE ${column} ${column} NOT IN (${placeholders})`,
             invoiceNumbers,
           );
           summary.deleted += result.affectedRows;
