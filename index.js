@@ -14,6 +14,9 @@ const connection = mysql.createConnection({
   password: password,
   database: database,
   insecureAuth: true,
+  ssl: {
+    rejectUnauthorized: false,
+  },
 });
 
 const color = {
