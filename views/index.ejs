@@ -1,0 +1,84 @@
+<%- include('header', { title: 'Upload' }) %>
+<section class="card">
+  <h1>Upload &amp; sync</h1>
+  <p class="muted">Upload the workbook, connect to the database and apply the updates. Use a dry run first to preview.</p>
+
+  <% if (error) { %>
+    <div class="alert alert-error" role="alert"><%= error %></div>
+  <% } %>
+
+  <form id="sync-form" method="post" action="/sync" enctype="multipart/form-data">
+    <label class="dropzone" id="dropzone">
+      <input type="file" name="file" id="file" accept=".xlsx,.xls,.csv" required>
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="M17 8l-5-5-5 5"/><path d="M12 3v12"/></svg>
+      <span id="file-label"><strong>Choose a file</strong> or drag it here</span>
+      <small class="muted">.xlsx, .xls or .csv · max 20 MB</small>
+    </label>
+
+    <div class="grid">
+      <div class="field">
+        <label for="user">Database user</label>
+        <input id="user" type="text" name="user" value="<%= form.user || 'root' %>" required autocomplete="off">
+      </div>
+      <div class="field">
+        <label for="password">Password</label>
+        <input id="password" type="password" name="password" autocomplete="off">
+      </div>
+      <div class="field full">
+        <label for="database">Database name</label>
+        <input id="database" type="text" name="database" value="<%= form.database || '' %>" required>
+      </div>
+    </div>
+
+    <label class="switch">
+      <input type="checkbox" name="dryRun" id="dryRun" <%= form.dryRun ? 'checked' : '' %>>
+      <span class="track"></span>
+      <span>Dry run <small class="muted">· preview only, no database changes</small></span>
+    </label>
+
+    <div class="field danger-zone" id="confirm-box">
+      <label for="confirm">Type <code>YES</code> to confirm</label>
+      <input id="confirm" type="text" name="confirm" autocomplete="off" placeholder="YES">
+      <small class="muted">This will update and delete data in the selected database.</small>
+    </div>
+
+    <button type="submit" class="btn" id="submit"><span id="submit-text">Run sync</span></button>
+  </form>
+</section>
+
+<script>
+  const $ = (id) => document.getElementById(id);
+  const file = $('file'), zone = $('dropzone'), dry = $('dryRun');
+
+  const showFile = () => {
+    const name = file.files.length ? file.files[0].name : null;
+    const label = $('file-label');
+    label.textContent = '';
+    if (name) {
+      const strong = document.createElement('strong');
+      strong.textContent = name;
+      label.append(strong);
+    } else {
+      label.innerHTML = '<strong>Choose a file</strong> or drag it here';
+    }
+    zone.classList.toggle('has-file', !!name);
+  };
+  file.addEventListener('change', showFile);
+  ['dragenter', 'dragover'].forEach((e) => zone.addEventListener(e, () => zone.classList.add('drag')));
+  ['dragleave', 'drop'].forEach((e) => zone.addEventListener(e, () => zone.classList.remove('drag')));
+
+  const syncMode = () => {
+    $('confirm-box').hidden = dry.checked;
+    $('submit-text').textContent = dry.checked ? 'Run dry run' : 'Run sync';
+    $('submit').classList.toggle('btn-danger', !dry.checked);
+  };
+  dry.addEventListener('change', syncMode);
+  syncMode(); showFile();
+
+  $('sync-form').addEventListener('submit', () => {
+    $('submit').disabled = true;
+    $('submit').classList.add('loading');
+    $('submit-text').textContent = 'Working…';
+  });
+</script>
+<%- include('footer') %>

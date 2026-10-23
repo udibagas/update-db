@@ -1,0 +1,24 @@
+<%- include('header', { title: 'Result' }) %>
+<section class="card">
+  <div class="head-row">
+    <h1>Result</h1>
+    <span class="badge <%= dryRun ? 'badge-warn' : 'badge-ok' %>"><%= dryRun ? 'Dry run' : 'Applied' %></span>
+  </div>
+  <p class="muted">File <code><%= fileName %></code> → database <code><%= database %></code></p>
+
+  <div class="stats">
+    <div class="stat"><span class="num"><%= rowCount %></span><span class="lbl">Rows read</span></div>
+    <div class="stat ok"><span class="num"><%= summary.updated %></span><span class="lbl"><%= dryRun ? 'Updates planned' : 'Updates applied' %></span></div>
+    <div class="stat ok"><span class="num"><%= summary.deleted %></span><span class="lbl"><%= dryRun ? 'Rows to delete' : 'Rows deleted' %></span></div>
+    <div class="stat warn"><span class="num"><%= summary.notFound %></span><span class="lbl">No row matched</span></div>
+    <div class="stat warn"><span class="num"><%= summary.skipped %></span><span class="lbl">Rows skipped</span></div>
+    <div class="stat <%= summary.failed ? 'bad' : '' %>"><span class="num"><%= summary.failed %></span><span class="lbl">Updates failed</span></div>
+  </div>
+
+  <h2>Log <small class="muted">· <%= logs.length %> entries</small></h2>
+  <pre class="log"><% logs.forEach((l) => { %><span class="<%= l.level %>"><%= l.message %></span>
+<% }) %></pre>
+
+  <a class="btn btn-secondary" href="/">← New sync</a>
+</section>
+<%- include('footer') %>
