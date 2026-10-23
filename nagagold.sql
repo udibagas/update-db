@@ -7,7 +7,7 @@
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!50503 SET NAMES utf8mb4 */;
+/*!50503 SET NAMES utf8 */;
 /*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
 /*!40103 SET TIME_ZONE='+00:00' */;
 /*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
@@ -19,7 +19,7 @@
 -- Current Database: `nagagold`
 --
 
-CREATE DATABASE /*!32312 IF NOT EXISTS*/ `nagagold` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
+CREATE DATABASE /*!32312 IF NOT EXISTS*/ `nagagold` /*!40100 DEFAULT CHARACTER SET utf8 COLLATE utf8_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
 
 USE `nagagold`;
 
@@ -29,7 +29,7 @@ USE `nagagold`;
 
 DROP TABLE IF EXISTS `th_barang_saldo_202201`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `th_barang_saldo_202201` (
   `tanggal` date NOT NULL DEFAULT '2008-01-01',
   `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
@@ -82,7 +82,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `th_barang_saldo_202202`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `th_barang_saldo_202202` (
   `tanggal` date NOT NULL DEFAULT '2008-01-01',
   `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
@@ -135,7 +135,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `th_barang_saldo_202203`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `th_barang_saldo_202203` (
   `tanggal` date NOT NULL DEFAULT '2008-01-01',
   `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
@@ -188,7 +188,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `th_barang_saldo_202204`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `th_barang_saldo_202204` (
   `tanggal` date NOT NULL DEFAULT '2008-01-01',
   `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
@@ -241,7 +241,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `th_barang_saldo_202205`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `th_barang_saldo_202205` (
   `tanggal` date NOT NULL DEFAULT '2008-01-01',
   `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
@@ -294,7 +294,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `th_barang_saldo_202206`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `th_barang_saldo_202206` (
   `tanggal` date NOT NULL DEFAULT '2008-01-01',
   `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
@@ -347,7 +347,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `th_barang_saldo_202207`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `th_barang_saldo_202207` (
   `tanggal` date NOT NULL DEFAULT '2008-01-01',
   `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
@@ -400,7 +400,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `th_barang_saldo_202208`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `th_barang_saldo_202208` (
   `tanggal` date NOT NULL DEFAULT '2008-01-01',
   `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
@@ -453,7 +453,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `th_barang_saldo_202209`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `th_barang_saldo_202209` (
   `tanggal` date NOT NULL DEFAULT '2008-01-01',
   `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
@@ -506,7 +506,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `th_barang_saldo_202210`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `th_barang_saldo_202210` (
   `tanggal` date NOT NULL DEFAULT '2008-01-01',
   `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
@@ -559,7 +559,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `th_barang_saldo_202211`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `th_barang_saldo_202211` (
   `tanggal` date NOT NULL DEFAULT '2008-01-01',
   `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
@@ -612,7 +612,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `th_barang_saldo_202212`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `th_barang_saldo_202212` (
   `tanggal` date NOT NULL DEFAULT '2008-01-01',
   `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
@@ -665,7 +665,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `th_barang_saldo_202301`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `th_barang_saldo_202301` (
   `tanggal` date NOT NULL DEFAULT '2008-01-01',
   `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
@@ -718,7 +718,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `th_barang_saldo_202302`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `th_barang_saldo_202302` (
   `tanggal` date NOT NULL DEFAULT '2008-01-01',
   `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
@@ -771,7 +771,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `th_barang_saldo_202303`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `th_barang_saldo_202303` (
   `tanggal` date NOT NULL DEFAULT '2008-01-01',
   `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
@@ -824,7 +824,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `th_barang_saldo_202304`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `th_barang_saldo_202304` (
   `tanggal` date NOT NULL DEFAULT '2008-01-01',
   `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
@@ -877,7 +877,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `th_barang_saldo_202305`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `th_barang_saldo_202305` (
   `tanggal` date NOT NULL DEFAULT '2008-01-01',
   `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
@@ -930,7 +930,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `th_barang_saldo_202306`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `th_barang_saldo_202306` (
   `tanggal` date NOT NULL DEFAULT '2008-01-01',
   `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
@@ -983,7 +983,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `th_barang_saldo_202307`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `th_barang_saldo_202307` (
   `tanggal` date NOT NULL DEFAULT '2008-01-01',
   `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
@@ -1036,7 +1036,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `th_barang_saldo_202308`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `th_barang_saldo_202308` (
   `tanggal` date NOT NULL DEFAULT '2008-01-01',
   `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
@@ -1089,7 +1089,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `th_barang_saldo_202309`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `th_barang_saldo_202309` (
   `tanggal` date NOT NULL DEFAULT '2008-01-01',
   `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
@@ -1142,7 +1142,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `th_barang_saldo_202310`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `th_barang_saldo_202310` (
   `tanggal` date NOT NULL DEFAULT '2008-01-01',
   `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
@@ -1195,7 +1195,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `th_barang_saldo_202311`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `th_barang_saldo_202311` (
   `tanggal` date NOT NULL DEFAULT '2008-01-01',
   `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
@@ -1248,7 +1248,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `th_barang_saldo_202312`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `th_barang_saldo_202312` (
   `tanggal` date NOT NULL DEFAULT '2008-01-01',
   `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
@@ -1301,7 +1301,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `th_barang_saldo_202401`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `th_barang_saldo_202401` (
   `tanggal` date NOT NULL DEFAULT '2008-01-01',
   `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
@@ -1354,7 +1354,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `th_barang_saldo_202402`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `th_barang_saldo_202402` (
   `tanggal` date NOT NULL DEFAULT '2008-01-01',
   `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
@@ -1407,7 +1407,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `th_barang_saldo_202403`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `th_barang_saldo_202403` (
   `tanggal` date NOT NULL DEFAULT '2008-01-01',
   `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
@@ -1460,7 +1460,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `th_barang_saldo_202404`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `th_barang_saldo_202404` (
   `tanggal` date NOT NULL DEFAULT '2008-01-01',
   `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
@@ -1513,7 +1513,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `th_barang_saldo_202405`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `th_barang_saldo_202405` (
   `tanggal` date NOT NULL DEFAULT '2008-01-01',
   `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
@@ -1566,7 +1566,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `th_barang_saldo_202406`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `th_barang_saldo_202406` (
   `tanggal` date NOT NULL DEFAULT '2008-01-01',
   `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
@@ -1619,7 +1619,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `th_barang_saldo_202407`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `th_barang_saldo_202407` (
   `tanggal` date NOT NULL DEFAULT '2008-01-01',
   `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
@@ -1672,7 +1672,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `th_barang_saldo_202408`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `th_barang_saldo_202408` (
   `tanggal` date NOT NULL DEFAULT '2008-01-01',
   `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
@@ -1725,7 +1725,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `th_barang_saldo_202409`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `th_barang_saldo_202409` (
   `tanggal` date NOT NULL DEFAULT '2008-01-01',
   `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
@@ -1778,7 +1778,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `th_barang_saldo_202410`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `th_barang_saldo_202410` (
   `tanggal` date NOT NULL DEFAULT '2008-01-01',
   `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
@@ -1831,7 +1831,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `th_barang_saldo_202411`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `th_barang_saldo_202411` (
   `tanggal` date NOT NULL DEFAULT '2008-01-01',
   `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
@@ -1884,7 +1884,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `th_barang_saldo_202412`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `th_barang_saldo_202412` (
   `tanggal` date NOT NULL DEFAULT '2008-01-01',
   `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
@@ -1937,7 +1937,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `th_barang_saldo_202501`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `th_barang_saldo_202501` (
   `tanggal` date NOT NULL DEFAULT '2008-01-01',
   `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
@@ -1990,7 +1990,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `th_barang_saldo_202502`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `th_barang_saldo_202502` (
   `tanggal` date NOT NULL DEFAULT '2008-01-01',
   `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
@@ -2043,7 +2043,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `th_barang_saldo_202503`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `th_barang_saldo_202503` (
   `tanggal` date NOT NULL DEFAULT '2008-01-01',
   `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
@@ -2096,7 +2096,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `th_barang_saldo_202504`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `th_barang_saldo_202504` (
   `tanggal` date NOT NULL DEFAULT '2008-01-01',
   `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
@@ -2149,7 +2149,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `th_barang_saldo_202505`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `th_barang_saldo_202505` (
   `tanggal` date NOT NULL DEFAULT '2008-01-01',
   `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
@@ -2202,7 +2202,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `th_barang_saldo_202506`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `th_barang_saldo_202506` (
   `tanggal` date NOT NULL DEFAULT '2008-01-01',
   `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
@@ -2255,7 +2255,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `th_barang_saldo_202507`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `th_barang_saldo_202507` (
   `tanggal` date NOT NULL DEFAULT '2008-01-01',
   `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
@@ -2308,7 +2308,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `th_barang_saldo_202508`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `th_barang_saldo_202508` (
   `tanggal` date NOT NULL DEFAULT '2008-01-01',
   `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
@@ -2361,7 +2361,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `th_barang_saldo_202509`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `th_barang_saldo_202509` (
   `tanggal` date NOT NULL DEFAULT '2008-01-01',
   `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
@@ -2414,7 +2414,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `th_barang_saldo_202510`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `th_barang_saldo_202510` (
   `tanggal` date NOT NULL DEFAULT '2008-01-01',
   `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
@@ -2467,7 +2467,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `th_barang_saldo_202511`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `th_barang_saldo_202511` (
   `tanggal` date NOT NULL DEFAULT '2008-01-01',
   `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
@@ -2520,7 +2520,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `th_barang_saldo_202512`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `th_barang_saldo_202512` (
   `tanggal` date NOT NULL DEFAULT '2008-01-01',
   `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
@@ -2573,7 +2573,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `th_barang_saldo_202601`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `th_barang_saldo_202601` (
   `tanggal` date NOT NULL DEFAULT '2008-01-01',
   `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
@@ -2626,7 +2626,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `th_barang_saldo_202602`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `th_barang_saldo_202602` (
   `tanggal` date NOT NULL DEFAULT '2008-01-01',
   `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
@@ -2679,7 +2679,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `th_barang_saldo_202603`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `th_barang_saldo_202603` (
   `tanggal` date NOT NULL DEFAULT '2008-01-01',
   `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
@@ -2732,7 +2732,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `th_barang_saldo_202604`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `th_barang_saldo_202604` (
   `tanggal` date NOT NULL DEFAULT '2008-01-01',
   `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
@@ -2785,7 +2785,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `th_barang_saldo_202605`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `th_barang_saldo_202605` (
   `tanggal` date NOT NULL DEFAULT '2008-01-01',
   `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
@@ -2838,7 +2838,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `th_barang_saldo_202606`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `th_barang_saldo_202606` (
   `tanggal` date NOT NULL DEFAULT '2008-01-01',
   `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
@@ -2891,7 +2891,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `th_barang_saldo_202607`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `th_barang_saldo_202607` (
   `tanggal` date NOT NULL DEFAULT '2008-01-01',
   `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
@@ -2944,7 +2944,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `th_barang_saldo_202608`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `th_barang_saldo_202608` (
   `tanggal` date NOT NULL DEFAULT '2008-01-01',
   `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
@@ -2997,7 +2997,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `th_barang_saldo_202609`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `th_barang_saldo_202609` (
   `tanggal` date NOT NULL DEFAULT '2008-01-01',
   `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
@@ -3050,7 +3050,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `th_barang_saldo_dump`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `th_barang_saldo_dump` (
   `tanggal` date NOT NULL DEFAULT '2008-01-01',
   `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
@@ -3105,7 +3105,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `th_barang_update`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `th_barang_update` (
   `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
   `old_kode_barcode` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
@@ -3148,7 +3148,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `th_cash_daily`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `th_cash_daily` (
   `no_ref` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
   `type_trx` varchar(1) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT 'D',
@@ -3183,7 +3183,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `th_cash_daily_dump`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `th_cash_daily_dump` (
   `no_ref` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
   `type_trx` varchar(1) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT 'D',
@@ -3218,7 +3218,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `th_log_error`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `th_log_error` (
   `menu` varchar(20) NOT NULL DEFAULT '',
   `err_number` varchar(50) DEFAULT NULL,
@@ -3244,7 +3244,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `th_log_poin`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `th_log_poin` (
   `tanggal` date DEFAULT '2013-01-01',
   `kode_member` varchar(10) DEFAULT NULL,
@@ -3267,7 +3267,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `th_saldo_hutang`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `th_saldo_hutang` (
   `tanggal` date DEFAULT '2008-01-01',
   `qty_awal` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
@@ -3301,7 +3301,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `th_stock_kosong`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `th_stock_kosong` (
   `user_id` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
   `input_date` datetime NOT NULL DEFAULT '2008-01-01 01:01:01'
@@ -3324,7 +3324,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `th_stock_sinkron`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `th_stock_sinkron` (
   `user_id` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
   `input_date` datetime DEFAULT NULL
@@ -3346,7 +3346,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `th_troy`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `th_troy` (
   `kode_group` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
   `harga_skrg` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
@@ -3372,7 +3372,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `th_user_login`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `th_user_login` (
   `user_id` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
   `tgl_login` date NOT NULL DEFAULT '2008-01-01',
@@ -3400,7 +3400,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tm_bandrol`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tm_bandrol` (
   `berat` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
   `input_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
@@ -3424,7 +3424,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tm_bank`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tm_bank` (
   `kode_bank` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
   `nama_bank` varchar(30) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
@@ -3453,7 +3453,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tm_bank_deleted`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tm_bank_deleted` (
   `kode_bank` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
   `nama_bank` varchar(30) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
@@ -3482,7 +3482,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tm_barang`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tm_barang` (
   `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
   `kode_barcode` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
@@ -3560,7 +3560,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tm_barang_beli`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tm_barang_beli` (
   `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
   `kode_barcode` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
@@ -3628,7 +3628,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tm_barang_contoh`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tm_barang_contoh` (
   `no_persekot` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
   `no_urut` tinyint DEFAULT '1',
@@ -3657,7 +3657,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tm_barang_deleted`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tm_barang_deleted` (
   `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
   `kode_barcode` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
@@ -3717,7 +3717,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tm_barang_dump`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tm_barang_dump` (
   `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
   `kode_barcode` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
@@ -3778,7 +3778,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tm_barang_minus`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tm_barang_minus` (
   `no_urut` int DEFAULT '0',
   `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
@@ -3806,7 +3806,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tm_barang_titip`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tm_barang_titip` (
   `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
   `kode_barcode` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
@@ -3866,7 +3866,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tm_barang_tmp`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tm_barang_tmp` (
   `nama_barang` varchar(60) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
   `nama_atribut` varchar(60) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
@@ -3894,7 +3894,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tm_cashier`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tm_cashier` (
   `cashier_id` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
   `nama_lkp` varchar(50) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
@@ -3923,7 +3923,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tm_cashier_deleted`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tm_cashier_deleted` (
   `cashier_id` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
   `nama_lkp` varchar(50) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
@@ -3951,7 +3951,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tm_credit_card`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tm_credit_card` (
   `id_card` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
   `nama_customer` varchar(30) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
@@ -3982,7 +3982,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tm_customer`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tm_customer` (
   `kode_customer` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
   `nama_customer` varchar(30) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
@@ -4032,7 +4032,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tm_customer_deleted`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tm_customer_deleted` (
   `kode_customer` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
   `nama_customer` varchar(30) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
@@ -4080,7 +4080,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tm_dept`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tm_dept` (
   `kode_group` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
   `kode_dept` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
@@ -4112,7 +4112,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tm_dept_deleted`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tm_dept_deleted` (
   `kode_group` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
   `kode_dept` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
@@ -4141,7 +4141,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tm_group`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tm_group` (
   `kode_group` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
   `nama_group` varchar(30) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
@@ -4172,7 +4172,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tm_group_deleted`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tm_group_deleted` (
   `kode_group` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
   `nama_group` varchar(30) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
@@ -4201,7 +4201,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tm_hadiah`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tm_hadiah` (
   `kode_hadiah` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
   `nama_hadiah` varchar(30) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
@@ -4231,7 +4231,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tm_lokasi_gudang`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tm_lokasi_gudang` (
   `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
   `nama_lokasi_gudang` varchar(50) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
@@ -4261,7 +4261,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tm_lokasi_gudang_deleted`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tm_lokasi_gudang_deleted` (
   `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
   `nama_lokasi_gudang` varchar(50) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
@@ -4289,7 +4289,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tm_lokasi_toko`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tm_lokasi_toko` (
   `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
   `kode_lokasi_toko` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
@@ -4323,7 +4323,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tm_lokasi_toko_deleted`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tm_lokasi_toko_deleted` (
   `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
   `kode_lokasi_toko` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
@@ -4355,7 +4355,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tm_otoritas`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tm_otoritas` (
   `user_id` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
   `nama_form` varchar(50) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
@@ -4380,7 +4380,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tm_sales`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tm_sales` (
   `sales_id` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
   `nama_sales` varchar(50) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
@@ -4410,7 +4410,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tm_sales_deleted`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tm_sales_deleted` (
   `sales_id` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
   `nama_sales` varchar(50) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
@@ -4439,7 +4439,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tm_satuan`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tm_satuan` (
   `kode_satuan` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
   `nama_satuan` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '-',
@@ -4468,7 +4468,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tm_satuan_deleted`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tm_satuan_deleted` (
   `kode_satuan` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
   `nama_satuan` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '-',
@@ -4497,7 +4497,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tm_supplier`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tm_supplier` (
   `kode_supplier` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
   `nama_supplier` varchar(50) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
@@ -4533,7 +4533,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tm_supplier_deleted`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tm_supplier_deleted` (
   `kode_supplier` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
   `nama_supplier` varchar(50) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
@@ -4572,7 +4572,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tm_supplier_umum`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tm_supplier_umum` (
   `no_faktur_beli` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
   `nama_supplier` varchar(50) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
@@ -4603,7 +4603,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tm_user`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tm_user` (
   `user_id` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
   `pass_key` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
@@ -4633,7 +4633,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tm_user_deleted`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tm_user_deleted` (
   `user_id` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
   `pass_key` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
@@ -4664,7 +4664,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tmp_rpt_bataljual`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tmp_rpt_bataljual` (
   `urut` int unsigned NOT NULL AUTO_INCREMENT,
   `tgl_retur_jual` date DEFAULT '2008-01-01',
@@ -4694,7 +4694,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tmp_rpt_jual`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tmp_rpt_jual` (
   `no_faktur_jual` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
   `tgl_faktur_jual` date NOT NULL DEFAULT '2008-01-01',
@@ -4725,7 +4725,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tmp_rpt_rekapbaki`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tmp_rpt_rekapbaki` (
   `kode_lokasi_toko` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
   `s_awal` double DEFAULT NULL,
@@ -4762,7 +4762,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tmp_rpt_stock`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tmp_rpt_stock` (
   `tanggal` date DEFAULT '2008-01-01',
   `kode_dept` varchar(51) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
@@ -4796,7 +4796,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tmp_rpt_stockjual`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tmp_rpt_stockjual` (
   `urut` tinyint DEFAULT '1',
   `kode_dept` varchar(15) DEFAULT NULL,
@@ -4830,7 +4830,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tmp_rpt_sum`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tmp_rpt_sum` (
   `s_in` double DEFAULT NULL,
   `b_in` double DEFAULT NULL,
@@ -4856,7 +4856,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tmp_rpt_tambahbrg`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tmp_rpt_tambahbrg` (
   `kode_barcode` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
   `harga_jual` double DEFAULT NULL,
@@ -4901,7 +4901,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tmp_rpt_tambahbrg_tot`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tmp_rpt_tambahbrg_tot` (
   `stock` double DEFAULT NULL,
   `berat` double DEFAULT NULL
@@ -4924,7 +4924,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tmp_stock_rkp`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tmp_stock_rkp` (
   `kode_lokasi_toko` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
   `s_awal` double DEFAULT NULL,
@@ -4960,7 +4960,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tp_backup`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tp_backup` (
   `tanggal` date DEFAULT '2008-01-01',
   `jam` time DEFAULT '01:01:01',
@@ -4986,7 +4986,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tp_barang`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tp_barang` (
   `kode_dept` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
   `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
@@ -5013,7 +5013,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tp_barang_beli`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tp_barang_beli` (
   `kode_dept` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
   `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
@@ -5039,7 +5039,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tp_cam`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tp_cam` (
   `pixel` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
   `lebar` char(5) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
@@ -5063,7 +5063,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tp_cash_trx`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tp_cash_trx` (
   `id_kategori` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
   `type_trx` varchar(1) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT 'D',
@@ -5092,7 +5092,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tp_cash_trx_deleted`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tp_cash_trx_deleted` (
   `id_kategori` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
   `type_trx` varchar(1) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT 'D',
@@ -5120,7 +5120,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tp_cfg`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tp_cfg` (
   `config1` varchar(10) DEFAULT '1',
   `config2` varchar(10) DEFAULT '0',
@@ -5146,7 +5146,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tp_curr`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tp_curr` (
   `curr` varchar(10) DEFAULT NULL,
   `rp` varchar(10) DEFAULT '0',
@@ -5171,7 +5171,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tp_kondisi_barang`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tp_kondisi_barang` (
   `kondisi_barang` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
   `input_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
@@ -5197,7 +5197,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tp_kondisi_barang_beli`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tp_kondisi_barang_beli` (
   `kondisi_barang` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
   `harga` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
@@ -5224,7 +5224,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tp_kondisi_barang_deleted`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tp_kondisi_barang_deleted` (
   `kondisi_barang` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
   `input_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
@@ -5251,7 +5251,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tp_konter_barang`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tp_konter_barang` (
   `kode_dept` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
   `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL
@@ -5273,7 +5273,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tp_konter_jual`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tp_konter_jual` (
   `no_faktur_jual` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
   `tgl_faktur_jual` date DEFAULT '2008-01-01'
@@ -5296,7 +5296,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tp_poin`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tp_poin` (
   `poin` varchar(10) DEFAULT NULL,
   `status` varchar(20) DEFAULT NULL
@@ -5318,7 +5318,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tp_restore`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tp_restore` (
   `tanggal` date DEFAULT '2008-01-01',
   `jam` time DEFAULT '01:01:01',
@@ -5343,7 +5343,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tp_status_beli`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tp_status_beli` (
   `status` int DEFAULT '0'
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_bin;
@@ -5365,7 +5365,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tp_system`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tp_system` (
   `nama_perusahaan` varchar(50) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
   `alamat_persh1` varchar(50) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
@@ -5397,7 +5397,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tt_bank_daily`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tt_bank_daily` (
   `no_ref` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
   `type_trx` varchar(1) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT 'D',
@@ -5429,7 +5429,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tt_barang_saldo`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tt_barang_saldo` (
   `tanggal` date NOT NULL DEFAULT '2008-01-01',
   `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
@@ -5485,7 +5485,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tt_barang_stock`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tt_barang_stock` (
   `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
   `kode_barcode` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
@@ -5515,7 +5515,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tt_barang_stock_lebih`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tt_barang_stock_lebih` (
   `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
   `kode_barcode` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
@@ -5543,7 +5543,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tt_barang_tukar`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tt_barang_tukar` (
   `no_faktur_group` varchar(20) NOT NULL,
   `no_faktur_ext` varchar(20) DEFAULT NULL,
@@ -5586,7 +5586,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tt_batal_barang_tukar`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tt_batal_barang_tukar` (
   `no_faktur_group` varchar(20) NOT NULL,
   `no_faktur_ext` varchar(20) DEFAULT NULL,
@@ -5624,7 +5624,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tt_batal_card`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tt_batal_card` (
   `no_trx` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
   `tgl_system` date DEFAULT '2008-01-01',
@@ -5653,7 +5653,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tt_batal_debet`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tt_batal_debet` (
   `no_trx` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
   `tgl_system` date DEFAULT '2008-01-01',
@@ -5682,7 +5682,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tt_batal_hutang_detail`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tt_batal_hutang_detail` (
   `no_hutang` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
   `sales_id` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
@@ -5711,7 +5711,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tt_batal_hutang_head`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tt_batal_hutang_head` (
   `no_hutang` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
   `tgl_system` date DEFAULT '2008-01-01',
@@ -5755,7 +5755,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tt_batal_hutang_lunas`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tt_batal_hutang_lunas` (
   `no_hutang` varchar(20) DEFAULT NULL,
   `tgl_hutang` date DEFAULT '2008-01-01',
@@ -5783,7 +5783,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tt_batal_member`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tt_batal_member` (
   `no_trx` varchar(15) NOT NULL DEFAULT '',
   `tgl_trx` date DEFAULT '2011-01-01',
@@ -5826,7 +5826,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tt_batal_transfer`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tt_batal_transfer` (
   `no_trx` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
   `tgl_system` date DEFAULT '2008-01-01',
@@ -5855,7 +5855,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tt_bayar_bunga`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tt_bayar_bunga` (
   `no_hutang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '',
   `tgl_system` date DEFAULT '2008-01-01',
@@ -5883,7 +5883,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tt_beli_detail`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tt_beli_detail` (
   `no_faktur_beli` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
   `sales_id` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
@@ -5934,7 +5934,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tt_beli_head`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tt_beli_head` (
   `no_faktur_beli` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
   `tgl_system` date DEFAULT '2008-01-01',
@@ -5984,7 +5984,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tt_beli_retur_detail`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tt_beli_retur_detail` (
   `no_faktur_beli` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
   `sales_id` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
@@ -6034,7 +6034,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tt_beli_retur_head`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tt_beli_retur_head` (
   `no_faktur_beli` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
   `tgl_system` date DEFAULT '2008-01-01',
@@ -6081,7 +6081,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tt_card`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tt_card` (
   `no_trx` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
   `tgl_system` date DEFAULT '2008-01-01',
@@ -6113,7 +6113,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tt_card_dump`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tt_card_dump` (
   `no_trx` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
   `tgl_system` date DEFAULT '2008-01-01',
@@ -6144,7 +6144,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tt_cash_daily`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tt_cash_daily` (
   `no_ref` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
   `type_trx` varchar(1) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT 'D',
@@ -6178,7 +6178,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tt_debet`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tt_debet` (
   `no_trx` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
   `tgl_system` date DEFAULT '2008-01-01',
@@ -6210,7 +6210,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tt_debet_dump`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tt_debet_dump` (
   `no_trx` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
   `tgl_system` date DEFAULT '2008-01-01',
@@ -6241,7 +6241,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tt_hilang_detail`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tt_hilang_detail` (
   `no_hilang` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
   `no_urut` varchar(4) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '1',
@@ -6279,7 +6279,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tt_hilang_head`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tt_hilang_head` (
   `no_hilang` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
   `tgl_system` date DEFAULT '2008-01-01',
@@ -6312,7 +6312,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tt_hutang_detail`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tt_hutang_detail` (
   `no_hutang` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
   `sales_id` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
@@ -6342,7 +6342,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tt_hutang_head`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tt_hutang_head` (
   `no_hutang` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
   `tgl_system` date DEFAULT '2008-01-01',
@@ -6392,7 +6392,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tt_jual_detail`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tt_jual_detail` (
   `no_faktur_jual` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
   `input_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
@@ -6446,7 +6446,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tt_jual_detail_dump`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tt_jual_detail_dump` (
   `no_faktur_jual` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
   `input_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
@@ -6500,7 +6500,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tt_jual_diskon`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tt_jual_diskon` (
   `no_faktur_jual` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
   `tgl_system` date DEFAULT '2008-01-01',
@@ -6531,7 +6531,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tt_jual_head`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tt_jual_head` (
   `no_faktur_jual` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
   `tgl_system` date DEFAULT '2008-01-01',
@@ -6584,7 +6584,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tt_jual_head_dump`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tt_jual_head_dump` (
   `no_faktur_jual` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
   `tgl_system` date DEFAULT '2008-01-01',
@@ -6637,7 +6637,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tt_jual_retur_detail`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tt_jual_retur_detail` (
   `no_retur_jual` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
   `no_urut` varchar(4) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '1',
@@ -6679,7 +6679,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tt_jual_retur_head`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tt_jual_retur_head` (
   `no_retur_jual` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
   `tgl_system` date DEFAULT '2008-01-01',
@@ -6713,7 +6713,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tt_jual_sales`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tt_jual_sales` (
   `no_faktur_jual` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
   `tgl_system` date DEFAULT '2008-01-01',
@@ -6744,7 +6744,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tt_jual_sales_dump`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tt_jual_sales_dump` (
   `no_faktur_jual` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
   `tgl_system` date DEFAULT '2008-01-01',
@@ -6775,7 +6775,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tt_jual_tukar_detail`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tt_jual_tukar_detail` (
   `no_faktur_jual` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
   `input_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
@@ -6807,7 +6807,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tt_jual_tukar_head`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tt_jual_tukar_head` (
   `no_faktur_jual` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
   `tgl_system` date DEFAULT '2008-01-01',
@@ -6843,7 +6843,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tt_member`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tt_member` (
   `no_trx` varchar(15) NOT NULL DEFAULT '',
   `tgl_trx` date DEFAULT '2011-01-01',
@@ -6889,7 +6889,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tt_persekot_batal_detail`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tt_persekot_batal_detail` (
   `no_persekot` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
   `sales_id` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
@@ -6926,7 +6926,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tt_persekot_batal_head`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tt_persekot_batal_head` (
   `no_persekot` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
   `tgl_system` date DEFAULT '2008-01-01',
@@ -6968,7 +6968,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tt_persekot_detail`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tt_persekot_detail` (
   `no_persekot` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
   `sales_id` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
@@ -7006,7 +7006,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tt_persekot_head`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tt_persekot_head` (
   `no_persekot` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
   `tgl_system` date DEFAULT '2008-01-01',
@@ -7052,7 +7052,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tt_pindah_detail`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tt_pindah_detail` (
   `no_pindah` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
   `no_urut` varchar(4) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '1',
@@ -7085,7 +7085,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tt_pindah_head`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tt_pindah_head` (
   `no_pindah` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
   `tgl_system` date DEFAULT '2008-01-01',
@@ -7116,7 +7116,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tt_poin`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tt_poin` (
   `tanggal` date DEFAULT '2013-01-01',
   `kode_member` varchar(10) DEFAULT NULL,
@@ -7140,7 +7140,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tt_saldo_kasir`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tt_saldo_kasir` (
   `tgl_system` date NOT NULL DEFAULT '2008-01-01',
   `jam` time NOT NULL DEFAULT '01:01:01',
@@ -7176,7 +7176,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tt_saldo_kasir_selisih`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tt_saldo_kasir_selisih` (
   `tgl_system` date NOT NULL DEFAULT '2008-01-01',
   `jam` time NOT NULL DEFAULT '00:00:00',
@@ -7203,7 +7203,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tt_service_batal_detail`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tt_service_batal_detail` (
   `no_service` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
   `sales_id` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
@@ -7234,7 +7234,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tt_service_batal_head`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tt_service_batal_head` (
   `no_service` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
   `tgl_system` date DEFAULT '2008-01-01',
@@ -7275,7 +7275,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tt_service_detail`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tt_service_detail` (
   `no_service` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
   `sales_id` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
@@ -7307,7 +7307,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tt_service_head`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tt_service_head` (
   `no_service` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
   `tgl_system` date DEFAULT '2008-01-01',
@@ -7351,7 +7351,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tt_titip_batal_detail`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tt_titip_batal_detail` (
   `no_titip` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
   `input_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
@@ -7389,7 +7389,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tt_titip_batal_head`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tt_titip_batal_head` (
   `no_titip` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
   `tgl_system` date DEFAULT '2008-01-01',
@@ -7430,7 +7430,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tt_titip_detail`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tt_titip_detail` (
   `no_titip` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
   `input_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
@@ -7470,7 +7470,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tt_titip_head`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tt_titip_head` (
   `no_titip` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
   `tgl_system` date DEFAULT '2008-01-01',
@@ -7513,7 +7513,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tt_transfer`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tt_transfer` (
   `no_trx` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
   `tgl_system` date DEFAULT '2008-01-01',
@@ -7543,7 +7543,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tt_tukar_batal_detail`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tt_tukar_batal_detail` (
   `no_faktur_jual` varchar(20) NOT NULL DEFAULT '',
   `input_by` varchar(20) NOT NULL DEFAULT '',
@@ -7576,7 +7576,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tt_tukar_batal_head`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tt_tukar_batal_head` (
   `no_faktur_jual` varchar(20) NOT NULL DEFAULT '',
   `tgl_system` date DEFAULT '2008-01-01',
@@ -7607,7 +7607,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tt_tukarpoin`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tt_tukarpoin` (
   `tanggal` date DEFAULT '2008-01-01',
   `kode_customer` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
@@ -7633,7 +7633,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tt_waste_detail`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tt_waste_detail` (
   `no_waste` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
   `no_urut` varchar(4) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '1',
@@ -7672,7 +7672,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tt_waste_head`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tt_waste_head` (
   `no_waste` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
   `tgl_system` date DEFAULT '2008-01-01',
