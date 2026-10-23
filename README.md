@@ -61,6 +61,23 @@ To inspect the matching and deletion counts without changing the database, add
 node index.js --dry-run app_user 'your-password' sales_db ./invoices.xlsx
 ```
 
+To run only the deletion of database rows whose invoice number is not present in
+the spreadsheet, use the separate deletion command:
+
+```sh
+node delete-nonexistent.js app_user 'your-password' sales_db ./invoices.xlsx
+```
+
+Add `--dry-run` to preview those deletions without changing the database:
+
+```sh
+node delete-nonexistent.js --dry-run app_user 'your-password' sales_db ./invoices.xlsx
+```
+
+The deletion-only command uses the same confirmation prompt as the main command
+and deletes rows with a `NULL` match column or an invoice number absent from the
+spreadsheet. If the spreadsheet contains no invoice numbers, it skips deletion.
+
 Dry-run mode connects to MySQL and runs read-only count queries to report the
 rows that match each update and the rows that would be deleted. It does not run
 any `UPDATE` or `DELETE` statements. The database account must have permission
@@ -101,3 +118,15 @@ the spreadsheet contains no invoice numbers, deletion is skipped.
 > not a replacement for backing up the database, verifying the workbook and
 > target database, and testing with a non-production database. A short or
 > incomplete workbook can cause records to be deleted.
+
+## Web interface
+
+Start the web app (default port 3000, override with `PORT`):
+
+```sh
+npm start   # or: node server.js
+```
+
+Open <http://localhost:3000>, upload the Excel file (handled by multer), enter
+the database credentials and run. Tick "Dry run" to preview changes; otherwise
+type `YES` to confirm. The CLI (`node index.js ...`) works as before.
