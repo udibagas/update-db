@@ -19,7 +19,7 @@
 -- Current Database: `nagagold`
 --
 
-CREATE DATABASE /*!32312 IF NOT EXISTS*/ `nagagold` /*!40100 DEFAULT CHARACTER SET utf8 COLLATE utf8_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
+CREATE DATABASE /*!32312 IF NOT EXISTS*/ `nagagold` /*!40100 DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
 
 USE `nagagold`;
 
@@ -32,39 +32,39 @@ DROP TABLE IF EXISTS `th_barang_saldo_202201`;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `th_barang_saldo_202201` (
   `tanggal` date NOT NULL DEFAULT '2008-01-01',
-  `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_dept` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `berat_awal` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_awal_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_awal` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `berat_tambah` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_tambah_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_tambah` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_out` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_out_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_out` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_in` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_in_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_in` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_beli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_beli_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_beli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_jual` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_jual_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_jual` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hancur` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hancur_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_hancur` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hilang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hilang_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_hilang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_akhir` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_akhir_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_akhir` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `status_close` varchar(4) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT 'OPEN'
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3;
+  `kode_barang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_dept` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `berat_awal` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_awal_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_awal` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `berat_tambah` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_tambah_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_tambah` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_out` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_out_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_out` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_in` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_in_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_in` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_beli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_beli_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_beli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_jual` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_jual_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_jual` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hancur` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hancur_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_hancur` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hilang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hilang_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_hilang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_akhir` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_akhir_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_akhir` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `status_close` varchar(4) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT 'OPEN'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -85,39 +85,39 @@ DROP TABLE IF EXISTS `th_barang_saldo_202202`;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `th_barang_saldo_202202` (
   `tanggal` date NOT NULL DEFAULT '2008-01-01',
-  `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_dept` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `berat_awal` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_awal_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_awal` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `berat_tambah` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_tambah_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_tambah` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_out` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_out_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_out` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_in` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_in_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_in` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_beli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_beli_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_beli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_jual` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_jual_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_jual` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hancur` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hancur_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_hancur` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hilang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hilang_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_hilang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_akhir` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_akhir_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_akhir` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `status_close` varchar(4) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT 'OPEN'
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3;
+  `kode_barang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_dept` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `berat_awal` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_awal_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_awal` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `berat_tambah` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_tambah_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_tambah` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_out` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_out_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_out` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_in` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_in_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_in` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_beli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_beli_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_beli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_jual` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_jual_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_jual` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hancur` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hancur_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_hancur` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hilang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hilang_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_hilang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_akhir` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_akhir_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_akhir` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `status_close` varchar(4) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT 'OPEN'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -138,39 +138,39 @@ DROP TABLE IF EXISTS `th_barang_saldo_202203`;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `th_barang_saldo_202203` (
   `tanggal` date NOT NULL DEFAULT '2008-01-01',
-  `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_dept` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `berat_awal` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_awal_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_awal` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `berat_tambah` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_tambah_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_tambah` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_out` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_out_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_out` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_in` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_in_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_in` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_beli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_beli_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_beli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_jual` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_jual_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_jual` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hancur` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hancur_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_hancur` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hilang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hilang_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_hilang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_akhir` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_akhir_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_akhir` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `status_close` varchar(4) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT 'OPEN'
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3;
+  `kode_barang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_dept` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `berat_awal` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_awal_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_awal` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `berat_tambah` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_tambah_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_tambah` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_out` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_out_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_out` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_in` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_in_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_in` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_beli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_beli_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_beli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_jual` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_jual_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_jual` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hancur` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hancur_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_hancur` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hilang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hilang_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_hilang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_akhir` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_akhir_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_akhir` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `status_close` varchar(4) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT 'OPEN'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -191,39 +191,39 @@ DROP TABLE IF EXISTS `th_barang_saldo_202204`;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `th_barang_saldo_202204` (
   `tanggal` date NOT NULL DEFAULT '2008-01-01',
-  `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_dept` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `berat_awal` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_awal_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_awal` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `berat_tambah` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_tambah_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_tambah` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_out` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_out_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_out` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_in` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_in_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_in` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_beli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_beli_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_beli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_jual` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_jual_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_jual` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hancur` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hancur_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_hancur` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hilang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hilang_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_hilang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_akhir` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_akhir_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_akhir` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `status_close` varchar(4) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT 'OPEN'
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3;
+  `kode_barang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_dept` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `berat_awal` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_awal_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_awal` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `berat_tambah` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_tambah_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_tambah` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_out` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_out_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_out` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_in` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_in_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_in` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_beli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_beli_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_beli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_jual` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_jual_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_jual` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hancur` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hancur_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_hancur` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hilang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hilang_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_hilang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_akhir` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_akhir_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_akhir` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `status_close` varchar(4) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT 'OPEN'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -244,39 +244,39 @@ DROP TABLE IF EXISTS `th_barang_saldo_202205`;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `th_barang_saldo_202205` (
   `tanggal` date NOT NULL DEFAULT '2008-01-01',
-  `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_dept` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `berat_awal` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_awal_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_awal` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `berat_tambah` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_tambah_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_tambah` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_out` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_out_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_out` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_in` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_in_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_in` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_beli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_beli_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_beli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_jual` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_jual_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_jual` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hancur` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hancur_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_hancur` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hilang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hilang_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_hilang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_akhir` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_akhir_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_akhir` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `status_close` varchar(4) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT 'OPEN'
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3;
+  `kode_barang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_dept` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `berat_awal` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_awal_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_awal` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `berat_tambah` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_tambah_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_tambah` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_out` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_out_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_out` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_in` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_in_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_in` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_beli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_beli_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_beli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_jual` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_jual_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_jual` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hancur` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hancur_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_hancur` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hilang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hilang_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_hilang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_akhir` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_akhir_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_akhir` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `status_close` varchar(4) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT 'OPEN'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -297,39 +297,39 @@ DROP TABLE IF EXISTS `th_barang_saldo_202206`;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `th_barang_saldo_202206` (
   `tanggal` date NOT NULL DEFAULT '2008-01-01',
-  `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_dept` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `berat_awal` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_awal_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_awal` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `berat_tambah` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_tambah_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_tambah` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_out` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_out_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_out` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_in` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_in_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_in` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_beli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_beli_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_beli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_jual` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_jual_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_jual` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hancur` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hancur_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_hancur` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hilang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hilang_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_hilang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_akhir` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_akhir_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_akhir` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `status_close` varchar(4) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT 'OPEN'
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3;
+  `kode_barang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_dept` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `berat_awal` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_awal_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_awal` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `berat_tambah` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_tambah_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_tambah` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_out` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_out_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_out` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_in` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_in_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_in` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_beli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_beli_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_beli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_jual` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_jual_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_jual` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hancur` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hancur_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_hancur` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hilang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hilang_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_hilang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_akhir` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_akhir_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_akhir` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `status_close` varchar(4) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT 'OPEN'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -350,39 +350,39 @@ DROP TABLE IF EXISTS `th_barang_saldo_202207`;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `th_barang_saldo_202207` (
   `tanggal` date NOT NULL DEFAULT '2008-01-01',
-  `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_dept` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `berat_awal` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_awal_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_awal` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `berat_tambah` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_tambah_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_tambah` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_out` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_out_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_out` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_in` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_in_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_in` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_beli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_beli_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_beli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_jual` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_jual_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_jual` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hancur` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hancur_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_hancur` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hilang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hilang_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_hilang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_akhir` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_akhir_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_akhir` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `status_close` varchar(4) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT 'OPEN'
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3;
+  `kode_barang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_dept` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `berat_awal` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_awal_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_awal` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `berat_tambah` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_tambah_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_tambah` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_out` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_out_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_out` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_in` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_in_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_in` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_beli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_beli_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_beli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_jual` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_jual_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_jual` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hancur` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hancur_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_hancur` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hilang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hilang_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_hilang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_akhir` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_akhir_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_akhir` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `status_close` varchar(4) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT 'OPEN'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -403,39 +403,39 @@ DROP TABLE IF EXISTS `th_barang_saldo_202208`;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `th_barang_saldo_202208` (
   `tanggal` date NOT NULL DEFAULT '2008-01-01',
-  `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_dept` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `berat_awal` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_awal_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_awal` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `berat_tambah` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_tambah_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_tambah` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_out` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_out_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_out` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_in` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_in_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_in` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_beli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_beli_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_beli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_jual` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_jual_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_jual` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hancur` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hancur_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_hancur` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hilang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hilang_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_hilang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_akhir` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_akhir_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_akhir` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `status_close` varchar(4) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT 'OPEN'
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3;
+  `kode_barang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_dept` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `berat_awal` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_awal_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_awal` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `berat_tambah` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_tambah_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_tambah` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_out` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_out_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_out` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_in` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_in_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_in` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_beli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_beli_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_beli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_jual` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_jual_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_jual` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hancur` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hancur_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_hancur` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hilang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hilang_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_hilang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_akhir` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_akhir_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_akhir` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `status_close` varchar(4) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT 'OPEN'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -456,39 +456,39 @@ DROP TABLE IF EXISTS `th_barang_saldo_202209`;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `th_barang_saldo_202209` (
   `tanggal` date NOT NULL DEFAULT '2008-01-01',
-  `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_dept` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `berat_awal` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_awal_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_awal` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `berat_tambah` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_tambah_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_tambah` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_out` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_out_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_out` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_in` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_in_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_in` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_beli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_beli_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_beli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_jual` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_jual_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_jual` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hancur` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hancur_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_hancur` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hilang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hilang_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_hilang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_akhir` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_akhir_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_akhir` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `status_close` varchar(4) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT 'OPEN'
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3;
+  `kode_barang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_dept` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `berat_awal` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_awal_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_awal` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `berat_tambah` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_tambah_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_tambah` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_out` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_out_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_out` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_in` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_in_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_in` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_beli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_beli_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_beli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_jual` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_jual_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_jual` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hancur` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hancur_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_hancur` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hilang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hilang_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_hilang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_akhir` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_akhir_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_akhir` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `status_close` varchar(4) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT 'OPEN'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -509,39 +509,39 @@ DROP TABLE IF EXISTS `th_barang_saldo_202210`;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `th_barang_saldo_202210` (
   `tanggal` date NOT NULL DEFAULT '2008-01-01',
-  `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_dept` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `berat_awal` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_awal_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_awal` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `berat_tambah` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_tambah_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_tambah` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_out` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_out_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_out` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_in` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_in_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_in` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_beli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_beli_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_beli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_jual` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_jual_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_jual` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hancur` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hancur_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_hancur` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hilang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hilang_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_hilang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_akhir` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_akhir_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_akhir` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `status_close` varchar(4) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT 'OPEN'
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3;
+  `kode_barang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_dept` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `berat_awal` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_awal_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_awal` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `berat_tambah` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_tambah_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_tambah` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_out` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_out_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_out` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_in` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_in_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_in` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_beli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_beli_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_beli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_jual` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_jual_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_jual` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hancur` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hancur_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_hancur` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hilang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hilang_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_hilang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_akhir` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_akhir_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_akhir` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `status_close` varchar(4) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT 'OPEN'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -562,39 +562,39 @@ DROP TABLE IF EXISTS `th_barang_saldo_202211`;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `th_barang_saldo_202211` (
   `tanggal` date NOT NULL DEFAULT '2008-01-01',
-  `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_dept` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `berat_awal` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_awal_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_awal` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `berat_tambah` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_tambah_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_tambah` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_out` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_out_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_out` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_in` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_in_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_in` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_beli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_beli_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_beli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_jual` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_jual_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_jual` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hancur` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hancur_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_hancur` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hilang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hilang_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_hilang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_akhir` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_akhir_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_akhir` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `status_close` varchar(4) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT 'OPEN'
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3;
+  `kode_barang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_dept` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `berat_awal` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_awal_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_awal` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `berat_tambah` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_tambah_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_tambah` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_out` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_out_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_out` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_in` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_in_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_in` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_beli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_beli_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_beli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_jual` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_jual_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_jual` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hancur` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hancur_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_hancur` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hilang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hilang_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_hilang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_akhir` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_akhir_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_akhir` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `status_close` varchar(4) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT 'OPEN'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -615,39 +615,39 @@ DROP TABLE IF EXISTS `th_barang_saldo_202212`;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `th_barang_saldo_202212` (
   `tanggal` date NOT NULL DEFAULT '2008-01-01',
-  `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_dept` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `berat_awal` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_awal_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_awal` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `berat_tambah` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_tambah_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_tambah` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_out` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_out_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_out` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_in` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_in_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_in` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_beli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_beli_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_beli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_jual` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_jual_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_jual` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hancur` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hancur_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_hancur` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hilang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hilang_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_hilang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_akhir` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_akhir_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_akhir` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `status_close` varchar(4) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT 'OPEN'
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3;
+  `kode_barang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_dept` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `berat_awal` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_awal_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_awal` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `berat_tambah` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_tambah_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_tambah` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_out` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_out_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_out` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_in` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_in_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_in` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_beli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_beli_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_beli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_jual` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_jual_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_jual` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hancur` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hancur_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_hancur` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hilang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hilang_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_hilang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_akhir` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_akhir_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_akhir` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `status_close` varchar(4) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT 'OPEN'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -668,39 +668,39 @@ DROP TABLE IF EXISTS `th_barang_saldo_202301`;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `th_barang_saldo_202301` (
   `tanggal` date NOT NULL DEFAULT '2008-01-01',
-  `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_dept` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `berat_awal` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_awal_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_awal` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `berat_tambah` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_tambah_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_tambah` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_out` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_out_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_out` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_in` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_in_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_in` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_beli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_beli_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_beli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_jual` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_jual_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_jual` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hancur` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hancur_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_hancur` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hilang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hilang_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_hilang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_akhir` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_akhir_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_akhir` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `status_close` varchar(4) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT 'OPEN'
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3;
+  `kode_barang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_dept` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `berat_awal` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_awal_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_awal` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `berat_tambah` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_tambah_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_tambah` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_out` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_out_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_out` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_in` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_in_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_in` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_beli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_beli_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_beli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_jual` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_jual_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_jual` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hancur` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hancur_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_hancur` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hilang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hilang_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_hilang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_akhir` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_akhir_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_akhir` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `status_close` varchar(4) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT 'OPEN'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -721,39 +721,39 @@ DROP TABLE IF EXISTS `th_barang_saldo_202302`;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `th_barang_saldo_202302` (
   `tanggal` date NOT NULL DEFAULT '2008-01-01',
-  `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_dept` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `berat_awal` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_awal_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_awal` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `berat_tambah` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_tambah_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_tambah` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_out` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_out_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_out` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_in` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_in_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_in` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_beli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_beli_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_beli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_jual` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_jual_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_jual` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hancur` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hancur_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_hancur` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hilang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hilang_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_hilang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_akhir` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_akhir_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_akhir` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `status_close` varchar(4) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT 'OPEN'
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3;
+  `kode_barang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_dept` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `berat_awal` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_awal_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_awal` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `berat_tambah` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_tambah_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_tambah` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_out` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_out_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_out` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_in` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_in_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_in` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_beli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_beli_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_beli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_jual` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_jual_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_jual` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hancur` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hancur_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_hancur` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hilang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hilang_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_hilang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_akhir` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_akhir_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_akhir` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `status_close` varchar(4) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT 'OPEN'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -774,39 +774,39 @@ DROP TABLE IF EXISTS `th_barang_saldo_202303`;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `th_barang_saldo_202303` (
   `tanggal` date NOT NULL DEFAULT '2008-01-01',
-  `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_dept` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `berat_awal` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_awal_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_awal` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `berat_tambah` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_tambah_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_tambah` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_out` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_out_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_out` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_in` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_in_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_in` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_beli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_beli_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_beli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_jual` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_jual_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_jual` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hancur` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hancur_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_hancur` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hilang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hilang_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_hilang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_akhir` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_akhir_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_akhir` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `status_close` varchar(4) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT 'OPEN'
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3;
+  `kode_barang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_dept` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `berat_awal` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_awal_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_awal` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `berat_tambah` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_tambah_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_tambah` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_out` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_out_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_out` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_in` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_in_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_in` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_beli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_beli_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_beli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_jual` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_jual_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_jual` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hancur` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hancur_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_hancur` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hilang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hilang_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_hilang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_akhir` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_akhir_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_akhir` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `status_close` varchar(4) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT 'OPEN'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -827,39 +827,39 @@ DROP TABLE IF EXISTS `th_barang_saldo_202304`;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `th_barang_saldo_202304` (
   `tanggal` date NOT NULL DEFAULT '2008-01-01',
-  `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_dept` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `berat_awal` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_awal_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_awal` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `berat_tambah` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_tambah_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_tambah` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_out` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_out_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_out` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_in` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_in_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_in` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_beli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_beli_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_beli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_jual` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_jual_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_jual` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hancur` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hancur_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_hancur` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hilang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hilang_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_hilang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_akhir` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_akhir_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_akhir` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `status_close` varchar(4) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT 'OPEN'
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3;
+  `kode_barang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_dept` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `berat_awal` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_awal_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_awal` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `berat_tambah` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_tambah_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_tambah` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_out` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_out_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_out` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_in` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_in_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_in` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_beli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_beli_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_beli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_jual` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_jual_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_jual` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hancur` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hancur_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_hancur` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hilang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hilang_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_hilang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_akhir` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_akhir_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_akhir` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `status_close` varchar(4) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT 'OPEN'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -880,39 +880,39 @@ DROP TABLE IF EXISTS `th_barang_saldo_202305`;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `th_barang_saldo_202305` (
   `tanggal` date NOT NULL DEFAULT '2008-01-01',
-  `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_dept` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `berat_awal` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_awal_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_awal` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `berat_tambah` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_tambah_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_tambah` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_out` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_out_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_out` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_in` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_in_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_in` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_beli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_beli_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_beli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_jual` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_jual_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_jual` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hancur` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hancur_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_hancur` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hilang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hilang_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_hilang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_akhir` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_akhir_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_akhir` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `status_close` varchar(4) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT 'OPEN'
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3;
+  `kode_barang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_dept` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `berat_awal` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_awal_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_awal` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `berat_tambah` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_tambah_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_tambah` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_out` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_out_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_out` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_in` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_in_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_in` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_beli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_beli_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_beli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_jual` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_jual_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_jual` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hancur` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hancur_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_hancur` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hilang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hilang_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_hilang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_akhir` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_akhir_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_akhir` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `status_close` varchar(4) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT 'OPEN'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -933,39 +933,39 @@ DROP TABLE IF EXISTS `th_barang_saldo_202306`;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `th_barang_saldo_202306` (
   `tanggal` date NOT NULL DEFAULT '2008-01-01',
-  `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_dept` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `berat_awal` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_awal_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_awal` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `berat_tambah` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_tambah_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_tambah` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_out` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_out_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_out` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_in` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_in_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_in` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_beli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_beli_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_beli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_jual` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_jual_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_jual` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hancur` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hancur_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_hancur` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hilang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hilang_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_hilang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_akhir` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_akhir_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_akhir` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `status_close` varchar(4) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT 'OPEN'
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3;
+  `kode_barang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_dept` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `berat_awal` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_awal_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_awal` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `berat_tambah` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_tambah_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_tambah` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_out` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_out_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_out` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_in` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_in_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_in` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_beli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_beli_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_beli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_jual` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_jual_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_jual` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hancur` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hancur_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_hancur` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hilang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hilang_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_hilang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_akhir` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_akhir_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_akhir` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `status_close` varchar(4) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT 'OPEN'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -986,39 +986,39 @@ DROP TABLE IF EXISTS `th_barang_saldo_202307`;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `th_barang_saldo_202307` (
   `tanggal` date NOT NULL DEFAULT '2008-01-01',
-  `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_dept` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `berat_awal` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_awal_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_awal` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `berat_tambah` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_tambah_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_tambah` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_out` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_out_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_out` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_in` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_in_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_in` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_beli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_beli_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_beli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_jual` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_jual_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_jual` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hancur` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hancur_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_hancur` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hilang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hilang_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_hilang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_akhir` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_akhir_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_akhir` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `status_close` varchar(4) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT 'OPEN'
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3;
+  `kode_barang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_dept` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `berat_awal` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_awal_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_awal` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `berat_tambah` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_tambah_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_tambah` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_out` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_out_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_out` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_in` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_in_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_in` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_beli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_beli_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_beli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_jual` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_jual_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_jual` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hancur` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hancur_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_hancur` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hilang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hilang_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_hilang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_akhir` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_akhir_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_akhir` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `status_close` varchar(4) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT 'OPEN'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1039,39 +1039,39 @@ DROP TABLE IF EXISTS `th_barang_saldo_202308`;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `th_barang_saldo_202308` (
   `tanggal` date NOT NULL DEFAULT '2008-01-01',
-  `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_dept` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `berat_awal` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_awal_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_awal` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `berat_tambah` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_tambah_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_tambah` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_out` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_out_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_out` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_in` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_in_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_in` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_beli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_beli_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_beli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_jual` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_jual_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_jual` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hancur` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hancur_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_hancur` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hilang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hilang_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_hilang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_akhir` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_akhir_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_akhir` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `status_close` varchar(4) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT 'OPEN'
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3;
+  `kode_barang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_dept` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `berat_awal` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_awal_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_awal` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `berat_tambah` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_tambah_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_tambah` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_out` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_out_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_out` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_in` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_in_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_in` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_beli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_beli_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_beli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_jual` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_jual_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_jual` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hancur` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hancur_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_hancur` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hilang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hilang_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_hilang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_akhir` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_akhir_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_akhir` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `status_close` varchar(4) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT 'OPEN'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1092,39 +1092,39 @@ DROP TABLE IF EXISTS `th_barang_saldo_202309`;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `th_barang_saldo_202309` (
   `tanggal` date NOT NULL DEFAULT '2008-01-01',
-  `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_dept` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `berat_awal` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_awal_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_awal` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `berat_tambah` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_tambah_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_tambah` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_out` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_out_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_out` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_in` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_in_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_in` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_beli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_beli_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_beli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_jual` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_jual_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_jual` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hancur` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hancur_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_hancur` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hilang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hilang_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_hilang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_akhir` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_akhir_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_akhir` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `status_close` varchar(4) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT 'OPEN'
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3;
+  `kode_barang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_dept` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `berat_awal` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_awal_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_awal` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `berat_tambah` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_tambah_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_tambah` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_out` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_out_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_out` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_in` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_in_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_in` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_beli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_beli_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_beli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_jual` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_jual_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_jual` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hancur` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hancur_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_hancur` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hilang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hilang_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_hilang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_akhir` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_akhir_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_akhir` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `status_close` varchar(4) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT 'OPEN'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1145,39 +1145,39 @@ DROP TABLE IF EXISTS `th_barang_saldo_202310`;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `th_barang_saldo_202310` (
   `tanggal` date NOT NULL DEFAULT '2008-01-01',
-  `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_dept` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `berat_awal` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_awal_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_awal` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `berat_tambah` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_tambah_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_tambah` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_out` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_out_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_out` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_in` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_in_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_in` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_beli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_beli_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_beli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_jual` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_jual_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_jual` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hancur` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hancur_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_hancur` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hilang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hilang_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_hilang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_akhir` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_akhir_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_akhir` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `status_close` varchar(4) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT 'OPEN'
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3;
+  `kode_barang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_dept` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `berat_awal` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_awal_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_awal` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `berat_tambah` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_tambah_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_tambah` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_out` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_out_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_out` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_in` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_in_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_in` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_beli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_beli_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_beli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_jual` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_jual_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_jual` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hancur` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hancur_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_hancur` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hilang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hilang_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_hilang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_akhir` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_akhir_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_akhir` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `status_close` varchar(4) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT 'OPEN'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1198,39 +1198,39 @@ DROP TABLE IF EXISTS `th_barang_saldo_202311`;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `th_barang_saldo_202311` (
   `tanggal` date NOT NULL DEFAULT '2008-01-01',
-  `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_dept` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `berat_awal` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_awal_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_awal` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `berat_tambah` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_tambah_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_tambah` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_out` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_out_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_out` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_in` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_in_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_in` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_beli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_beli_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_beli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_jual` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_jual_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_jual` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hancur` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hancur_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_hancur` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hilang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hilang_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_hilang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_akhir` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_akhir_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_akhir` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `status_close` varchar(4) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT 'OPEN'
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3;
+  `kode_barang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_dept` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `berat_awal` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_awal_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_awal` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `berat_tambah` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_tambah_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_tambah` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_out` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_out_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_out` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_in` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_in_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_in` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_beli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_beli_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_beli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_jual` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_jual_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_jual` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hancur` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hancur_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_hancur` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hilang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hilang_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_hilang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_akhir` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_akhir_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_akhir` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `status_close` varchar(4) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT 'OPEN'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1251,39 +1251,39 @@ DROP TABLE IF EXISTS `th_barang_saldo_202312`;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `th_barang_saldo_202312` (
   `tanggal` date NOT NULL DEFAULT '2008-01-01',
-  `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_dept` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `berat_awal` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_awal_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_awal` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `berat_tambah` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_tambah_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_tambah` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_out` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_out_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_out` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_in` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_in_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_in` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_beli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_beli_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_beli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_jual` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_jual_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_jual` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hancur` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hancur_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_hancur` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hilang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hilang_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_hilang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_akhir` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_akhir_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_akhir` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `status_close` varchar(4) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT 'OPEN'
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3;
+  `kode_barang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_dept` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `berat_awal` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_awal_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_awal` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `berat_tambah` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_tambah_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_tambah` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_out` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_out_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_out` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_in` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_in_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_in` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_beli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_beli_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_beli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_jual` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_jual_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_jual` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hancur` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hancur_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_hancur` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hilang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hilang_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_hilang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_akhir` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_akhir_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_akhir` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `status_close` varchar(4) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT 'OPEN'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1304,39 +1304,39 @@ DROP TABLE IF EXISTS `th_barang_saldo_202401`;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `th_barang_saldo_202401` (
   `tanggal` date NOT NULL DEFAULT '2008-01-01',
-  `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_dept` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `berat_awal` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_awal_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_awal` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `berat_tambah` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_tambah_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_tambah` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_out` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_out_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_out` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_in` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_in_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_in` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_beli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_beli_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_beli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_jual` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_jual_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_jual` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hancur` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hancur_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_hancur` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hilang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hilang_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_hilang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_akhir` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_akhir_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_akhir` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `status_close` varchar(4) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT 'OPEN'
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3;
+  `kode_barang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_dept` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `berat_awal` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_awal_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_awal` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `berat_tambah` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_tambah_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_tambah` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_out` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_out_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_out` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_in` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_in_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_in` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_beli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_beli_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_beli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_jual` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_jual_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_jual` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hancur` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hancur_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_hancur` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hilang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hilang_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_hilang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_akhir` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_akhir_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_akhir` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `status_close` varchar(4) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT 'OPEN'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1357,39 +1357,39 @@ DROP TABLE IF EXISTS `th_barang_saldo_202402`;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `th_barang_saldo_202402` (
   `tanggal` date NOT NULL DEFAULT '2008-01-01',
-  `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_dept` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `berat_awal` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_awal_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_awal` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `berat_tambah` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_tambah_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_tambah` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_out` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_out_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_out` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_in` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_in_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_in` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_beli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_beli_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_beli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_jual` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_jual_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_jual` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hancur` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hancur_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_hancur` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hilang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hilang_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_hilang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_akhir` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_akhir_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_akhir` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `status_close` varchar(4) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT 'OPEN'
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3;
+  `kode_barang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_dept` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `berat_awal` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_awal_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_awal` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `berat_tambah` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_tambah_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_tambah` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_out` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_out_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_out` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_in` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_in_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_in` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_beli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_beli_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_beli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_jual` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_jual_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_jual` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hancur` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hancur_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_hancur` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hilang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hilang_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_hilang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_akhir` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_akhir_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_akhir` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `status_close` varchar(4) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT 'OPEN'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1410,39 +1410,39 @@ DROP TABLE IF EXISTS `th_barang_saldo_202403`;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `th_barang_saldo_202403` (
   `tanggal` date NOT NULL DEFAULT '2008-01-01',
-  `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_dept` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `berat_awal` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_awal_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_awal` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `berat_tambah` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_tambah_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_tambah` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_out` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_out_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_out` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_in` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_in_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_in` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_beli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_beli_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_beli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_jual` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_jual_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_jual` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hancur` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hancur_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_hancur` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hilang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hilang_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_hilang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_akhir` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_akhir_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_akhir` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `status_close` varchar(4) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT 'OPEN'
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3;
+  `kode_barang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_dept` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `berat_awal` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_awal_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_awal` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `berat_tambah` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_tambah_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_tambah` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_out` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_out_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_out` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_in` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_in_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_in` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_beli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_beli_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_beli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_jual` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_jual_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_jual` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hancur` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hancur_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_hancur` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hilang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hilang_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_hilang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_akhir` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_akhir_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_akhir` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `status_close` varchar(4) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT 'OPEN'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1463,39 +1463,39 @@ DROP TABLE IF EXISTS `th_barang_saldo_202404`;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `th_barang_saldo_202404` (
   `tanggal` date NOT NULL DEFAULT '2008-01-01',
-  `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_dept` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `berat_awal` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_awal_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_awal` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `berat_tambah` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_tambah_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_tambah` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_out` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_out_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_out` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_in` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_in_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_in` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_beli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_beli_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_beli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_jual` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_jual_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_jual` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hancur` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hancur_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_hancur` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hilang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hilang_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_hilang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_akhir` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_akhir_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_akhir` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `status_close` varchar(4) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT 'OPEN'
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3;
+  `kode_barang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_dept` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `berat_awal` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_awal_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_awal` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `berat_tambah` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_tambah_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_tambah` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_out` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_out_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_out` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_in` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_in_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_in` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_beli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_beli_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_beli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_jual` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_jual_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_jual` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hancur` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hancur_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_hancur` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hilang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hilang_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_hilang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_akhir` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_akhir_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_akhir` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `status_close` varchar(4) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT 'OPEN'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1516,39 +1516,39 @@ DROP TABLE IF EXISTS `th_barang_saldo_202405`;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `th_barang_saldo_202405` (
   `tanggal` date NOT NULL DEFAULT '2008-01-01',
-  `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_dept` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `berat_awal` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_awal_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_awal` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `berat_tambah` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_tambah_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_tambah` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_out` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_out_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_out` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_in` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_in_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_in` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_beli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_beli_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_beli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_jual` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_jual_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_jual` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hancur` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hancur_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_hancur` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hilang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hilang_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_hilang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_akhir` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_akhir_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_akhir` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `status_close` varchar(4) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT 'OPEN'
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3;
+  `kode_barang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_dept` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `berat_awal` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_awal_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_awal` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `berat_tambah` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_tambah_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_tambah` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_out` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_out_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_out` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_in` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_in_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_in` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_beli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_beli_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_beli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_jual` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_jual_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_jual` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hancur` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hancur_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_hancur` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hilang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hilang_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_hilang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_akhir` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_akhir_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_akhir` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `status_close` varchar(4) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT 'OPEN'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1569,39 +1569,39 @@ DROP TABLE IF EXISTS `th_barang_saldo_202406`;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `th_barang_saldo_202406` (
   `tanggal` date NOT NULL DEFAULT '2008-01-01',
-  `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_dept` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `berat_awal` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_awal_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_awal` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `berat_tambah` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_tambah_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_tambah` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_out` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_out_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_out` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_in` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_in_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_in` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_beli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_beli_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_beli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_jual` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_jual_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_jual` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hancur` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hancur_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_hancur` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hilang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hilang_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_hilang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_akhir` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_akhir_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_akhir` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `status_close` varchar(4) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT 'OPEN'
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3;
+  `kode_barang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_dept` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `berat_awal` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_awal_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_awal` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `berat_tambah` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_tambah_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_tambah` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_out` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_out_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_out` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_in` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_in_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_in` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_beli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_beli_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_beli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_jual` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_jual_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_jual` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hancur` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hancur_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_hancur` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hilang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hilang_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_hilang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_akhir` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_akhir_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_akhir` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `status_close` varchar(4) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT 'OPEN'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1622,39 +1622,39 @@ DROP TABLE IF EXISTS `th_barang_saldo_202407`;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `th_barang_saldo_202407` (
   `tanggal` date NOT NULL DEFAULT '2008-01-01',
-  `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_dept` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `berat_awal` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_awal_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_awal` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `berat_tambah` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_tambah_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_tambah` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_out` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_out_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_out` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_in` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_in_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_in` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_beli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_beli_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_beli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_jual` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_jual_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_jual` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hancur` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hancur_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_hancur` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hilang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hilang_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_hilang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_akhir` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_akhir_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_akhir` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `status_close` varchar(4) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT 'OPEN'
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3;
+  `kode_barang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_dept` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `berat_awal` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_awal_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_awal` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `berat_tambah` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_tambah_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_tambah` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_out` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_out_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_out` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_in` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_in_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_in` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_beli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_beli_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_beli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_jual` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_jual_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_jual` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hancur` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hancur_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_hancur` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hilang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hilang_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_hilang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_akhir` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_akhir_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_akhir` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `status_close` varchar(4) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT 'OPEN'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1675,39 +1675,39 @@ DROP TABLE IF EXISTS `th_barang_saldo_202408`;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `th_barang_saldo_202408` (
   `tanggal` date NOT NULL DEFAULT '2008-01-01',
-  `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_dept` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `berat_awal` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_awal_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_awal` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `berat_tambah` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_tambah_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_tambah` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_out` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_out_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_out` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_in` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_in_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_in` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_beli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_beli_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_beli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_jual` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_jual_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_jual` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hancur` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hancur_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_hancur` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hilang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hilang_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_hilang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_akhir` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_akhir_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_akhir` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `status_close` varchar(4) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT 'OPEN'
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3;
+  `kode_barang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_dept` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `berat_awal` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_awal_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_awal` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `berat_tambah` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_tambah_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_tambah` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_out` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_out_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_out` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_in` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_in_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_in` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_beli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_beli_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_beli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_jual` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_jual_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_jual` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hancur` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hancur_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_hancur` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hilang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hilang_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_hilang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_akhir` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_akhir_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_akhir` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `status_close` varchar(4) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT 'OPEN'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1728,39 +1728,39 @@ DROP TABLE IF EXISTS `th_barang_saldo_202409`;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `th_barang_saldo_202409` (
   `tanggal` date NOT NULL DEFAULT '2008-01-01',
-  `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_dept` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `berat_awal` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_awal_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_awal` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `berat_tambah` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_tambah_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_tambah` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_out` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_out_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_out` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_in` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_in_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_in` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_beli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_beli_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_beli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_jual` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_jual_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_jual` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hancur` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hancur_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_hancur` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hilang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hilang_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_hilang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_akhir` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_akhir_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_akhir` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `status_close` varchar(4) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT 'OPEN'
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3;
+  `kode_barang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_dept` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `berat_awal` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_awal_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_awal` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `berat_tambah` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_tambah_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_tambah` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_out` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_out_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_out` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_in` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_in_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_in` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_beli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_beli_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_beli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_jual` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_jual_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_jual` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hancur` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hancur_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_hancur` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hilang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hilang_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_hilang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_akhir` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_akhir_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_akhir` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `status_close` varchar(4) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT 'OPEN'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1781,39 +1781,39 @@ DROP TABLE IF EXISTS `th_barang_saldo_202410`;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `th_barang_saldo_202410` (
   `tanggal` date NOT NULL DEFAULT '2008-01-01',
-  `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_dept` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `berat_awal` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_awal_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_awal` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `berat_tambah` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_tambah_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_tambah` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_out` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_out_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_out` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_in` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_in_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_in` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_beli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_beli_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_beli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_jual` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_jual_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_jual` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hancur` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hancur_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_hancur` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hilang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hilang_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_hilang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_akhir` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_akhir_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_akhir` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `status_close` varchar(4) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT 'OPEN'
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3;
+  `kode_barang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_dept` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `berat_awal` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_awal_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_awal` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `berat_tambah` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_tambah_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_tambah` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_out` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_out_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_out` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_in` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_in_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_in` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_beli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_beli_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_beli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_jual` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_jual_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_jual` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hancur` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hancur_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_hancur` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hilang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hilang_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_hilang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_akhir` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_akhir_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_akhir` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `status_close` varchar(4) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT 'OPEN'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1834,39 +1834,39 @@ DROP TABLE IF EXISTS `th_barang_saldo_202411`;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `th_barang_saldo_202411` (
   `tanggal` date NOT NULL DEFAULT '2008-01-01',
-  `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_dept` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `berat_awal` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_awal_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_awal` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `berat_tambah` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_tambah_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_tambah` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_out` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_out_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_out` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_in` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_in_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_in` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_beli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_beli_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_beli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_jual` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_jual_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_jual` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hancur` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hancur_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_hancur` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hilang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hilang_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_hilang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_akhir` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_akhir_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_akhir` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `status_close` varchar(4) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT 'OPEN'
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3;
+  `kode_barang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_dept` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `berat_awal` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_awal_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_awal` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `berat_tambah` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_tambah_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_tambah` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_out` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_out_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_out` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_in` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_in_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_in` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_beli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_beli_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_beli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_jual` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_jual_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_jual` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hancur` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hancur_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_hancur` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hilang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hilang_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_hilang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_akhir` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_akhir_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_akhir` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `status_close` varchar(4) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT 'OPEN'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1887,39 +1887,39 @@ DROP TABLE IF EXISTS `th_barang_saldo_202412`;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `th_barang_saldo_202412` (
   `tanggal` date NOT NULL DEFAULT '2008-01-01',
-  `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_dept` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `berat_awal` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_awal_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_awal` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `berat_tambah` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_tambah_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_tambah` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_out` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_out_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_out` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_in` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_in_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_in` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_beli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_beli_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_beli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_jual` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_jual_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_jual` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hancur` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hancur_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_hancur` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hilang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hilang_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_hilang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_akhir` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_akhir_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_akhir` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `status_close` varchar(4) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT 'OPEN'
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3;
+  `kode_barang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_dept` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `berat_awal` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_awal_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_awal` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `berat_tambah` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_tambah_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_tambah` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_out` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_out_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_out` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_in` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_in_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_in` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_beli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_beli_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_beli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_jual` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_jual_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_jual` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hancur` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hancur_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_hancur` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hilang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hilang_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_hilang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_akhir` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_akhir_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_akhir` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `status_close` varchar(4) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT 'OPEN'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1940,39 +1940,39 @@ DROP TABLE IF EXISTS `th_barang_saldo_202501`;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `th_barang_saldo_202501` (
   `tanggal` date NOT NULL DEFAULT '2008-01-01',
-  `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_dept` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `berat_awal` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_awal_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_awal` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `berat_tambah` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_tambah_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_tambah` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_out` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_out_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_out` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_in` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_in_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_in` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_beli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_beli_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_beli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_jual` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_jual_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_jual` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hancur` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hancur_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_hancur` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hilang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hilang_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_hilang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_akhir` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_akhir_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_akhir` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `status_close` varchar(4) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT 'OPEN'
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3;
+  `kode_barang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_dept` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `berat_awal` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_awal_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_awal` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `berat_tambah` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_tambah_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_tambah` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_out` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_out_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_out` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_in` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_in_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_in` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_beli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_beli_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_beli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_jual` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_jual_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_jual` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hancur` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hancur_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_hancur` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hilang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hilang_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_hilang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_akhir` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_akhir_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_akhir` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `status_close` varchar(4) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT 'OPEN'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1993,39 +1993,39 @@ DROP TABLE IF EXISTS `th_barang_saldo_202502`;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `th_barang_saldo_202502` (
   `tanggal` date NOT NULL DEFAULT '2008-01-01',
-  `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_dept` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `berat_awal` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_awal_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_awal` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `berat_tambah` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_tambah_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_tambah` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_out` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_out_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_out` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_in` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_in_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_in` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_beli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_beli_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_beli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_jual` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_jual_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_jual` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hancur` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hancur_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_hancur` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hilang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hilang_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_hilang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_akhir` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_akhir_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_akhir` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `status_close` varchar(4) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT 'OPEN'
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3;
+  `kode_barang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_dept` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `berat_awal` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_awal_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_awal` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `berat_tambah` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_tambah_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_tambah` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_out` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_out_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_out` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_in` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_in_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_in` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_beli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_beli_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_beli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_jual` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_jual_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_jual` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hancur` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hancur_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_hancur` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hilang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hilang_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_hilang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_akhir` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_akhir_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_akhir` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `status_close` varchar(4) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT 'OPEN'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -2046,39 +2046,39 @@ DROP TABLE IF EXISTS `th_barang_saldo_202503`;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `th_barang_saldo_202503` (
   `tanggal` date NOT NULL DEFAULT '2008-01-01',
-  `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_dept` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `berat_awal` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_awal_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_awal` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `berat_tambah` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_tambah_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_tambah` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_out` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_out_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_out` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_in` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_in_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_in` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_beli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_beli_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_beli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_jual` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_jual_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_jual` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hancur` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hancur_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_hancur` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hilang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hilang_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_hilang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_akhir` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_akhir_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_akhir` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `status_close` varchar(4) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT 'OPEN'
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3;
+  `kode_barang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_dept` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `berat_awal` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_awal_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_awal` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `berat_tambah` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_tambah_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_tambah` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_out` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_out_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_out` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_in` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_in_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_in` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_beli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_beli_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_beli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_jual` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_jual_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_jual` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hancur` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hancur_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_hancur` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hilang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hilang_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_hilang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_akhir` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_akhir_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_akhir` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `status_close` varchar(4) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT 'OPEN'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -2099,39 +2099,39 @@ DROP TABLE IF EXISTS `th_barang_saldo_202504`;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `th_barang_saldo_202504` (
   `tanggal` date NOT NULL DEFAULT '2008-01-01',
-  `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_dept` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `berat_awal` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_awal_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_awal` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `berat_tambah` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_tambah_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_tambah` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_out` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_out_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_out` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_in` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_in_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_in` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_beli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_beli_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_beli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_jual` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_jual_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_jual` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hancur` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hancur_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_hancur` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hilang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hilang_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_hilang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_akhir` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_akhir_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_akhir` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `status_close` varchar(4) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT 'OPEN'
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3;
+  `kode_barang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_dept` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `berat_awal` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_awal_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_awal` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `berat_tambah` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_tambah_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_tambah` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_out` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_out_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_out` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_in` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_in_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_in` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_beli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_beli_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_beli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_jual` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_jual_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_jual` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hancur` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hancur_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_hancur` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hilang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hilang_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_hilang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_akhir` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_akhir_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_akhir` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `status_close` varchar(4) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT 'OPEN'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -2152,39 +2152,39 @@ DROP TABLE IF EXISTS `th_barang_saldo_202505`;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `th_barang_saldo_202505` (
   `tanggal` date NOT NULL DEFAULT '2008-01-01',
-  `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_dept` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `berat_awal` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_awal_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_awal` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `berat_tambah` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_tambah_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_tambah` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_out` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_out_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_out` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_in` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_in_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_in` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_beli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_beli_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_beli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_jual` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_jual_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_jual` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hancur` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hancur_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_hancur` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hilang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hilang_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_hilang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_akhir` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_akhir_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_akhir` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `status_close` varchar(4) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT 'OPEN'
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3;
+  `kode_barang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_dept` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `berat_awal` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_awal_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_awal` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `berat_tambah` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_tambah_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_tambah` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_out` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_out_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_out` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_in` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_in_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_in` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_beli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_beli_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_beli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_jual` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_jual_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_jual` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hancur` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hancur_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_hancur` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hilang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hilang_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_hilang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_akhir` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_akhir_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_akhir` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `status_close` varchar(4) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT 'OPEN'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -2205,39 +2205,39 @@ DROP TABLE IF EXISTS `th_barang_saldo_202506`;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `th_barang_saldo_202506` (
   `tanggal` date NOT NULL DEFAULT '2008-01-01',
-  `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_dept` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `berat_awal` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_awal_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_awal` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `berat_tambah` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_tambah_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_tambah` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_out` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_out_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_out` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_in` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_in_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_in` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_beli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_beli_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_beli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_jual` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_jual_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_jual` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hancur` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hancur_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_hancur` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hilang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hilang_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_hilang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_akhir` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_akhir_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_akhir` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `status_close` varchar(4) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT 'OPEN'
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3;
+  `kode_barang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_dept` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `berat_awal` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_awal_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_awal` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `berat_tambah` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_tambah_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_tambah` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_out` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_out_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_out` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_in` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_in_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_in` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_beli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_beli_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_beli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_jual` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_jual_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_jual` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hancur` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hancur_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_hancur` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hilang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hilang_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_hilang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_akhir` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_akhir_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_akhir` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `status_close` varchar(4) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT 'OPEN'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -2258,39 +2258,39 @@ DROP TABLE IF EXISTS `th_barang_saldo_202507`;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `th_barang_saldo_202507` (
   `tanggal` date NOT NULL DEFAULT '2008-01-01',
-  `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_dept` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `berat_awal` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_awal_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_awal` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `berat_tambah` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_tambah_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_tambah` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_out` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_out_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_out` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_in` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_in_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_in` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_beli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_beli_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_beli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_jual` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_jual_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_jual` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hancur` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hancur_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_hancur` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hilang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hilang_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_hilang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_akhir` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_akhir_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_akhir` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `status_close` varchar(4) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT 'OPEN'
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3;
+  `kode_barang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_dept` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `berat_awal` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_awal_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_awal` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `berat_tambah` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_tambah_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_tambah` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_out` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_out_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_out` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_in` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_in_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_in` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_beli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_beli_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_beli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_jual` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_jual_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_jual` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hancur` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hancur_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_hancur` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hilang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hilang_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_hilang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_akhir` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_akhir_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_akhir` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `status_close` varchar(4) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT 'OPEN'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -2311,39 +2311,39 @@ DROP TABLE IF EXISTS `th_barang_saldo_202508`;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `th_barang_saldo_202508` (
   `tanggal` date NOT NULL DEFAULT '2008-01-01',
-  `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_dept` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `berat_awal` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_awal_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_awal` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `berat_tambah` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_tambah_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_tambah` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_out` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_out_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_out` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_in` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_in_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_in` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_beli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_beli_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_beli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_jual` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_jual_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_jual` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hancur` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hancur_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_hancur` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hilang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hilang_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_hilang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_akhir` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_akhir_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_akhir` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `status_close` varchar(4) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT 'OPEN'
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3;
+  `kode_barang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_dept` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `berat_awal` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_awal_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_awal` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `berat_tambah` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_tambah_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_tambah` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_out` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_out_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_out` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_in` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_in_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_in` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_beli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_beli_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_beli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_jual` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_jual_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_jual` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hancur` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hancur_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_hancur` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hilang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hilang_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_hilang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_akhir` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_akhir_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_akhir` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `status_close` varchar(4) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT 'OPEN'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -2364,39 +2364,39 @@ DROP TABLE IF EXISTS `th_barang_saldo_202509`;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `th_barang_saldo_202509` (
   `tanggal` date NOT NULL DEFAULT '2008-01-01',
-  `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_dept` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `berat_awal` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_awal_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_awal` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `berat_tambah` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_tambah_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_tambah` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_out` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_out_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_out` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_in` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_in_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_in` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_beli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_beli_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_beli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_jual` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_jual_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_jual` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hancur` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hancur_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_hancur` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hilang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hilang_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_hilang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_akhir` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_akhir_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_akhir` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `status_close` varchar(4) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT 'OPEN'
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3;
+  `kode_barang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_dept` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `berat_awal` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_awal_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_awal` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `berat_tambah` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_tambah_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_tambah` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_out` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_out_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_out` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_in` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_in_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_in` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_beli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_beli_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_beli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_jual` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_jual_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_jual` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hancur` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hancur_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_hancur` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hilang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hilang_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_hilang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_akhir` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_akhir_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_akhir` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `status_close` varchar(4) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT 'OPEN'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -2417,39 +2417,39 @@ DROP TABLE IF EXISTS `th_barang_saldo_202510`;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `th_barang_saldo_202510` (
   `tanggal` date NOT NULL DEFAULT '2008-01-01',
-  `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_dept` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `berat_awal` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_awal_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_awal` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `berat_tambah` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_tambah_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_tambah` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_out` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_out_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_out` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_in` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_in_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_in` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_beli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_beli_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_beli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_jual` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_jual_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_jual` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hancur` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hancur_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_hancur` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hilang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hilang_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_hilang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_akhir` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_akhir_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_akhir` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `status_close` varchar(4) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT 'OPEN'
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3;
+  `kode_barang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_dept` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `berat_awal` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_awal_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_awal` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `berat_tambah` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_tambah_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_tambah` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_out` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_out_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_out` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_in` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_in_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_in` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_beli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_beli_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_beli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_jual` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_jual_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_jual` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hancur` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hancur_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_hancur` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hilang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hilang_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_hilang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_akhir` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_akhir_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_akhir` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `status_close` varchar(4) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT 'OPEN'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -2470,39 +2470,39 @@ DROP TABLE IF EXISTS `th_barang_saldo_202511`;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `th_barang_saldo_202511` (
   `tanggal` date NOT NULL DEFAULT '2008-01-01',
-  `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_dept` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `berat_awal` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_awal_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_awal` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `berat_tambah` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_tambah_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_tambah` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_out` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_out_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_out` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_in` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_in_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_in` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_beli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_beli_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_beli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_jual` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_jual_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_jual` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hancur` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hancur_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_hancur` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hilang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hilang_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_hilang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_akhir` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_akhir_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_akhir` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `status_close` varchar(4) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT 'OPEN'
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3;
+  `kode_barang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_dept` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `berat_awal` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_awal_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_awal` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `berat_tambah` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_tambah_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_tambah` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_out` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_out_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_out` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_in` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_in_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_in` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_beli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_beli_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_beli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_jual` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_jual_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_jual` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hancur` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hancur_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_hancur` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hilang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hilang_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_hilang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_akhir` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_akhir_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_akhir` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `status_close` varchar(4) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT 'OPEN'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -2523,39 +2523,39 @@ DROP TABLE IF EXISTS `th_barang_saldo_202512`;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `th_barang_saldo_202512` (
   `tanggal` date NOT NULL DEFAULT '2008-01-01',
-  `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_dept` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `berat_awal` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_awal_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_awal` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `berat_tambah` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_tambah_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_tambah` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_out` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_out_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_out` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_in` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_in_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_in` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_beli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_beli_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_beli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_jual` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_jual_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_jual` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hancur` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hancur_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_hancur` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hilang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hilang_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_hilang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_akhir` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_akhir_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_akhir` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `status_close` varchar(4) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT 'OPEN'
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3;
+  `kode_barang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_dept` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `berat_awal` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_awal_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_awal` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `berat_tambah` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_tambah_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_tambah` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_out` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_out_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_out` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_in` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_in_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_in` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_beli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_beli_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_beli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_jual` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_jual_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_jual` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hancur` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hancur_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_hancur` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hilang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hilang_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_hilang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_akhir` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_akhir_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_akhir` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `status_close` varchar(4) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT 'OPEN'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -2576,39 +2576,39 @@ DROP TABLE IF EXISTS `th_barang_saldo_202601`;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `th_barang_saldo_202601` (
   `tanggal` date NOT NULL DEFAULT '2008-01-01',
-  `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_dept` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `berat_awal` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_awal_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_awal` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `berat_tambah` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_tambah_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_tambah` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_out` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_out_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_out` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_in` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_in_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_in` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_beli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_beli_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_beli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_jual` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_jual_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_jual` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hancur` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hancur_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_hancur` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hilang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hilang_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_hilang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_akhir` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_akhir_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_akhir` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `status_close` varchar(4) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT 'OPEN'
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3;
+  `kode_barang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_dept` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `berat_awal` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_awal_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_awal` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `berat_tambah` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_tambah_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_tambah` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_out` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_out_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_out` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_in` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_in_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_in` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_beli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_beli_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_beli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_jual` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_jual_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_jual` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hancur` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hancur_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_hancur` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hilang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hilang_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_hilang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_akhir` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_akhir_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_akhir` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `status_close` varchar(4) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT 'OPEN'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -2629,39 +2629,39 @@ DROP TABLE IF EXISTS `th_barang_saldo_202602`;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `th_barang_saldo_202602` (
   `tanggal` date NOT NULL DEFAULT '2008-01-01',
-  `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_dept` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `berat_awal` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_awal_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_awal` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `berat_tambah` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_tambah_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_tambah` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_out` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_out_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_out` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_in` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_in_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_in` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_beli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_beli_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_beli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_jual` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_jual_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_jual` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hancur` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hancur_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_hancur` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hilang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hilang_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_hilang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_akhir` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_akhir_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_akhir` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `status_close` varchar(4) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT 'OPEN'
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3;
+  `kode_barang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_dept` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `berat_awal` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_awal_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_awal` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `berat_tambah` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_tambah_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_tambah` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_out` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_out_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_out` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_in` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_in_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_in` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_beli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_beli_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_beli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_jual` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_jual_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_jual` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hancur` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hancur_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_hancur` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hilang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hilang_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_hilang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_akhir` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_akhir_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_akhir` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `status_close` varchar(4) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT 'OPEN'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -2682,39 +2682,39 @@ DROP TABLE IF EXISTS `th_barang_saldo_202603`;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `th_barang_saldo_202603` (
   `tanggal` date NOT NULL DEFAULT '2008-01-01',
-  `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_dept` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `berat_awal` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_awal_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_awal` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `berat_tambah` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_tambah_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_tambah` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_out` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_out_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_out` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_in` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_in_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_in` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_beli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_beli_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_beli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_jual` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_jual_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_jual` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hancur` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hancur_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_hancur` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hilang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hilang_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_hilang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_akhir` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_akhir_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_akhir` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `status_close` varchar(4) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT 'OPEN'
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3;
+  `kode_barang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_dept` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `berat_awal` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_awal_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_awal` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `berat_tambah` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_tambah_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_tambah` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_out` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_out_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_out` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_in` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_in_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_in` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_beli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_beli_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_beli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_jual` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_jual_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_jual` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hancur` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hancur_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_hancur` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hilang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hilang_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_hilang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_akhir` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_akhir_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_akhir` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `status_close` varchar(4) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT 'OPEN'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -2735,39 +2735,39 @@ DROP TABLE IF EXISTS `th_barang_saldo_202604`;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `th_barang_saldo_202604` (
   `tanggal` date NOT NULL DEFAULT '2008-01-01',
-  `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_dept` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `berat_awal` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_awal_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_awal` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `berat_tambah` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_tambah_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_tambah` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_out` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_out_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_out` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_in` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_in_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_in` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_beli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_beli_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_beli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_jual` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_jual_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_jual` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hancur` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hancur_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_hancur` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hilang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hilang_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_hilang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_akhir` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_akhir_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_akhir` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `status_close` varchar(4) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT 'OPEN'
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3;
+  `kode_barang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_dept` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `berat_awal` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_awal_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_awal` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `berat_tambah` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_tambah_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_tambah` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_out` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_out_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_out` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_in` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_in_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_in` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_beli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_beli_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_beli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_jual` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_jual_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_jual` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hancur` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hancur_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_hancur` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hilang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hilang_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_hilang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_akhir` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_akhir_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_akhir` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `status_close` varchar(4) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT 'OPEN'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -2788,39 +2788,39 @@ DROP TABLE IF EXISTS `th_barang_saldo_202605`;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `th_barang_saldo_202605` (
   `tanggal` date NOT NULL DEFAULT '2008-01-01',
-  `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_dept` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `berat_awal` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_awal_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_awal` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `berat_tambah` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_tambah_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_tambah` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_out` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_out_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_out` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_in` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_in_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_in` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_beli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_beli_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_beli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_jual` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_jual_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_jual` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hancur` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hancur_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_hancur` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hilang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hilang_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_hilang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_akhir` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_akhir_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_akhir` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `status_close` varchar(4) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT 'OPEN'
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3;
+  `kode_barang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_dept` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `berat_awal` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_awal_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_awal` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `berat_tambah` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_tambah_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_tambah` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_out` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_out_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_out` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_in` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_in_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_in` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_beli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_beli_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_beli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_jual` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_jual_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_jual` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hancur` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hancur_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_hancur` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hilang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hilang_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_hilang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_akhir` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_akhir_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_akhir` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `status_close` varchar(4) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT 'OPEN'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -2841,39 +2841,39 @@ DROP TABLE IF EXISTS `th_barang_saldo_202606`;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `th_barang_saldo_202606` (
   `tanggal` date NOT NULL DEFAULT '2008-01-01',
-  `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_dept` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `berat_awal` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_awal_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_awal` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `berat_tambah` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_tambah_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_tambah` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_out` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_out_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_out` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_in` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_in_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_in` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_beli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_beli_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_beli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_jual` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_jual_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_jual` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hancur` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hancur_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_hancur` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hilang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hilang_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_hilang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_akhir` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_akhir_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_akhir` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `status_close` varchar(4) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT 'OPEN'
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3;
+  `kode_barang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_dept` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `berat_awal` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_awal_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_awal` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `berat_tambah` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_tambah_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_tambah` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_out` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_out_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_out` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_in` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_in_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_in` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_beli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_beli_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_beli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_jual` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_jual_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_jual` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hancur` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hancur_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_hancur` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hilang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hilang_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_hilang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_akhir` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_akhir_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_akhir` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `status_close` varchar(4) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT 'OPEN'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -2894,39 +2894,39 @@ DROP TABLE IF EXISTS `th_barang_saldo_202607`;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `th_barang_saldo_202607` (
   `tanggal` date NOT NULL DEFAULT '2008-01-01',
-  `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_dept` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `berat_awal` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_awal_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_awal` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `berat_tambah` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_tambah_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_tambah` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_out` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_out_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_out` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_in` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_in_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_in` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_beli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_beli_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_beli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_jual` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_jual_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_jual` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hancur` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hancur_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_hancur` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hilang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hilang_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_hilang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_akhir` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_akhir_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_akhir` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `status_close` varchar(4) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT 'OPEN'
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3;
+  `kode_barang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_dept` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `berat_awal` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_awal_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_awal` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `berat_tambah` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_tambah_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_tambah` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_out` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_out_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_out` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_in` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_in_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_in` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_beli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_beli_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_beli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_jual` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_jual_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_jual` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hancur` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hancur_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_hancur` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hilang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hilang_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_hilang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_akhir` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_akhir_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_akhir` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `status_close` varchar(4) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT 'OPEN'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -2947,39 +2947,39 @@ DROP TABLE IF EXISTS `th_barang_saldo_202608`;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `th_barang_saldo_202608` (
   `tanggal` date NOT NULL DEFAULT '2008-01-01',
-  `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_dept` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `berat_awal` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_awal_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_awal` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `berat_tambah` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_tambah_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_tambah` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_out` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_out_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_out` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_in` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_in_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_in` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_beli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_beli_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_beli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_jual` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_jual_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_jual` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hancur` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hancur_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_hancur` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hilang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hilang_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_hilang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_akhir` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_akhir_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_akhir` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `status_close` varchar(4) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT 'OPEN'
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3;
+  `kode_barang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_dept` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `berat_awal` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_awal_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_awal` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `berat_tambah` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_tambah_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_tambah` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_out` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_out_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_out` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_in` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_in_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_in` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_beli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_beli_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_beli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_jual` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_jual_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_jual` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hancur` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hancur_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_hancur` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hilang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hilang_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_hilang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_akhir` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_akhir_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_akhir` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `status_close` varchar(4) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT 'OPEN'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -3000,39 +3000,39 @@ DROP TABLE IF EXISTS `th_barang_saldo_202609`;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `th_barang_saldo_202609` (
   `tanggal` date NOT NULL DEFAULT '2008-01-01',
-  `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_dept` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `berat_awal` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_awal_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_awal` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `berat_tambah` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_tambah_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_tambah` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_out` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_out_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_out` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_in` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_in_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_in` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_beli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_beli_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_beli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_jual` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_jual_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_jual` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hancur` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hancur_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_hancur` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hilang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hilang_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_hilang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_akhir` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_akhir_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_akhir` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `status_close` varchar(4) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT 'OPEN'
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3;
+  `kode_barang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_dept` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `berat_awal` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_awal_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_awal` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `berat_tambah` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_tambah_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_tambah` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_out` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_out_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_out` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_in` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_in_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_in` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_beli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_beli_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_beli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_jual` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_jual_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_jual` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hancur` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hancur_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_hancur` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hilang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hilang_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_hilang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_akhir` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_akhir_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_akhir` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `status_close` varchar(4) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT 'OPEN'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -3053,40 +3053,40 @@ DROP TABLE IF EXISTS `th_barang_saldo_dump`;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `th_barang_saldo_dump` (
   `tanggal` date NOT NULL DEFAULT '2008-01-01',
-  `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_dept` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `berat_awal` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_awal_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_awal` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `berat_tambah` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_tambah_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_tambah` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_out` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_out_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_out` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_in` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_in_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_in` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_beli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_beli_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_beli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_jual` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_jual_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_jual` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hancur` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hancur_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_hancur` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hilang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hilang_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_hilang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_akhir` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_akhir_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_akhir` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `status_close` varchar(4) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT 'OPEN',
+  `kode_barang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_dept` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `berat_awal` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_awal_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_awal` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `berat_tambah` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_tambah_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_tambah` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_out` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_out_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_out` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_in` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_in_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_in` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_beli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_beli_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_beli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_jual` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_jual_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_jual` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hancur` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hancur_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_hancur` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hilang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hilang_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_hilang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_akhir` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_akhir_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_akhir` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `status_close` varchar(4) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT 'OPEN',
   KEY `NewIndex` (`tanggal`,`kode_barang`,`kode_dept`,`kode_lokasi_gudang`,`kode_lokasi_toko`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_bin;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -3107,30 +3107,30 @@ DROP TABLE IF EXISTS `th_barang_update`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `th_barang_update` (
-  `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `old_kode_barcode` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `kode_barcode` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `old_nama_barang` varchar(30) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `nama_barang` varchar(30) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `old_nama_atribut` varchar(30) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `nama_atribut` varchar(30) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `old_kode_supplier` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `kode_supplier` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `old_kode_dept` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `kode_dept` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `old_harga_beli` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `harga_beli` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `old_harga_jual` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `harga_jual` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `old_berat` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `berat` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `old_kadar` varchar(5) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `kadar` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `old_harga_atribut` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `harga_atribut` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `input_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
+  `kode_barang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `old_kode_barcode` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `kode_barcode` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `old_nama_barang` varchar(30) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `nama_barang` varchar(30) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `old_nama_atribut` varchar(30) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `nama_atribut` varchar(30) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `old_kode_supplier` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `kode_supplier` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `old_kode_dept` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `kode_dept` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `old_harga_beli` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `harga_beli` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `old_harga_jual` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `harga_jual` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `old_berat` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `berat` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `old_kadar` varchar(5) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `kadar` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `old_harga_atribut` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `harga_atribut` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `input_by` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
   `input_date` datetime NOT NULL DEFAULT '2008-01-01 01:01:01'
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_bin;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -3150,21 +3150,21 @@ DROP TABLE IF EXISTS `th_cash_daily`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `th_cash_daily` (
-  `no_ref` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `type_trx` varchar(1) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT 'D',
+  `no_ref` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `type_trx` varchar(1) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT 'D',
   `tanggal` date NOT NULL DEFAULT '2008-01-01',
   `jam` time NOT NULL DEFAULT '01:01:01',
-  `input_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `kategori` varchar(30) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `deskripsi` varchar(50) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `sld_awal_rp` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `jumlah_rp` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `sld_akhir_rp` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
+  `input_by` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `kategori` varchar(30) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `deskripsi` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `sld_awal_rp` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `jumlah_rp` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `sld_akhir_rp` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
   KEY `tanggal` (`tanggal`),
   KEY `kategori` (`kategori`),
   KEY `type_trx` (`type_trx`),
   KEY `deskripsi` (`deskripsi`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_bin;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -3185,21 +3185,21 @@ DROP TABLE IF EXISTS `th_cash_daily_dump`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `th_cash_daily_dump` (
-  `no_ref` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `type_trx` varchar(1) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT 'D',
+  `no_ref` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `type_trx` varchar(1) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT 'D',
   `tanggal` date NOT NULL DEFAULT '2008-01-01',
   `jam` time NOT NULL DEFAULT '01:01:01',
-  `input_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `kategori` varchar(30) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `deskripsi` varchar(50) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `sld_awal_rp` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `jumlah_rp` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `sld_akhir_rp` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
+  `input_by` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `kategori` varchar(30) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `deskripsi` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `sld_awal_rp` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `jumlah_rp` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `sld_akhir_rp` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
   KEY `tanggal` (`tanggal`),
   KEY `kategori` (`kategori`),
   KEY `type_trx` (`type_trx`),
   KEY `deskripsi` (`deskripsi`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_bin;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -3225,7 +3225,7 @@ CREATE TABLE `th_log_error` (
   `err_deskripsi` varchar(250) DEFAULT NULL,
   `input_date` datetime DEFAULT '2008-01-01 00:00:00',
   PRIMARY KEY (`menu`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -3249,7 +3249,7 @@ CREATE TABLE `th_log_poin` (
   `tanggal` date DEFAULT '2013-01-01',
   `kode_member` varchar(10) DEFAULT NULL,
   `poin` varchar(10) DEFAULT '0'
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -3270,20 +3270,20 @@ DROP TABLE IF EXISTS `th_saldo_hutang`;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `th_saldo_hutang` (
   `tanggal` date DEFAULT '2008-01-01',
-  `qty_awal` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_awal` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `rp_awal` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `qty_tambah` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_tambah` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `rp_tambah` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `qty_keluar` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_keluar` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `rp_keluar` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `qty_akhir` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_akhir` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `rp_akhir` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
+  `qty_awal` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_awal` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `rp_awal` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `qty_tambah` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_tambah` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `rp_tambah` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `qty_keluar` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_keluar` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `rp_keluar` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `qty_akhir` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_akhir` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `rp_akhir` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
   KEY `tanggal` (`tanggal`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_bin;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -3303,9 +3303,9 @@ DROP TABLE IF EXISTS `th_stock_kosong`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `th_stock_kosong` (
-  `user_id` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
+  `user_id` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `input_date` datetime NOT NULL DEFAULT '2008-01-01 01:01:01'
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_bin;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -3326,9 +3326,9 @@ DROP TABLE IF EXISTS `th_stock_sinkron`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `th_stock_sinkron` (
-  `user_id` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
+  `user_id` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `input_date` datetime DEFAULT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_bin;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -3348,12 +3348,12 @@ DROP TABLE IF EXISTS `th_troy`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `th_troy` (
-  `kode_group` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `harga_skrg` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `input_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
+  `kode_group` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `harga_skrg` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `input_by` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `input_date` datetime DEFAULT '2008-01-01 01:01:01',
   KEY `kode_group` (`kode_group`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_bin;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -3374,12 +3374,12 @@ DROP TABLE IF EXISTS `th_user_login`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `th_user_login` (
-  `user_id` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
+  `user_id` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
   `tgl_login` date NOT NULL DEFAULT '2008-01-01',
   `jam_login` time NOT NULL DEFAULT '01:01:01',
   `tgl_logout` date DEFAULT '2008-01-01',
   `jam_logout` time DEFAULT '01:01:01'
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_bin;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -3402,10 +3402,10 @@ DROP TABLE IF EXISTS `tm_bandrol`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tm_bandrol` (
-  `berat` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `input_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
+  `berat` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `input_by` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
   `input_date` datetime NOT NULL DEFAULT '2008-01-01 01:01:01'
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_bin;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -3426,16 +3426,16 @@ DROP TABLE IF EXISTS `tm_bank`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tm_bank` (
-  `kode_bank` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `nama_bank` varchar(30) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `input_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
+  `kode_bank` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `nama_bank` varchar(30) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `input_by` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
   `input_date` datetime NOT NULL DEFAULT '2008-01-01 01:01:01',
-  `edit_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
+  `edit_by` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `edit_date` datetime DEFAULT '2008-01-01 01:01:01',
-  `deleted_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
+  `deleted_by` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `deleted_date` datetime DEFAULT '2008-01-01 01:01:01',
   PRIMARY KEY (`kode_bank`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_bin;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -3455,15 +3455,15 @@ DROP TABLE IF EXISTS `tm_bank_deleted`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tm_bank_deleted` (
-  `kode_bank` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `nama_bank` varchar(30) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `input_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
+  `kode_bank` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `nama_bank` varchar(30) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `input_by` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
   `input_date` datetime NOT NULL DEFAULT '2008-01-01 01:01:01',
-  `edit_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
+  `edit_by` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `edit_date` datetime DEFAULT '2008-01-01 01:01:01',
-  `deleted_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
+  `deleted_by` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `deleted_date` datetime DEFAULT '2008-01-01 01:01:01'
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_bin;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -3484,47 +3484,47 @@ DROP TABLE IF EXISTS `tm_barang`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tm_barang` (
-  `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_barcode` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_intern` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `nama_barang` varchar(60) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `nama_atribut` varchar(60) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `kode_satuan` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_supplier` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_group` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `kode_dept` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `harga_beli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
+  `kode_barang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_barcode` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_intern` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `nama_barang` varchar(60) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `nama_atribut` varchar(60) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `kode_satuan` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_supplier` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_group` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `kode_dept` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `harga_beli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
   `tgl_last_beli` date DEFAULT '2008-01-01',
-  `harga_jual` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
+  `harga_jual` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
   `tgl_last_jual` datetime DEFAULT '2008-01-01 01:01:01',
-  `berat` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `kadar` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `kadar_cetak` varchar(5) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `harga_atribut` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_atribut` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `harga_skrg` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `ongkos_berlian` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `total_usd` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_on_hand` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `berat_bandrol` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `curr` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT 'RP',
-  `input_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
+  `berat` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `kadar` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `kadar_cetak` varchar(5) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `harga_atribut` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_atribut` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `harga_skrg` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `ongkos_berlian` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `total_usd` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_on_hand` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `berat_bandrol` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `curr` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT 'RP',
+  `input_by` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
   `input_date` datetime NOT NULL DEFAULT '2008-01-01 01:01:01',
-  `edit_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
+  `edit_by` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `edit_date` datetime DEFAULT '2008-01-01 01:01:01',
-  `deleted_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
+  `deleted_by` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `deleted_date` datetime DEFAULT '2008-01-01 01:01:01',
-  `status_delete` varchar(1) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
+  `status_delete` varchar(1) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
   PRIMARY KEY (`kode_barang`),
   UNIQUE KEY `kode_barcode` (`kode_barcode`),
   KEY `nama_barang` (`nama_barang`),
   KEY `d` (`kode_group`),
   KEY `kode_dept` (`kode_dept`),
   KEY `kode` (`kode_lokasi_gudang`,`kode_lokasi_toko`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_bin;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -3562,47 +3562,47 @@ DROP TABLE IF EXISTS `tm_barang_beli`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tm_barang_beli` (
-  `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_barcode` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_intern` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `nama_barang` varchar(60) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `nama_atribut` varchar(60) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `kode_satuan` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_supplier` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_group` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `kode_dept` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `harga_beli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
+  `kode_barang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_barcode` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_intern` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `nama_barang` varchar(60) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `nama_atribut` varchar(60) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `kode_satuan` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_supplier` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_group` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `kode_dept` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `harga_beli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
   `tgl_last_beli` date DEFAULT '2008-01-01',
-  `harga_jual` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
+  `harga_jual` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
   `tgl_last_jual` datetime DEFAULT '2008-01-01 01:01:01',
-  `berat` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `kadar` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `kadar_cetak` varchar(5) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `harga_atribut` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_atribut` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `harga_skrg` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `ongkos_berlian` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `total_usd` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_on_hand` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `berat_bandrol` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `curr` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT 'RP',
-  `input_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
+  `berat` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `kadar` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `kadar_cetak` varchar(5) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `harga_atribut` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_atribut` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `harga_skrg` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `ongkos_berlian` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `total_usd` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_on_hand` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `berat_bandrol` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `curr` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT 'RP',
+  `input_by` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
   `input_date` datetime NOT NULL DEFAULT '2008-01-01 01:01:01',
-  `edit_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
+  `edit_by` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `edit_date` datetime DEFAULT '2008-01-01 01:01:01',
-  `deleted_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
+  `deleted_by` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `deleted_date` datetime DEFAULT '2008-01-01 01:01:01',
-  `status_delete` varchar(1) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
+  `status_delete` varchar(1) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
   PRIMARY KEY (`kode_barang`),
   KEY `kode_barcode` (`kode_barcode`),
   KEY `kode_lokasi_gudang` (`kode_lokasi_gudang`),
   KEY `kode_lokasi_toko` (`kode_lokasi_toko`),
   KEY `kode_group` (`kode_group`),
   KEY `kode_dept` (`kode_dept`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -3630,16 +3630,16 @@ DROP TABLE IF EXISTS `tm_barang_contoh`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tm_barang_contoh` (
-  `no_persekot` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
+  `no_persekot` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `no_urut` tinyint DEFAULT '1',
-  `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `nama_barang` varchar(60) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
+  `kode_barang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `nama_barang` varchar(60) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `tgl_titip` date DEFAULT '2008-01-01',
   `tgl_ambil` date DEFAULT NULL,
-  `berat` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `status` varchar(4) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT 'OPEN',
+  `berat` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `status` varchar(4) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT 'OPEN',
   KEY `no_persekot` (`no_persekot`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_bin;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -3659,47 +3659,47 @@ DROP TABLE IF EXISTS `tm_barang_deleted`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tm_barang_deleted` (
-  `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_barcode` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_intern` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `nama_barang` varchar(60) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `nama_atribut` varchar(60) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `kode_satuan` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_supplier` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_group` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `kode_dept` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `harga_beli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
+  `kode_barang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_barcode` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_intern` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `nama_barang` varchar(60) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `nama_atribut` varchar(60) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `kode_satuan` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_supplier` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_group` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `kode_dept` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `harga_beli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
   `tgl_last_beli` date DEFAULT '2008-01-01',
-  `harga_jual` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
+  `harga_jual` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
   `tgl_last_jual` datetime DEFAULT '2008-01-01 01:01:01',
-  `berat` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `kadar` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `kadar_cetak` varchar(5) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `harga_atribut` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_atribut` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `harga_skrg` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `ongkos_berlian` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `total_usd` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_on_hand` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `berat_bandrol` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `curr` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT 'RP',
-  `input_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
+  `berat` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `kadar` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `kadar_cetak` varchar(5) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `harga_atribut` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_atribut` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `harga_skrg` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `ongkos_berlian` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `total_usd` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_on_hand` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `berat_bandrol` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `curr` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT 'RP',
+  `input_by` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
   `input_date` datetime NOT NULL DEFAULT '2008-01-01 01:01:01',
-  `edit_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
+  `edit_by` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `edit_date` datetime DEFAULT '2008-01-01 01:01:01',
-  `deleted_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
+  `deleted_by` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `deleted_date` datetime DEFAULT '2008-01-01 01:01:01',
-  `status_delete` varchar(1) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
+  `status_delete` varchar(1) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
   PRIMARY KEY (`kode_barang`),
   KEY `kode_barcode` (`kode_barcode`),
   KEY `kode_lokasi_gudang` (`kode_lokasi_gudang`),
   KEY `kode_lokasi_toko` (`kode_lokasi_toko`),
   KEY `kode_group` (`kode_group`),
   KEY `kode_dept` (`kode_dept`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -3719,47 +3719,47 @@ DROP TABLE IF EXISTS `tm_barang_dump`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tm_barang_dump` (
-  `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_barcode` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_intern` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `nama_barang` varchar(60) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `nama_atribut` varchar(60) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `kode_satuan` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_supplier` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_group` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `kode_dept` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `harga_beli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
+  `kode_barang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_barcode` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_intern` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `nama_barang` varchar(60) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `nama_atribut` varchar(60) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `kode_satuan` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_supplier` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_group` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `kode_dept` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `harga_beli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
   `tgl_last_beli` date DEFAULT '2008-01-01',
-  `harga_jual` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
+  `harga_jual` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
   `tgl_last_jual` datetime DEFAULT '2008-01-01 01:01:01',
-  `berat` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `kadar` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `kadar_cetak` varchar(5) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `harga_atribut` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_atribut` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `harga_skrg` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `ongkos_berlian` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `total_usd` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_on_hand` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `berat_bandrol` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `curr` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT 'RP',
-  `input_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
+  `berat` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `kadar` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `kadar_cetak` varchar(5) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `harga_atribut` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_atribut` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `harga_skrg` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `ongkos_berlian` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `total_usd` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_on_hand` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `berat_bandrol` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `curr` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT 'RP',
+  `input_by` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
   `input_date` datetime NOT NULL DEFAULT '2008-01-01 01:01:01',
-  `edit_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
+  `edit_by` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `edit_date` datetime DEFAULT '2008-01-01 01:01:01',
-  `deleted_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
+  `deleted_by` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `deleted_date` datetime DEFAULT '2008-01-01 01:01:01',
-  `status_delete` varchar(1) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
+  `status_delete` varchar(1) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
   PRIMARY KEY (`kode_barang`),
   UNIQUE KEY `kode_barcode` (`kode_barcode`),
   KEY `nama_barang` (`nama_barang`),
   KEY `d` (`kode_group`),
   KEY `kode_dept` (`kode_dept`),
   KEY `kode` (`kode_lokasi_gudang`,`kode_lokasi_toko`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_bin;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -3781,14 +3781,14 @@ DROP TABLE IF EXISTS `tm_barang_minus`;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tm_barang_minus` (
   `no_urut` int DEFAULT '0',
-  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `nama_barang` varchar(30) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
+  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_barang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `nama_barang` varchar(30) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
   `stock` double NOT NULL DEFAULT '0',
   `berat` double DEFAULT NULL,
   `totberat` double DEFAULT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_bin;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -3808,47 +3808,47 @@ DROP TABLE IF EXISTS `tm_barang_titip`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tm_barang_titip` (
-  `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_barcode` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_intern` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `nama_barang` varchar(60) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `nama_atribut` varchar(60) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `kode_satuan` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_supplier` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_group` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `kode_dept` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `harga_beli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
+  `kode_barang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_barcode` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_intern` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `nama_barang` varchar(60) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `nama_atribut` varchar(60) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `kode_satuan` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_supplier` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_group` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `kode_dept` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `harga_beli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
   `tgl_last_beli` date DEFAULT '2008-01-01',
-  `harga_jual` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
+  `harga_jual` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
   `tgl_last_jual` datetime DEFAULT '2008-01-01 01:01:01',
-  `berat` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `kadar` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `kadar_cetak` varchar(5) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `harga_atribut` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_atribut` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `harga_skrg` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `ongkos_berlian` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `total_usd` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_on_hand` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `berat_bandrol` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `curr` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT 'RP',
-  `input_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
+  `berat` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `kadar` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `kadar_cetak` varchar(5) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `harga_atribut` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_atribut` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `harga_skrg` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `ongkos_berlian` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `total_usd` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_on_hand` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `berat_bandrol` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `curr` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT 'RP',
+  `input_by` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
   `input_date` datetime NOT NULL DEFAULT '2008-01-01 01:01:01',
-  `edit_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
+  `edit_by` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `edit_date` datetime DEFAULT '2008-01-01 01:01:01',
-  `deleted_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
+  `deleted_by` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `deleted_date` datetime DEFAULT '2008-01-01 01:01:01',
-  `status_delete` varchar(1) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
+  `status_delete` varchar(1) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
   PRIMARY KEY (`kode_barang`),
   KEY `kode_barcode` (`kode_barcode`),
   KEY `kode_lokasi_gudang` (`kode_lokasi_gudang`),
   KEY `kode_lokasi_toko` (`kode_lokasi_toko`),
   KEY `kode_group` (`kode_group`),
   KEY `kode_dept` (`kode_dept`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -3868,15 +3868,15 @@ DROP TABLE IF EXISTS `tm_barang_tmp`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tm_barang_tmp` (
-  `nama_barang` varchar(60) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `nama_atribut` varchar(60) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `kode_intern` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `kode_dept` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `harga_atribut` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `kadar` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `status_update` varchar(1) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0'
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_bin;
+  `nama_barang` varchar(60) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `nama_atribut` varchar(60) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `kode_intern` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `kode_dept` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `harga_atribut` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `kadar` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `status_update` varchar(1) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -3896,16 +3896,16 @@ DROP TABLE IF EXISTS `tm_cashier`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tm_cashier` (
-  `cashier_id` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `nama_lkp` varchar(50) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `input_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
+  `cashier_id` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `nama_lkp` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `input_by` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
   `input_date` datetime NOT NULL DEFAULT '2008-01-01 01:01:01',
-  `edit_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
+  `edit_by` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `edit_date` datetime DEFAULT '2008-01-01 01:01:01',
-  `deleted_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
+  `deleted_by` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `deleted_date` datetime DEFAULT '2008-01-01 01:01:01',
   PRIMARY KEY (`cashier_id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_bin;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -3925,15 +3925,15 @@ DROP TABLE IF EXISTS `tm_cashier_deleted`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tm_cashier_deleted` (
-  `cashier_id` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `nama_lkp` varchar(50) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `input_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
+  `cashier_id` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `nama_lkp` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `input_by` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
   `input_date` datetime NOT NULL DEFAULT '2008-01-01 01:01:01',
-  `edit_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
+  `edit_by` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `edit_date` datetime DEFAULT '2008-01-01 01:01:01',
-  `deleted_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
+  `deleted_by` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `deleted_date` datetime DEFAULT '2008-01-01 01:01:01'
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_bin;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -3953,17 +3953,17 @@ DROP TABLE IF EXISTS `tm_credit_card`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tm_credit_card` (
-  `id_card` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `nama_customer` varchar(30) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `no_ktp` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `alamat1` varchar(50) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `alamat2` varchar(50) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `kota` varchar(50) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `no_telp` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
+  `id_card` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `nama_customer` varchar(30) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `no_ktp` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `alamat1` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `alamat2` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `kota` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `no_telp` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `tgl_daftar` date DEFAULT NULL,
-  `tgl_valid_until` varchar(5) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
+  `tgl_valid_until` varchar(5) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `tgl_last_gesek` datetime DEFAULT '2008-01-01 01:01:01'
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_bin;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -3984,36 +3984,36 @@ DROP TABLE IF EXISTS `tm_customer`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tm_customer` (
-  `kode_customer` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `nama_customer` varchar(30) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `alamat1` varchar(50) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `alamat2` varchar(50) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `kota` varchar(50) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `kode_pos` varchar(5) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `no_telp` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `no_hp` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `email` varchar(30) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
+  `kode_customer` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `nama_customer` varchar(30) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `alamat1` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `alamat2` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `kota` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `kode_pos` varchar(5) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `no_telp` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `no_hp` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `email` varchar(30) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `tgl_daftar` date DEFAULT '2008-01-01',
-  `diskon` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `npwp_no` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
+  `diskon` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `npwp_no` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `npwp_tgl` date DEFAULT NULL,
-  `pkp_no` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
+  `pkp_no` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `pkp_tgl` date DEFAULT NULL,
-  `photo` varchar(255) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
+  `photo` varchar(255) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `tgl_valid_until` date DEFAULT NULL,
-  `status` varchar(5) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT 'OPEN',
-  `status_customer` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT 'REGULER',
+  `status` varchar(5) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT 'OPEN',
+  `status_customer` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT 'REGULER',
   `tgl_lahir` date DEFAULT NULL,
-  `point` varchar(5) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `input_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
+  `point` varchar(5) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `input_by` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
   `input_date` datetime NOT NULL DEFAULT '2008-01-01 01:01:02',
-  `edit_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
+  `edit_by` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `edit_date` datetime DEFAULT NULL,
-  `deleted_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
+  `deleted_by` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `deleted_date` datetime DEFAULT NULL,
   PRIMARY KEY (`kode_customer`),
   KEY `nama_customer` (`nama_customer`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_bin;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -4034,34 +4034,34 @@ DROP TABLE IF EXISTS `tm_customer_deleted`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tm_customer_deleted` (
-  `kode_customer` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `nama_customer` varchar(30) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `alamat1` varchar(50) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `alamat2` varchar(50) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `kota` varchar(50) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `kode_pos` varchar(5) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `no_telp` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `no_hp` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `email` varchar(30) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
+  `kode_customer` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `nama_customer` varchar(30) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `alamat1` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `alamat2` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `kota` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `kode_pos` varchar(5) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `no_telp` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `no_hp` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `email` varchar(30) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `tgl_daftar` date DEFAULT '2008-01-01',
-  `diskon` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `npwp_no` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
+  `diskon` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `npwp_no` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `npwp_tgl` date DEFAULT NULL,
-  `pkp_no` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
+  `pkp_no` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `pkp_tgl` date DEFAULT NULL,
-  `photo` varchar(255) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
+  `photo` varchar(255) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `tgl_valid_until` date DEFAULT NULL,
-  `status` varchar(5) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT 'OPEN',
-  `status_customer` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT 'REGULER',
+  `status` varchar(5) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT 'OPEN',
+  `status_customer` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT 'REGULER',
   `tgl_lahir` date DEFAULT NULL,
-  `point` varchar(5) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `input_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
+  `point` varchar(5) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `input_by` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
   `input_date` datetime NOT NULL DEFAULT '2008-01-01 01:01:02',
-  `edit_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
+  `edit_by` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `edit_date` datetime DEFAULT NULL,
-  `deleted_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
+  `deleted_by` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `deleted_date` datetime DEFAULT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_bin;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -4082,18 +4082,18 @@ DROP TABLE IF EXISTS `tm_dept`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tm_dept` (
-  `kode_group` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_dept` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `nama_dept` varchar(30) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `input_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
+  `kode_group` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_dept` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `nama_dept` varchar(30) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `input_by` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
   `input_date` datetime NOT NULL DEFAULT '2008-01-01 01:01:01',
-  `edit_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
+  `edit_by` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `edit_date` datetime DEFAULT '2008-01-01 01:01:01',
-  `deleted_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
+  `deleted_by` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `deleted_date` datetime DEFAULT '2008-01-01 01:01:01',
   PRIMARY KEY (`kode_group`,`kode_dept`),
   KEY `kode_dept` (`kode_dept`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_bin;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -4114,16 +4114,16 @@ DROP TABLE IF EXISTS `tm_dept_deleted`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tm_dept_deleted` (
-  `kode_group` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_dept` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `nama_dept` varchar(30) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `input_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
+  `kode_group` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_dept` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `nama_dept` varchar(30) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `input_by` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
   `input_date` datetime NOT NULL DEFAULT '2008-01-01 01:01:01',
-  `edit_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
+  `edit_by` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `edit_date` datetime DEFAULT '2008-01-01 01:01:01',
-  `deleted_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
+  `deleted_by` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `deleted_date` datetime DEFAULT '2008-01-01 01:01:01'
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_bin;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -4143,17 +4143,17 @@ DROP TABLE IF EXISTS `tm_group`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tm_group` (
-  `kode_group` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `nama_group` varchar(30) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `harga` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `input_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
+  `kode_group` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `nama_group` varchar(30) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `harga` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `input_by` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
   `input_date` datetime NOT NULL DEFAULT '2008-01-01 01:01:01',
-  `edit_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
+  `edit_by` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `edit_date` datetime DEFAULT '2008-01-01 01:01:01',
-  `deleted_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
+  `deleted_by` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `deleted_date` datetime DEFAULT '2008-01-01 01:01:01',
   PRIMARY KEY (`kode_group`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_bin;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -4174,16 +4174,16 @@ DROP TABLE IF EXISTS `tm_group_deleted`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tm_group_deleted` (
-  `kode_group` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `nama_group` varchar(30) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `harga` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `input_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
+  `kode_group` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `nama_group` varchar(30) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `harga` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `input_by` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
   `input_date` datetime NOT NULL DEFAULT '2008-01-01 01:01:01',
-  `edit_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
+  `edit_by` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `edit_date` datetime DEFAULT '2008-01-01 01:01:01',
-  `deleted_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
+  `deleted_by` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `deleted_date` datetime DEFAULT '2008-01-01 01:01:01'
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_bin;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -4203,17 +4203,17 @@ DROP TABLE IF EXISTS `tm_hadiah`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tm_hadiah` (
-  `kode_hadiah` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `nama_hadiah` varchar(30) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `qty` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `status` varchar(4) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT 'OPEN',
-  `input_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
+  `kode_hadiah` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `nama_hadiah` varchar(30) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `qty` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `status` varchar(4) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT 'OPEN',
+  `input_by` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
   `input_date` datetime NOT NULL DEFAULT '2008-01-01 01:01:01',
-  `edit_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
+  `edit_by` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `edit_date` datetime DEFAULT NULL,
-  `deleted_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
+  `deleted_by` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `deleted_date` datetime DEFAULT '2008-01-01 01:01:01'
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_bin;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -4233,16 +4233,16 @@ DROP TABLE IF EXISTS `tm_lokasi_gudang`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tm_lokasi_gudang` (
-  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `nama_lokasi_gudang` varchar(50) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `input_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
+  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `nama_lokasi_gudang` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `input_by` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
   `input_date` datetime NOT NULL DEFAULT '2008-01-01 01:01:01',
-  `edit_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
+  `edit_by` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `edit_date` datetime DEFAULT '2008-01-01 01:01:01',
-  `deleted_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
+  `deleted_by` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `deleted_date` datetime DEFAULT '2008-01-01 01:01:01',
   PRIMARY KEY (`kode_lokasi_gudang`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_bin;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -4263,15 +4263,15 @@ DROP TABLE IF EXISTS `tm_lokasi_gudang_deleted`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tm_lokasi_gudang_deleted` (
-  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `nama_lokasi_gudang` varchar(50) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `input_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
+  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `nama_lokasi_gudang` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `input_by` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
   `input_date` datetime NOT NULL DEFAULT '2008-01-01 01:01:01',
-  `edit_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
+  `edit_by` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `edit_date` datetime DEFAULT NULL,
-  `deleted_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
+  `deleted_by` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
   `deleted_date` datetime NOT NULL DEFAULT '2008-01-01 01:01:01'
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_bin;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -4291,20 +4291,20 @@ DROP TABLE IF EXISTS `tm_lokasi_toko`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tm_lokasi_toko` (
-  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `nama_lokasi_toko` varchar(50) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `berat` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `berat_bandrol` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `input_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
+  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `nama_lokasi_toko` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `berat` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `berat_bandrol` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `input_by` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
   `input_date` datetime NOT NULL DEFAULT '2008-01-01 01:01:01',
-  `edit_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
+  `edit_by` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `edit_date` datetime DEFAULT NULL,
-  `deleted_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
+  `deleted_by` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `deleted_date` datetime DEFAULT '2008-01-01 00:00:00',
   PRIMARY KEY (`kode_lokasi_gudang`,`kode_lokasi_toko`),
   KEY `kode_lokasi_toko` (`kode_lokasi_toko`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_bin;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -4325,18 +4325,18 @@ DROP TABLE IF EXISTS `tm_lokasi_toko_deleted`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tm_lokasi_toko_deleted` (
-  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `nama_lokasi_toko` varchar(50) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `berat` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `berat_bandrol` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `input_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
+  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `nama_lokasi_toko` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `berat` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `berat_bandrol` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `input_by` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
   `input_date` datetime NOT NULL DEFAULT '2008-01-01 01:01:01',
-  `edit_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
+  `edit_by` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `edit_date` datetime DEFAULT NULL,
-  `deleted_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
+  `deleted_by` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `deleted_date` datetime DEFAULT '2008-01-01 00:00:00'
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_bin;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -4357,11 +4357,11 @@ DROP TABLE IF EXISTS `tm_otoritas`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tm_otoritas` (
-  `user_id` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `nama_form` varchar(50) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `input_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
+  `user_id` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `nama_form` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `input_by` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
   `input_date` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_bin;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -4382,16 +4382,16 @@ DROP TABLE IF EXISTS `tm_sales`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tm_sales` (
-  `sales_id` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `nama_sales` varchar(50) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `input_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
+  `sales_id` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `nama_sales` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `input_by` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
   `input_date` datetime NOT NULL DEFAULT '2008-01-01 01:01:01',
-  `edit_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
+  `edit_by` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `edit_date` datetime DEFAULT '2008-01-01 01:01:01',
-  `deleted_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
+  `deleted_by` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `deleted_date` datetime DEFAULT '2008-01-01 01:01:01',
   PRIMARY KEY (`sales_id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_bin;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -4412,15 +4412,15 @@ DROP TABLE IF EXISTS `tm_sales_deleted`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tm_sales_deleted` (
-  `sales_id` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `nama_sales` varchar(50) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `input_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
+  `sales_id` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `nama_sales` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `input_by` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
   `input_date` datetime NOT NULL DEFAULT '2008-01-01 01:01:01',
-  `edit_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
+  `edit_by` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `edit_date` datetime DEFAULT '2008-01-01 01:01:01',
-  `deleted_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
+  `deleted_by` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `deleted_date` datetime DEFAULT '2008-01-01 01:01:01'
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_bin;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -4441,16 +4441,16 @@ DROP TABLE IF EXISTS `tm_satuan`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tm_satuan` (
-  `kode_satuan` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `nama_satuan` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '-',
-  `konversi` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `input_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
+  `kode_satuan` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `nama_satuan` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '-',
+  `konversi` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `input_by` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
   `input_date` datetime NOT NULL DEFAULT '2008-01-01 01:01:01',
-  `edit_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
+  `edit_by` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `edit_date` datetime DEFAULT NULL,
-  `deleted_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
+  `deleted_by` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `deleted_date` datetime DEFAULT '2008-01-01 01:01:01'
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_bin;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -4470,16 +4470,16 @@ DROP TABLE IF EXISTS `tm_satuan_deleted`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tm_satuan_deleted` (
-  `kode_satuan` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `nama_satuan` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '-',
-  `konversi` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `input_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
+  `kode_satuan` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `nama_satuan` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '-',
+  `konversi` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `input_by` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
   `input_date` datetime NOT NULL DEFAULT '2008-01-01 01:01:01',
-  `edit_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
+  `edit_by` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `edit_date` datetime DEFAULT NULL,
-  `deleted_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
+  `deleted_by` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
   `deleted_date` datetime NOT NULL DEFAULT '2008-01-01 01:01:01'
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_bin;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -4499,23 +4499,23 @@ DROP TABLE IF EXISTS `tm_supplier`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tm_supplier` (
-  `kode_supplier` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `nama_supplier` varchar(50) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kontak_person` varchar(50) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '-',
-  `handphone` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '-',
-  `alamat1` varchar(30) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '-',
-  `alamat2` varchar(30) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '-',
-  `kota` varchar(30) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '-',
-  `kode_pos` varchar(5) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '-',
-  `telepon` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '-',
-  `fax` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '-',
-  `email` varchar(50) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '-',
-  `input_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
+  `kode_supplier` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `nama_supplier` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kontak_person` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '-',
+  `handphone` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '-',
+  `alamat1` varchar(30) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '-',
+  `alamat2` varchar(30) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '-',
+  `kota` varchar(30) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '-',
+  `kode_pos` varchar(5) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '-',
+  `telepon` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '-',
+  `fax` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '-',
+  `email` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '-',
+  `input_by` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
   `input_date` datetime NOT NULL DEFAULT '2008-01-01 01:01:01',
-  `edit_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
+  `edit_by` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `edit_date` datetime DEFAULT NULL,
   KEY `kode_supplier` (`kode_supplier`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_bin;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -4535,26 +4535,26 @@ DROP TABLE IF EXISTS `tm_supplier_deleted`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tm_supplier_deleted` (
-  `kode_supplier` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `nama_supplier` varchar(50) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kontak_person` varchar(50) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '-',
-  `alamat1` varchar(30) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '-',
-  `alamat2` varchar(30) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '-',
-  `kota` varchar(30) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '-',
-  `telepon` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '-',
-  `fax` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '-',
-  `email` varchar(30) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '-',
-  `npwp_no` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '-',
+  `kode_supplier` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `nama_supplier` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kontak_person` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '-',
+  `alamat1` varchar(30) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '-',
+  `alamat2` varchar(30) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '-',
+  `kota` varchar(30) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '-',
+  `telepon` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '-',
+  `fax` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '-',
+  `email` varchar(30) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '-',
+  `npwp_no` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '-',
   `npwp_tgl` date DEFAULT NULL,
-  `pkp_no` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '-',
+  `pkp_no` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '-',
   `pkp_tgl` date DEFAULT NULL,
-  `input_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
+  `input_by` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
   `input_date` datetime NOT NULL DEFAULT '2008-01-01 01:01:01',
-  `edit_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
+  `edit_by` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `edit_date` datetime DEFAULT NULL,
-  `deleted_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
+  `deleted_by` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
   `deleted_date` datetime NOT NULL DEFAULT '2008-01-01 01:01:01'
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_bin;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -4574,16 +4574,16 @@ DROP TABLE IF EXISTS `tm_supplier_umum`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tm_supplier_umum` (
-  `no_faktur_beli` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `nama_supplier` varchar(50) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `alamat1` varchar(50) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '-',
-  `alamat2` varchar(50) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '-',
-  `kota` varchar(50) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '-',
-  `telepon` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '-',
-  `input_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
+  `no_faktur_beli` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `nama_supplier` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `alamat1` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '-',
+  `alamat2` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '-',
+  `kota` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '-',
+  `telepon` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '-',
+  `input_by` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
   `input_date` datetime NOT NULL DEFAULT '2008-01-01 01:01:01',
   KEY `no_faktur_beli` (`no_faktur_beli`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_bin;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -4605,16 +4605,16 @@ DROP TABLE IF EXISTS `tm_user`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tm_user` (
-  `user_id` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `pass_key` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `nama_lkp` varchar(50) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `type` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `input_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
+  `user_id` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `pass_key` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `nama_lkp` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `type` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `input_by` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
   `input_date` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  `edit_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
+  `edit_by` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `edit_date` datetime DEFAULT NULL,
   PRIMARY KEY (`user_id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_bin;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -4635,17 +4635,17 @@ DROP TABLE IF EXISTS `tm_user_deleted`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tm_user_deleted` (
-  `user_id` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `pass_key` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `nama_lkp` varchar(50) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `type` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `input_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
+  `user_id` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `pass_key` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `nama_lkp` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `type` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `input_by` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
   `input_date` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  `edit_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
+  `edit_by` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `edit_date` datetime DEFAULT NULL,
-  `deleted_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
+  `deleted_by` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
   `deleted_date` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_bin;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -4668,15 +4668,15 @@ DROP TABLE IF EXISTS `tmp_rpt_bataljual`;
 CREATE TABLE `tmp_rpt_bataljual` (
   `urut` int unsigned NOT NULL AUTO_INCREMENT,
   `tgl_retur_jual` date DEFAULT '2008-01-01',
-  `no_retur_jual` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `no_faktur_jual` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_barang` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `nama_barang` varchar(50) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
+  `no_retur_jual` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `no_faktur_jual` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_barang` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `nama_barang` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `berat` double DEFAULT NULL,
   `jml_retur_rp` double DEFAULT NULL,
-  `alasan` varchar(30) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
+  `alasan` varchar(30) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   PRIMARY KEY (`urut`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -4696,17 +4696,17 @@ DROP TABLE IF EXISTS `tmp_rpt_jual`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tmp_rpt_jual` (
-  `no_faktur_jual` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
+  `no_faktur_jual` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
   `tgl_faktur_jual` date NOT NULL DEFAULT '2008-01-01',
   `no_urut` double NOT NULL DEFAULT '0',
-  `sales_id` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `nama_barang` varchar(60) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
+  `sales_id` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `nama_barang` varchar(60) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `qty` double NOT NULL DEFAULT '0',
   `berat` double NOT NULL DEFAULT '0',
   `jml_jual_rp` double NOT NULL DEFAULT '0',
   `dibayar_rp` double NOT NULL DEFAULT '0',
-  `status_tukar` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3;
+  `status_tukar` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -4727,7 +4727,7 @@ DROP TABLE IF EXISTS `tmp_rpt_rekapbaki`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tmp_rpt_rekapbaki` (
-  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
+  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
   `s_awal` double DEFAULT NULL,
   `b_awal` double DEFAULT NULL,
   `s_tbh` double DEFAULT NULL,
@@ -4743,7 +4743,7 @@ CREATE TABLE `tmp_rpt_rekapbaki` (
   `berat_bandrol` double DEFAULT NULL,
   `berat_baki` double DEFAULT NULL,
   `totalan` double DEFAULT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -4765,19 +4765,19 @@ DROP TABLE IF EXISTS `tmp_rpt_stock`;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tmp_rpt_stock` (
   `tanggal` date DEFAULT '2008-01-01',
-  `kode_dept` varchar(51) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `kode` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `nama_barang` varchar(122) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
+  `kode_dept` varchar(51) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `kode` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `nama_barang` varchar(122) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `qty` double NOT NULL DEFAULT '0',
-  `sales_id` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
+  `sales_id` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `berat` double NOT NULL DEFAULT '0',
   `harga_jual` double NOT NULL DEFAULT '0',
   `ongkos` double NOT NULL DEFAULT '0',
   `dpp_detail` double NOT NULL DEFAULT '0',
   `rata` double DEFAULT NULL,
   `urut` varchar(10) DEFAULT '0'
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -4811,7 +4811,7 @@ CREATE TABLE `tmp_rpt_stockjual` (
   `ongkos` varchar(20) DEFAULT '0',
   `dpp_detail` varchar(20) DEFAULT '0',
   `rata` varchar(20) DEFAULT '0'
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -4835,9 +4835,9 @@ CREATE TABLE `tmp_rpt_sum` (
   `s_in` double DEFAULT NULL,
   `b_in` double DEFAULT NULL,
   `b_in_asli` double DEFAULT NULL,
-  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `nama_lokasi_toko` varchar(30) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3;
+  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `nama_lokasi_toko` varchar(30) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -4858,31 +4858,31 @@ DROP TABLE IF EXISTS `tmp_rpt_tambahbrg`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tmp_rpt_tambahbrg` (
-  `kode_barcode` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
+  `kode_barcode` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
   `harga_jual` double DEFAULT NULL,
-  `kode_dept` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `nama_barang` varchar(60) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
+  `kode_dept` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_barang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `nama_barang` varchar(60) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `tgl_last_beli` date DEFAULT '2008-01-01',
   `kadar` double DEFAULT NULL,
   `kadar_cetak` double DEFAULT NULL,
   `berat` double DEFAULT NULL,
   `berat_asli` double DEFAULT NULL,
   `jml_berat` double DEFAULT NULL,
-  `kode_satuan` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
+  `kode_satuan` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
   `jml_beratasli` double DEFAULT NULL,
   `stock_on_hand` double NOT NULL DEFAULT '0',
   `harga_beli` double DEFAULT NULL,
-  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `nama_lokasi_toko` varchar(50) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `nama_lokasi_gudang` varchar(50) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `nama_dept` varchar(30) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `kode_group` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `nama_group` varchar(30) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `kode_intern` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `berat_bandrol` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0'
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3;
+  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `nama_lokasi_toko` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `nama_lokasi_gudang` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `nama_dept` varchar(30) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `kode_group` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `nama_group` varchar(30) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `kode_intern` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `berat_bandrol` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -4905,7 +4905,7 @@ DROP TABLE IF EXISTS `tmp_rpt_tambahbrg_tot`;
 CREATE TABLE `tmp_rpt_tambahbrg_tot` (
   `stock` double DEFAULT NULL,
   `berat` double DEFAULT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -4926,7 +4926,7 @@ DROP TABLE IF EXISTS `tmp_stock_rkp`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tmp_stock_rkp` (
-  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
+  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
   `s_awal` double DEFAULT NULL,
   `b_awal` double DEFAULT NULL,
   `s_tambah` double DEFAULT NULL,
@@ -4941,7 +4941,7 @@ CREATE TABLE `tmp_stock_rkp` (
   `b_akhir` double DEFAULT NULL,
   `b_bandrol` varchar(10) DEFAULT '0',
   `b_baki` varchar(10) DEFAULT '0'
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -4964,10 +4964,10 @@ DROP TABLE IF EXISTS `tp_backup`;
 CREATE TABLE `tp_backup` (
   `tanggal` date DEFAULT '2008-01-01',
   `jam` time DEFAULT '01:01:01',
-  `nama_db` varchar(30) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `input_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
+  `nama_db` varchar(30) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `input_by` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `input_date` datetime DEFAULT '2008-01-01 01:01:01'
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_bin;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -4988,13 +4988,13 @@ DROP TABLE IF EXISTS `tp_barang`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tp_barang` (
-  `kode_dept` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `kode_barcode` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
+  `kode_dept` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `kode_barang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `kode_barcode` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   KEY `kode_dept` (`kode_dept`),
   KEY `kode_barang` (`kode_barang`),
   KEY `kode_barcode` (`kode_barcode`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_bin;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -5015,13 +5015,13 @@ DROP TABLE IF EXISTS `tp_barang_beli`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tp_barang_beli` (
-  `kode_dept` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `kode_barcode` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
+  `kode_dept` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `kode_barang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `kode_barcode` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   KEY `kode_dept` (`kode_dept`),
   KEY `kode_barang` (`kode_barang`),
   KEY `kode_barcode` (`kode_barcode`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_bin;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -5041,10 +5041,10 @@ DROP TABLE IF EXISTS `tp_cam`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tp_cam` (
-  `pixel` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `lebar` char(5) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `tinggi` char(5) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0'
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_bin;
+  `pixel` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `lebar` char(5) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `tinggi` char(5) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -5065,15 +5065,15 @@ DROP TABLE IF EXISTS `tp_cash_trx`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tp_cash_trx` (
-  `id_kategori` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `type_trx` varchar(1) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT 'D',
-  `input_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
+  `id_kategori` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `type_trx` varchar(1) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT 'D',
+  `input_by` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
   `input_date` datetime NOT NULL DEFAULT '2008-01-01 01:01:01',
-  `edit_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
+  `edit_by` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `edit_date` datetime DEFAULT '2008-01-01 01:01:01',
-  `deleted_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
+  `deleted_by` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `deleted_date` datetime DEFAULT '2008-01-01 01:01:01'
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_bin;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -5094,15 +5094,15 @@ DROP TABLE IF EXISTS `tp_cash_trx_deleted`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tp_cash_trx_deleted` (
-  `id_kategori` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `type_trx` varchar(1) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT 'D',
-  `input_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
+  `id_kategori` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `type_trx` varchar(1) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT 'D',
+  `input_by` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
   `input_date` datetime NOT NULL DEFAULT '2008-01-01 01:01:01',
-  `edit_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
+  `edit_by` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `edit_date` datetime DEFAULT '2008-01-01 01:01:01',
-  `deleted_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
+  `deleted_by` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `deleted_date` datetime DEFAULT '2008-01-01 01:01:01'
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_bin;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -5127,7 +5127,7 @@ CREATE TABLE `tp_cfg` (
   `config3` varchar(10) DEFAULT 'OFF',
   `config4` varchar(10) DEFAULT '0',
   `config5` date DEFAULT '2018-01-01'
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -5152,7 +5152,7 @@ CREATE TABLE `tp_curr` (
   `rp` varchar(10) DEFAULT '0',
   `input_by` varchar(20) DEFAULT NULL,
   `input_date` datetime DEFAULT '2008-01-01 00:00:00'
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -5173,12 +5173,12 @@ DROP TABLE IF EXISTS `tp_kondisi_barang`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tp_kondisi_barang` (
-  `kondisi_barang` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `input_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
+  `kondisi_barang` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `input_by` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
   `input_date` datetime NOT NULL DEFAULT '2008-01-01 01:01:01',
-  `edit_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
+  `edit_by` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `edit_date` datetime DEFAULT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_bin;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -5199,13 +5199,13 @@ DROP TABLE IF EXISTS `tp_kondisi_barang_beli`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tp_kondisi_barang_beli` (
-  `kondisi_barang` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `harga` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `input_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
+  `kondisi_barang` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `harga` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `input_by` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
   `input_date` datetime NOT NULL DEFAULT '2008-01-01 01:01:01',
-  `edit_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
+  `edit_by` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `edit_date` datetime DEFAULT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_bin;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -5226,14 +5226,14 @@ DROP TABLE IF EXISTS `tp_kondisi_barang_deleted`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tp_kondisi_barang_deleted` (
-  `kondisi_barang` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `input_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
+  `kondisi_barang` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `input_by` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
   `input_date` datetime NOT NULL DEFAULT '2008-01-01 01:01:01',
-  `edit_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
+  `edit_by` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `edit_date` datetime DEFAULT NULL,
-  `deleted_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
+  `deleted_by` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
   `deleted_date` datetime NOT NULL DEFAULT '2008-01-01 01:01:01'
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_bin;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -5253,9 +5253,9 @@ DROP TABLE IF EXISTS `tp_konter_barang`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tp_konter_barang` (
-  `kode_dept` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_bin;
+  `kode_dept` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `kode_barang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -5275,9 +5275,9 @@ DROP TABLE IF EXISTS `tp_konter_jual`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tp_konter_jual` (
-  `no_faktur_jual` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
+  `no_faktur_jual` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `tgl_faktur_jual` date DEFAULT '2008-01-01'
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_bin;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -5300,7 +5300,7 @@ DROP TABLE IF EXISTS `tp_poin`;
 CREATE TABLE `tp_poin` (
   `poin` varchar(10) DEFAULT NULL,
   `status` varchar(20) DEFAULT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -5322,10 +5322,10 @@ DROP TABLE IF EXISTS `tp_restore`;
 CREATE TABLE `tp_restore` (
   `tanggal` date DEFAULT '2008-01-01',
   `jam` time DEFAULT '01:01:01',
-  `nama_db` varchar(30) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `input_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
+  `nama_db` varchar(30) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `input_by` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `input_date` datetime DEFAULT '2008-01-01 01:01:01'
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_bin;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -5346,7 +5346,7 @@ DROP TABLE IF EXISTS `tp_status_beli`;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tp_status_beli` (
   `status` int DEFAULT '0'
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_bin;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -5367,18 +5367,18 @@ DROP TABLE IF EXISTS `tp_system`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tp_system` (
-  `nama_perusahaan` varchar(50) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `alamat_persh1` varchar(50) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `alamat_persh2` varchar(50) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `kota_persh` varchar(30) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `kdpos_persh` varchar(5) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `telp_persh` varchar(30) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `fax_persh` varchar(30) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `input_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
+  `nama_perusahaan` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `alamat_persh1` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `alamat_persh2` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `kota_persh` varchar(30) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `kdpos_persh` varchar(5) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `telp_persh` varchar(30) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `fax_persh` varchar(30) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `input_by` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `input_date` datetime DEFAULT NULL,
   `tgl_system` date DEFAULT '2008-01-01',
-  `ip_server` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT 'localhost'
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_bin;
+  `ip_server` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT 'localhost'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -5399,18 +5399,18 @@ DROP TABLE IF EXISTS `tt_bank_daily`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tt_bank_daily` (
-  `no_ref` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `type_trx` varchar(1) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT 'D',
+  `no_ref` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `type_trx` varchar(1) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT 'D',
   `tanggal` date NOT NULL DEFAULT '2008-01-01',
   `jam` time NOT NULL DEFAULT '01:01:01',
-  `input_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kategori` varchar(30) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `deskripsi` varchar(50) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `sld_awal_rp` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `jumlah_rp` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `sld_akhir_rp` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `jenis_trx` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_bin;
+  `input_by` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kategori` varchar(30) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `deskripsi` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `sld_awal_rp` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `jumlah_rp` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `sld_akhir_rp` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `jenis_trx` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -5432,40 +5432,40 @@ DROP TABLE IF EXISTS `tt_barang_saldo`;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tt_barang_saldo` (
   `tanggal` date NOT NULL DEFAULT '2008-01-01',
-  `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_dept` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `berat_awal` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_awal_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_awal` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `berat_tambah` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_tambah_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_tambah` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_out` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_out_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_out` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_in` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_in_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_in` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_beli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_beli_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_beli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_jual` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_jual_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_jual` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hancur` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hancur_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_hancur` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hilang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_hilang_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_hilang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_akhir` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat_akhir_asli` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `stock_akhir` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `status_close` varchar(4) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT 'OPEN',
+  `kode_barang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_dept` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `berat_awal` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_awal_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_awal` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `berat_tambah` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_tambah_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_tambah` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_out` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_out_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_out` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_in` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_in_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_in` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_beli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_beli_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_beli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_jual` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_jual_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_jual` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hancur` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hancur_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_hancur` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hilang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_hilang_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_hilang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_akhir` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat_akhir_asli` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `stock_akhir` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `status_close` varchar(4) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT 'OPEN',
   KEY `NewIndex` (`tanggal`,`kode_barang`,`kode_dept`,`kode_lokasi_gudang`,`kode_lokasi_toko`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_bin;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -5487,16 +5487,16 @@ DROP TABLE IF EXISTS `tt_barang_stock`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tt_barang_stock` (
-  `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `kode_barcode` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
+  `kode_barang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `kode_barcode` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `tgl_taking` date DEFAULT '2008-01-01',
   `jam_taking` time DEFAULT '01:01:01',
   `stock_fisik` int DEFAULT '0',
-  `input_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
+  `input_by` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   KEY `kode_barang` (`kode_barang`),
   KEY `kode_barcode` (`kode_barcode`),
   KEY `tgl_taking` (`tgl_taking`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_bin;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -5517,15 +5517,15 @@ DROP TABLE IF EXISTS `tt_barang_stock_lebih`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tt_barang_stock_lebih` (
-  `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `kode_barcode` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
+  `kode_barang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `kode_barcode` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `tgl_taking` date DEFAULT '2008-01-01',
   `jam_taking` time DEFAULT '01:01:01',
   `stock_fisik` int DEFAULT '0',
-  `input_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
+  `input_by` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   KEY `kode_barang` (`kode_barang`),
   KEY `kode_barcode` (`kode_barcode`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_bin;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -5568,7 +5568,7 @@ CREATE TABLE `tt_barang_tukar` (
   KEY `tgl_system` (`tgl_system`),
   KEY `sales_id` (`sales_id`),
   KEY `kode_dept` (`kode_dept`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -5606,7 +5606,7 @@ CREATE TABLE `tt_batal_barang_tukar` (
   `input_date` datetime DEFAULT '2001-01-01 01:01:01',
   `status` varchar(5) DEFAULT 'OPEN',
   `kondisi_barang` varchar(30) DEFAULT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -5626,16 +5626,16 @@ DROP TABLE IF EXISTS `tt_batal_card`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tt_batal_card` (
-  `no_trx` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
+  `no_trx` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
   `tgl_system` date DEFAULT '2008-01-01',
   `tgl_trx` datetime NOT NULL DEFAULT '2008-01-01 01:01:01',
-  `deskripsi` varchar(150) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `id_card` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `jml_cash_rp` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `card_rp` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `card_fee_rp` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `nama_bank` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3;
+  `deskripsi` varchar(150) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `id_card` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `jml_cash_rp` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `card_rp` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `card_fee_rp` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `nama_bank` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -5655,16 +5655,16 @@ DROP TABLE IF EXISTS `tt_batal_debet`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tt_batal_debet` (
-  `no_trx` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
+  `no_trx` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
   `tgl_system` date DEFAULT '2008-01-01',
   `tgl_trx` datetime NOT NULL DEFAULT '2008-01-01 01:01:01',
-  `deskripsi` varchar(150) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `id_card` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `jml_cash_rp` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `debet_rp` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `debet_fee_rp` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `nama_bank` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3;
+  `deskripsi` varchar(150) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `id_card` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `jml_cash_rp` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `debet_rp` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `debet_fee_rp` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `nama_bank` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -5684,16 +5684,16 @@ DROP TABLE IF EXISTS `tt_batal_hutang_detail`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tt_batal_hutang_detail` (
-  `no_hutang` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `sales_id` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
+  `no_hutang` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `sales_id` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `no_urut` int unsigned NOT NULL DEFAULT '1',
-  `kode_dept` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `deskripsi` varchar(50) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `berat` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `qty` varchar(5) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `jum_berat` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
+  `kode_dept` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `deskripsi` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `berat` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `qty` varchar(5) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `jum_berat` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
   PRIMARY KEY (`no_hutang`,`no_urut`,`kode_dept`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_bin;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -5713,31 +5713,31 @@ DROP TABLE IF EXISTS `tt_batal_hutang_head`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tt_batal_hutang_head` (
-  `no_hutang` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
+  `no_hutang` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
   `tgl_system` date DEFAULT '2008-01-01',
   `tgl_hutang` date NOT NULL DEFAULT '2008-01-01',
   `tgl_batal_hutang` date DEFAULT '2008-01-01',
   `jam_hutang` time NOT NULL DEFAULT '01:01:01',
-  `kode_customer` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `sales_id` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `lama_hari` varchar(4) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '1',
+  `kode_customer` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `sales_id` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `lama_hari` varchar(4) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '1',
   `tgl_jth_tmp` date NOT NULL DEFAULT '2008-01-01',
-  `input_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
+  `input_by` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
   `input_date` datetime NOT NULL DEFAULT '2008-01-01 01:01:01',
-  `berat` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `jml_awal_rp` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `bunga_persen` varchar(5) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0.00',
-  `bunga_rp` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `jml_akhir_rp` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `sld_akhir_rp` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `status` varchar(4) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT 'OPEN',
-  `berat_plus` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `Qty` varchar(5) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
+  `berat` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `jml_awal_rp` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `bunga_persen` varchar(5) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0.00',
+  `bunga_rp` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `jml_akhir_rp` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `sld_akhir_rp` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `status` varchar(4) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT 'OPEN',
+  `berat_plus` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `Qty` varchar(5) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
   `tgl_lunas` date DEFAULT '2008-01-01',
-  `byr_harus_rp` varchar(14) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `kembali_rp` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `total_lunas` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0'
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3;
+  `byr_harus_rp` varchar(14) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `kembali_rp` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `total_lunas` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -5765,7 +5765,7 @@ CREATE TABLE `tt_batal_hutang_lunas` (
   `bunga_rp` varchar(20) DEFAULT '0',
   `total_lunas` varchar(20) DEFAULT '0',
   `input_by` varchar(20) DEFAULT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -5808,7 +5808,7 @@ CREATE TABLE `tt_batal_member` (
   `berat_titip` varchar(10) DEFAULT '0',
   `jumlah_titip` varchar(10) DEFAULT '0',
   `bayar_titip` varchar(10) DEFAULT '0'
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -5828,16 +5828,16 @@ DROP TABLE IF EXISTS `tt_batal_transfer`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tt_batal_transfer` (
-  `no_trx` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
+  `no_trx` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
   `tgl_system` date DEFAULT '2008-01-01',
   `tgl_trx` datetime NOT NULL DEFAULT '2008-01-01 01:01:01',
-  `deskripsi` varchar(150) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `id_card` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `jml_cash_rp` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
+  `deskripsi` varchar(150) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `id_card` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `jml_cash_rp` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
   `transfer_rp` varchar(20) NOT NULL DEFAULT '0',
-  `card_fee_rp` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `nama_bank` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3;
+  `card_fee_rp` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `nama_bank` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -5857,15 +5857,15 @@ DROP TABLE IF EXISTS `tt_bayar_bunga`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tt_bayar_bunga` (
-  `no_hutang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '',
+  `no_hutang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '',
   `tgl_system` date DEFAULT '2008-01-01',
   `tgl_bayar` date DEFAULT '2008-01-01',
-  `dibayar` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `Saldo` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `status_close` varchar(4) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT 'OPEN',
+  `dibayar` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `Saldo` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `status_close` varchar(4) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT 'OPEN',
   KEY `no_hutang` (`no_hutang`),
   KEY `tgl_system` (`tgl_system`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_bin;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -5885,36 +5885,36 @@ DROP TABLE IF EXISTS `tt_beli_detail`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tt_beli_detail` (
-  `no_faktur_beli` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `sales_id` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
+  `no_faktur_beli` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `sales_id` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `no_urut` double NOT NULL AUTO_INCREMENT,
-  `no_faktur_ext` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_dept` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kondisi` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `nama_barang` varchar(60) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `berat_nota` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kadar` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0.00',
-  `harga_nota` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `biaya_produksi` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `harga_beli` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `harga_rata` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `qty` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '1',
-  `ppn_det_rp` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `dpp_det_rp` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `jml_det_rp` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `status` varchar(4) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT 'OPEN',
-  `status_close` varchar(4) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT 'OPEN',
+  `no_faktur_ext` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_dept` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kondisi` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `kode_barang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `nama_barang` varchar(60) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `berat_nota` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kadar` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0.00',
+  `harga_nota` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `biaya_produksi` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `harga_beli` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `harga_rata` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `qty` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '1',
+  `ppn_det_rp` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `dpp_det_rp` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `jml_det_rp` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `status` varchar(4) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT 'OPEN',
+  `status_close` varchar(4) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT 'OPEN',
   PRIMARY KEY (`no_faktur_beli`,`no_urut`),
   UNIQUE KEY `kode_barang` (`kode_barang`),
   KEY `kode_lokasi_gudang` (`kode_lokasi_gudang`),
   KEY `kode_lokasi_toko` (`kode_lokasi_toko`),
   KEY `kode_dept` (`kode_dept`),
   KEY `no_faktur_ext` (`no_faktur_ext`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_bin;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -5936,35 +5936,35 @@ DROP TABLE IF EXISTS `tt_beli_head`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tt_beli_head` (
-  `no_faktur_beli` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
+  `no_faktur_beli` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
   `tgl_system` date DEFAULT '2008-01-01',
   `tgl_faktur_beli` date NOT NULL DEFAULT '2008-01-01',
   `jam_faktur_beli` time DEFAULT '01:01:01',
-  `sales_id` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `kode_supplier` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `tot_berat` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `dpp_bruto_rp` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `disk_persen` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `disk_rp` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `dpp_netto_rp` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `dpp_intern_rp` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `selisih_dpp` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `ppn_rp` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `ppn_intern` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `selisih_ppn` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `jml_beli_rp` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `jml_beli_intern` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `selisih_jml` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `status` varchar(4) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT 'OPEN',
-  `input_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
+  `sales_id` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `kode_supplier` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `tot_berat` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `dpp_bruto_rp` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `disk_persen` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `disk_rp` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `dpp_netto_rp` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `dpp_intern_rp` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `selisih_dpp` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `ppn_rp` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `ppn_intern` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `selisih_ppn` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `jml_beli_rp` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `jml_beli_intern` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `selisih_jml` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `status` varchar(4) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT 'OPEN',
+  `input_by` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
   `input_date` datetime NOT NULL DEFAULT '2008-01-01 01:01:01',
-  `status_close` varchar(4) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT 'OPEN',
-  `status_truncate` char(1) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
+  `status_close` varchar(4) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT 'OPEN',
+  `status_truncate` char(1) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
   PRIMARY KEY (`no_faktur_beli`),
   KEY `tgl_beli` (`tgl_faktur_beli`),
   KEY `tgl_system` (`tgl_system`),
   KEY `kode_supplier` (`kode_supplier`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_bin;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -5986,36 +5986,36 @@ DROP TABLE IF EXISTS `tt_beli_retur_detail`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tt_beli_retur_detail` (
-  `no_faktur_beli` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `sales_id` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
+  `no_faktur_beli` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `sales_id` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `no_urut` double NOT NULL DEFAULT '0',
-  `no_faktur_ext` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `kode_dept` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `kondisi` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `nama_barang` varchar(60) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `berat_nota` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berat` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kadar` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0.00',
-  `harga_nota` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `biaya_produksi` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `harga_beli` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `harga_rata` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `qty` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '1',
-  `ppn_det_rp` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `dpp_det_rp` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `jml_det_rp` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `status` varchar(4) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT 'OPEN',
-  `status_close` varchar(4) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT 'OPEN',
+  `no_faktur_ext` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `kode_dept` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `kondisi` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `kode_barang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `nama_barang` varchar(60) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `berat_nota` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berat` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kadar` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0.00',
+  `harga_nota` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `biaya_produksi` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `harga_beli` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `harga_rata` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `qty` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '1',
+  `ppn_det_rp` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `dpp_det_rp` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `jml_det_rp` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `status` varchar(4) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT 'OPEN',
+  `status_close` varchar(4) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT 'OPEN',
   KEY `no_faktur_beli` (`no_faktur_beli`),
   KEY `no_faktur_ext` (`no_faktur_ext`),
   KEY `kode_lokasi_gudang` (`kode_lokasi_gudang`),
   KEY `kode_lokasi_toko` (`kode_lokasi_toko`),
   KEY `kode_dept` (`kode_dept`),
   KEY `kode_barang` (`kode_barang`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_bin;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -6036,33 +6036,33 @@ DROP TABLE IF EXISTS `tt_beli_retur_head`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tt_beli_retur_head` (
-  `no_faktur_beli` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
+  `no_faktur_beli` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
   `tgl_system` date DEFAULT '2008-01-01',
   `tgl_faktur_beli` date NOT NULL DEFAULT '2008-01-01',
   `jam_faktur_beli` time DEFAULT '01:01:01',
-  `sales_id` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `kode_supplier` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `tot_berat` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `dpp_bruto_rp` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `disk_persen` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `disk_rp` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `dpp_netto_rp` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `dpp_intern_rp` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `selisih_dpp` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `ppn_rp` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `ppn_intern` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `selisih_ppn` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `jml_beli_rp` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `jml_beli_intern` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `selisih_jml` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `status` varchar(4) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT 'OPEN',
-  `input_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
+  `sales_id` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `kode_supplier` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `tot_berat` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `dpp_bruto_rp` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `disk_persen` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `disk_rp` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `dpp_netto_rp` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `dpp_intern_rp` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `selisih_dpp` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `ppn_rp` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `ppn_intern` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `selisih_ppn` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `jml_beli_rp` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `jml_beli_intern` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `selisih_jml` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `status` varchar(4) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT 'OPEN',
+  `input_by` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
   `input_date` datetime NOT NULL DEFAULT '2008-01-01 01:01:01',
-  `status_close` varchar(4) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT 'OPEN',
-  `status_truncate` char(1) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
+  `status_close` varchar(4) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT 'OPEN',
+  `status_truncate` char(1) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
   KEY `no_faktur_beli` (`no_faktur_beli`),
   KEY `tgl_system` (`tgl_system`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_bin;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -6083,18 +6083,18 @@ DROP TABLE IF EXISTS `tt_card`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tt_card` (
-  `no_trx` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
+  `no_trx` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
   `tgl_system` date DEFAULT '2008-01-01',
   `tgl_trx` datetime NOT NULL DEFAULT '2008-01-01 01:01:01',
-  `deskripsi` varchar(150) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `id_card` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `jml_cash_rp` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `card_rp` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `card_fee_rp` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `kode_bank` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
+  `deskripsi` varchar(150) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `id_card` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `jml_cash_rp` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `card_rp` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `card_fee_rp` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `kode_bank` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   PRIMARY KEY (`no_trx`),
   KEY `tgl_system` (`tgl_system`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_bin;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -6115,18 +6115,18 @@ DROP TABLE IF EXISTS `tt_card_dump`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tt_card_dump` (
-  `no_trx` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
+  `no_trx` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
   `tgl_system` date DEFAULT '2008-01-01',
   `tgl_trx` datetime NOT NULL DEFAULT '2008-01-01 01:01:01',
-  `deskripsi` varchar(150) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `id_card` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `jml_cash_rp` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `card_rp` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `card_fee_rp` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `kode_bank` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
+  `deskripsi` varchar(150) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `id_card` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `jml_cash_rp` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `card_rp` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `card_fee_rp` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `kode_bank` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   PRIMARY KEY (`no_trx`),
   KEY `tgl_system` (`tgl_system`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_bin;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -6146,20 +6146,20 @@ DROP TABLE IF EXISTS `tt_cash_daily`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tt_cash_daily` (
-  `no_ref` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `type_trx` varchar(1) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT 'D',
+  `no_ref` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `type_trx` varchar(1) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT 'D',
   `tanggal` date NOT NULL DEFAULT '2008-01-01',
   `jam` time NOT NULL DEFAULT '01:01:01',
-  `input_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `kategori` varchar(30) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `deskripsi` varchar(50) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `sld_awal_rp` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `jumlah_rp` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `sld_akhir_rp` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
+  `input_by` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `kategori` varchar(30) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `deskripsi` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `sld_awal_rp` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `jumlah_rp` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `sld_akhir_rp` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
   PRIMARY KEY (`no_ref`),
   KEY `tanggal` (`tanggal`),
   KEY `deskripsi` (`deskripsi`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_bin;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -6180,18 +6180,18 @@ DROP TABLE IF EXISTS `tt_debet`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tt_debet` (
-  `no_trx` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
+  `no_trx` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
   `tgl_system` date DEFAULT '2008-01-01',
   `tgl_trx` datetime NOT NULL DEFAULT '2008-01-01 01:01:01',
-  `deskripsi` varchar(150) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `id_card` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `jml_cash_rp` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `debet_rp` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `debet_fee_rp` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `kode_bank` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
+  `deskripsi` varchar(150) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `id_card` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `jml_cash_rp` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `debet_rp` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `debet_fee_rp` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `kode_bank` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   PRIMARY KEY (`no_trx`),
   KEY `tgl_system` (`tgl_system`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_bin;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -6212,18 +6212,18 @@ DROP TABLE IF EXISTS `tt_debet_dump`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tt_debet_dump` (
-  `no_trx` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
+  `no_trx` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
   `tgl_system` date DEFAULT '2008-01-01',
   `tgl_trx` datetime NOT NULL DEFAULT '2008-01-01 01:01:01',
-  `deskripsi` varchar(150) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `id_card` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `jml_cash_rp` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `debet_rp` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `debet_fee_rp` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `kode_bank` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
+  `deskripsi` varchar(150) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `id_card` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `jml_cash_rp` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `debet_rp` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `debet_fee_rp` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `kode_bank` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   PRIMARY KEY (`no_trx`),
   KEY `tgl_system` (`tgl_system`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_bin;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -6243,24 +6243,24 @@ DROP TABLE IF EXISTS `tt_hilang_detail`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tt_hilang_detail` (
-  `no_hilang` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `no_urut` varchar(4) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '1',
-  `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `nama_barang` varchar(60) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `qty` varchar(6) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `berat` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `harga_beli_rp` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `biaya_produksi_rp` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `jml_beli_det_rp` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `harga_skrg` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `harga_jual_rp` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `jml_jual_det_rp` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `kondisi_barang` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `status_close` varchar(4) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT 'OPEN',
+  `no_hilang` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `no_urut` varchar(4) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '1',
+  `kode_barang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `nama_barang` varchar(60) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `qty` varchar(6) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `berat` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `harga_beli_rp` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `biaya_produksi_rp` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `jml_beli_det_rp` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `harga_skrg` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `harga_jual_rp` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `jml_jual_det_rp` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `kondisi_barang` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `status_close` varchar(4) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT 'OPEN',
   PRIMARY KEY (`no_hilang`,`no_urut`,`kode_lokasi_gudang`,`kode_lokasi_toko`,`kode_barang`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_bin;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -6281,19 +6281,19 @@ DROP TABLE IF EXISTS `tt_hilang_head`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tt_hilang_head` (
-  `no_hilang` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
+  `no_hilang` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
   `tgl_system` date DEFAULT '2008-01-01',
-  `sales_id` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
+  `sales_id` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
   `tgl_hilang` date NOT NULL DEFAULT '2008-01-01',
   `jam_hilang` time NOT NULL DEFAULT '01:01:01',
-  `jml_beli_rp` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `jml_jual_rp` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `input_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
+  `jml_beli_rp` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `jml_jual_rp` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `input_by` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
   `input_date` datetime NOT NULL DEFAULT '2008-01-01 01:01:01',
-  `status_close` varchar(4) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT 'OPEN',
+  `status_close` varchar(4) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT 'OPEN',
   PRIMARY KEY (`no_hilang`),
   KEY `tgl_system` (`tgl_system`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_bin;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -6314,17 +6314,17 @@ DROP TABLE IF EXISTS `tt_hutang_detail`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tt_hutang_detail` (
-  `no_hutang` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `sales_id` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
+  `no_hutang` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `sales_id` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `no_urut` int unsigned NOT NULL DEFAULT '1',
-  `kode_dept` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `deskripsi` varchar(50) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `berat` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `qty` varchar(5) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `jum_berat` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
+  `kode_dept` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `deskripsi` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `berat` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `qty` varchar(5) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `jum_berat` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
   PRIMARY KEY (`no_hutang`,`no_urut`,`kode_dept`),
   KEY `kode_dept` (`kode_dept`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_bin;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -6344,37 +6344,37 @@ DROP TABLE IF EXISTS `tt_hutang_head`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tt_hutang_head` (
-  `no_hutang` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
+  `no_hutang` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
   `tgl_system` date DEFAULT '2008-01-01',
   `tgl_hutang` date NOT NULL DEFAULT '2008-01-01',
   `tgl_batal_hutang` date DEFAULT '2008-01-01',
   `jam_hutang` time NOT NULL DEFAULT '01:01:01',
-  `kode_customer` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `sales_id` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `lama_hari` varchar(4) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '1',
+  `kode_customer` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `sales_id` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `lama_hari` varchar(4) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '1',
   `tgl_jth_tmp` date NOT NULL DEFAULT '2008-01-01',
-  `input_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
+  `input_by` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
   `input_date` datetime NOT NULL DEFAULT '2008-01-01 01:01:01',
-  `berat` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `jml_awal_rp` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `bunga_persen` varchar(5) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0.00',
-  `bunga_rp` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `jml_akhir_rp` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `sld_akhir_rp` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `status` varchar(4) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT 'OPEN',
-  `berat_plus` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `Qty` varchar(5) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
+  `berat` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `jml_awal_rp` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `bunga_persen` varchar(5) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0.00',
+  `bunga_rp` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `jml_akhir_rp` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `sld_akhir_rp` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `status` varchar(4) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT 'OPEN',
+  `berat_plus` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `Qty` varchar(5) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
   `tgl_lunas` date DEFAULT '2008-01-01',
-  `byr_harus_rp` varchar(14) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `kembali_rp` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `total_lunas` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
+  `byr_harus_rp` varchar(14) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `kembali_rp` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `total_lunas` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
   PRIMARY KEY (`no_hutang`),
   KEY `tgl_system` (`tgl_system`),
   KEY `kode_customer` (`kode_customer`),
   KEY `tgl_lunas` (`tgl_lunas`),
   KEY `tgl_batal_hutang` (`tgl_batal_hutang`),
   KEY `tgl_jth_tmp` (`tgl_jth_tmp`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_bin;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -6394,32 +6394,32 @@ DROP TABLE IF EXISTS `tt_jual_detail`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tt_jual_detail` (
-  `no_faktur_jual` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `input_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `no_urut` varchar(4) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '1',
-  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `kode_dept` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_barcode` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_intern` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `nama_barang` varchar(60) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `nama_atribut` varchar(60) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `berat` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `qty` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '1',
-  `harga_beli` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `harga_jual` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `harga_atribut` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `ongkos_detail` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `dpp_detail` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `berlian_rp` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `ongkos_berlian` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berlian_usd` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `curr_rp` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `ppn_detail` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `status_update` char(1) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `sales_id` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `status_close` varchar(4) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT 'OPEN',
+  `no_faktur_jual` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `input_by` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `no_urut` varchar(4) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '1',
+  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `kode_dept` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `kode_barang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_barcode` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_intern` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `nama_barang` varchar(60) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `nama_atribut` varchar(60) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `berat` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `qty` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '1',
+  `harga_beli` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `harga_jual` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `harga_atribut` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `ongkos_detail` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `dpp_detail` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `berlian_rp` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `ongkos_berlian` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berlian_usd` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `curr_rp` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `ppn_detail` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `status_update` char(1) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `sales_id` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `status_close` varchar(4) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT 'OPEN',
   PRIMARY KEY (`no_faktur_jual`,`kode_barang`,`kode_barcode`),
   UNIQUE KEY `kode_barcode` (`kode_barcode`),
   UNIQUE KEY `kode_barang` (`kode_barang`),
@@ -6427,7 +6427,7 @@ CREATE TABLE `tt_jual_detail` (
   KEY `kode_lokasi_gudang` (`kode_lokasi_gudang`),
   KEY `kode_lokasi_toko` (`kode_lokasi_toko`),
   KEY `kode_dept` (`kode_dept`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_bin;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -6448,32 +6448,32 @@ DROP TABLE IF EXISTS `tt_jual_detail_dump`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tt_jual_detail_dump` (
-  `no_faktur_jual` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `input_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `no_urut` varchar(4) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '1',
-  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `kode_dept` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_barcode` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_intern` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `nama_barang` varchar(60) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `nama_atribut` varchar(60) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `berat` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `qty` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '1',
-  `harga_beli` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `harga_jual` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `harga_atribut` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `ongkos_detail` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `dpp_detail` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `berlian_rp` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `ongkos_berlian` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `berlian_usd` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `curr_rp` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `ppn_detail` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `status_update` char(1) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `sales_id` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `status_close` varchar(4) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT 'OPEN',
+  `no_faktur_jual` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `input_by` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `no_urut` varchar(4) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '1',
+  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `kode_dept` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `kode_barang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_barcode` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_intern` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `nama_barang` varchar(60) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `nama_atribut` varchar(60) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `berat` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `qty` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '1',
+  `harga_beli` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `harga_jual` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `harga_atribut` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `ongkos_detail` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `dpp_detail` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `berlian_rp` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `ongkos_berlian` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `berlian_usd` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `curr_rp` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `ppn_detail` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `status_update` char(1) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `sales_id` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `status_close` varchar(4) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT 'OPEN',
   PRIMARY KEY (`no_faktur_jual`,`kode_barang`,`kode_barcode`),
   UNIQUE KEY `kode_barcode` (`kode_barcode`),
   UNIQUE KEY `kode_barang` (`kode_barang`),
@@ -6481,7 +6481,7 @@ CREATE TABLE `tt_jual_detail_dump` (
   KEY `kode_lokasi_gudang` (`kode_lokasi_gudang`),
   KEY `kode_lokasi_toko` (`kode_lokasi_toko`),
   KEY `kode_dept` (`kode_dept`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_bin;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -6502,18 +6502,18 @@ DROP TABLE IF EXISTS `tt_jual_diskon`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tt_jual_diskon` (
-  `no_faktur_jual` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
+  `no_faktur_jual` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
   `tgl_system` date DEFAULT '2008-01-01',
   `tgl_faktur_jual` date NOT NULL DEFAULT '2008-01-01',
   `jam_faktur_jual` time NOT NULL DEFAULT '01:01:01',
-  `kode_customer` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `dpp_bruto_rp` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `pembulat_rp` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `disk_faktur_rp` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `dpp_netto_rp` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `input_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `status_close` varchar(4) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT 'OPEN'
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_bin;
+  `kode_customer` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `dpp_bruto_rp` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `pembulat_rp` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `disk_faktur_rp` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `dpp_netto_rp` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `input_by` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `status_close` varchar(4) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT 'OPEN'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -6533,39 +6533,39 @@ DROP TABLE IF EXISTS `tt_jual_head`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tt_jual_head` (
-  `no_faktur_jual` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
+  `no_faktur_jual` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
   `tgl_system` date DEFAULT '2008-01-01',
   `tgl_faktur_jual` date NOT NULL DEFAULT '2008-01-01',
   `jam_faktur_jual` time NOT NULL DEFAULT '01:01:01',
-  `kode_customer` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `berat` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `dpp_bruto_rp` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `disk_persen` varchar(2) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `disk_rp` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `dpp_netto_rp` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `ongkos_rp` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `ppn_rp` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `jml_jual_rp` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `dibayar_rp` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `debet_rp` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `card_rp` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `card_fee_rp` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `transfer_rp` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `tukar_rp` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `pembulat_rp` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `kembali_rp` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `input_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
+  `kode_customer` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `berat` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `dpp_bruto_rp` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `disk_persen` varchar(2) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `disk_rp` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `dpp_netto_rp` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `ongkos_rp` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `ppn_rp` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `jml_jual_rp` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `dibayar_rp` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `debet_rp` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `card_rp` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `card_fee_rp` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `transfer_rp` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `tukar_rp` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `pembulat_rp` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `kembali_rp` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `input_by` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
   `input_date` datetime NOT NULL DEFAULT '2008-01-01 01:01:01',
-  `status_update` char(1) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `status_return` varchar(4) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT 'OPEN',
-  `stat_tukar` char(1) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `status_truncate` char(1) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `no_faktur_group` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
+  `status_update` char(1) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `status_return` varchar(4) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT 'OPEN',
+  `stat_tukar` char(1) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `status_truncate` char(1) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `no_faktur_group` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   PRIMARY KEY (`no_faktur_jual`),
   KEY `tgl_system` (`tgl_system`),
   KEY `kode_customer` (`kode_customer`),
   KEY `tgl_faktur_jual` (`tgl_faktur_jual`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_bin;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -6586,39 +6586,39 @@ DROP TABLE IF EXISTS `tt_jual_head_dump`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tt_jual_head_dump` (
-  `no_faktur_jual` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
+  `no_faktur_jual` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
   `tgl_system` date DEFAULT '2008-01-01',
   `tgl_faktur_jual` date NOT NULL DEFAULT '2008-01-01',
   `jam_faktur_jual` time NOT NULL DEFAULT '01:01:01',
-  `kode_customer` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `berat` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `dpp_bruto_rp` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `disk_persen` varchar(2) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `disk_rp` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `dpp_netto_rp` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `ongkos_rp` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `ppn_rp` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `jml_jual_rp` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `dibayar_rp` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `debet_rp` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `card_rp` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `card_fee_rp` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `transfer_rp` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `tukar_rp` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `pembulat_rp` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `kembali_rp` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `input_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
+  `kode_customer` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `berat` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `dpp_bruto_rp` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `disk_persen` varchar(2) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `disk_rp` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `dpp_netto_rp` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `ongkos_rp` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `ppn_rp` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `jml_jual_rp` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `dibayar_rp` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `debet_rp` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `card_rp` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `card_fee_rp` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `transfer_rp` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `tukar_rp` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `pembulat_rp` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `kembali_rp` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `input_by` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
   `input_date` datetime NOT NULL DEFAULT '2008-01-01 01:01:01',
-  `status_update` char(1) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `status_return` varchar(4) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT 'OPEN',
-  `stat_tukar` char(1) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `status_truncate` char(1) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `no_faktur_group` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
+  `status_update` char(1) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `status_return` varchar(4) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT 'OPEN',
+  `stat_tukar` char(1) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `status_truncate` char(1) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `no_faktur_group` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   PRIMARY KEY (`no_faktur_jual`),
   KEY `tgl_system` (`tgl_system`),
   KEY `kode_customer` (`kode_customer`),
   KEY `tgl_faktur_jual` (`tgl_faktur_jual`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_bin;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -6639,28 +6639,28 @@ DROP TABLE IF EXISTS `tt_jual_retur_detail`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tt_jual_retur_detail` (
-  `no_retur_jual` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `no_urut` varchar(4) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '1',
-  `no_faktur_jual` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_barang` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `nama_barang` varchar(50) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `berat` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `harga` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `ongkos` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `jml_detail` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `qty_retur` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '1',
-  `harga_jual` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `harga_atribut` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `ongkos_detail` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `dpp_detail_rp` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `ppn_detail_rp` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `jml_detail_rp` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `sales_id` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `alasan` varchar(30) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `status_close` varchar(4) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT 'OPEN',
+  `no_retur_jual` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `no_urut` varchar(4) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '1',
+  `no_faktur_jual` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_barang` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `nama_barang` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `berat` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `harga` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `ongkos` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `jml_detail` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `qty_retur` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '1',
+  `harga_jual` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `harga_atribut` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `ongkos_detail` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `dpp_detail_rp` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `ppn_detail_rp` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `jml_detail_rp` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `sales_id` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `alasan` varchar(30) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `status_close` varchar(4) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT 'OPEN',
   PRIMARY KEY (`no_retur_jual`,`no_faktur_jual`,`kode_barang`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_bin;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -6681,20 +6681,20 @@ DROP TABLE IF EXISTS `tt_jual_retur_head`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tt_jual_retur_head` (
-  `no_retur_jual` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
+  `no_retur_jual` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
   `tgl_system` date DEFAULT '2008-01-01',
   `tgl_retur_jual` date NOT NULL DEFAULT '2008-01-01',
-  `kode_customer` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `dpp_netto_rp` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `ppn_rp` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `jml_retur_rp` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `input_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
+  `kode_customer` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `dpp_netto_rp` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `ppn_rp` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `jml_retur_rp` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `input_by` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
   `input_date` datetime NOT NULL DEFAULT '2008-01-01 01:01:01',
-  `status_close` varchar(4) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT 'OPEN',
+  `status_close` varchar(4) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT 'OPEN',
   PRIMARY KEY (`no_retur_jual`),
   KEY `kode_customer` (`kode_customer`),
   KEY `tgl_system` (`tgl_system`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_bin;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -6715,17 +6715,17 @@ DROP TABLE IF EXISTS `tt_jual_sales`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tt_jual_sales` (
-  `no_faktur_jual` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
+  `no_faktur_jual` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
   `tgl_system` date DEFAULT '2008-01-01',
   `tgl_faktur_jual` date NOT NULL DEFAULT '2008-01-01',
   `jam_faktur_jual` time NOT NULL DEFAULT '01:01:01',
-  `sales_id` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `jml_jual_rp` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `ongkos_rp` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
+  `sales_id` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `jml_jual_rp` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `ongkos_rp` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
   PRIMARY KEY (`no_faktur_jual`),
   KEY `tgl_system` (`tgl_system`),
   KEY `tgl_faktur_jual` (`tgl_faktur_jual`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_bin;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -6746,17 +6746,17 @@ DROP TABLE IF EXISTS `tt_jual_sales_dump`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tt_jual_sales_dump` (
-  `no_faktur_jual` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
+  `no_faktur_jual` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
   `tgl_system` date DEFAULT '2008-01-01',
   `tgl_faktur_jual` date NOT NULL DEFAULT '2008-01-01',
   `jam_faktur_jual` time NOT NULL DEFAULT '01:01:01',
-  `sales_id` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `jml_jual_rp` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `ongkos_rp` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
+  `sales_id` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `jml_jual_rp` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `ongkos_rp` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
   PRIMARY KEY (`no_faktur_jual`),
   KEY `tgl_system` (`tgl_system`),
   KEY `tgl_faktur_jual` (`tgl_faktur_jual`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_bin;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -6777,18 +6777,18 @@ DROP TABLE IF EXISTS `tt_jual_tukar_detail`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tt_jual_tukar_detail` (
-  `no_faktur_jual` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `input_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `no_urut` varchar(4) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '1',
-  `nama_barang` varchar(60) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `berat` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `qty` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '1',
-  `harga_jual` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `status_update` char(1) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `sales_id` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `status_close` varchar(4) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT 'OPEN',
+  `no_faktur_jual` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `input_by` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `no_urut` varchar(4) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '1',
+  `nama_barang` varchar(60) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `berat` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `qty` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '1',
+  `harga_jual` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `status_update` char(1) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `sales_id` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `status_close` varchar(4) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT 'OPEN',
   PRIMARY KEY (`no_faktur_jual`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_bin;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -6809,22 +6809,22 @@ DROP TABLE IF EXISTS `tt_jual_tukar_head`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tt_jual_tukar_head` (
-  `no_faktur_jual` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
+  `no_faktur_jual` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
   `tgl_system` date DEFAULT '2008-01-01',
   `tgl_faktur_jual` date NOT NULL DEFAULT '2008-01-01',
-  `berat` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `jml_jual_rp` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `dibayar_rp` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `input_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
+  `berat` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `jml_jual_rp` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `dibayar_rp` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `input_by` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
   `input_date` datetime NOT NULL DEFAULT '2008-01-01 01:01:01',
-  `status_update` char(1) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `status_return` varchar(4) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT 'OPEN',
-  `status_tukar` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `no_faktur_group` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
+  `status_update` char(1) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `status_return` varchar(4) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT 'OPEN',
+  `status_tukar` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `no_faktur_group` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   PRIMARY KEY (`no_faktur_jual`),
   KEY `tgl_system` (`tgl_system`),
   KEY `status_tukar` (`status_tukar`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_bin;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -6871,7 +6871,7 @@ CREATE TABLE `tt_member` (
   PRIMARY KEY (`no_trx`),
   UNIQUE KEY `no_trx` (`no_trx`),
   KEY `no_trx_2` (`no_trx`,`kode_customer`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -6891,24 +6891,24 @@ DROP TABLE IF EXISTS `tt_persekot_batal_detail`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tt_persekot_batal_detail` (
-  `no_persekot` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `sales_id` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
+  `no_persekot` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `sales_id` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `no_urut` int unsigned NOT NULL DEFAULT '1',
-  `kode_group` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `deskripsi_short` varchar(60) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `nama_atribut` varchar(60) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `deskripsi` varchar(600) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `berat` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `berat_akhir` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `kadar` varchar(6) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0.00',
-  `kadar_akhir` varchar(6) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `qty` varchar(5) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `harga` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `harga_atribut` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `ongkos_detail` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `jml_detail_rp` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `status_close` varchar(4) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT 'OPEN'
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_bin;
+  `kode_group` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `deskripsi_short` varchar(60) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `nama_atribut` varchar(60) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `deskripsi` varchar(600) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `berat` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `berat_akhir` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `kadar` varchar(6) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0.00',
+  `kadar_akhir` varchar(6) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `qty` varchar(5) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `harga` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `harga_atribut` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `ongkos_detail` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `jml_detail_rp` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `status_close` varchar(4) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT 'OPEN'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -6928,29 +6928,29 @@ DROP TABLE IF EXISTS `tt_persekot_batal_head`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tt_persekot_batal_head` (
-  `no_persekot` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
+  `no_persekot` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
   `tgl_system` date DEFAULT '2008-01-01',
   `tgl_persekot` date NOT NULL DEFAULT '2008-01-01',
   `jam_persekot` time NOT NULL DEFAULT '01:01:01',
   `tgl_selesai` date DEFAULT '2008-01-01',
   `tgl_serah` date DEFAULT '2008-01-01',
-  `kode_customer` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `sales_id` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
+  `kode_customer` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `sales_id` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `tgl_ambil` date NOT NULL DEFAULT '2008-01-01',
-  `input_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
+  `input_by` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
   `input_date` datetime NOT NULL DEFAULT '2008-01-01 01:01:01',
-  `berat` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `dibayar_rp` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `debet_rp` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `card_rp` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `card_fee_rp` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `ongkos_rp` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `jml_awal_rp` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `jml_akhir_rp` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `sld_akhir_rp` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `status` varchar(4) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT 'OPEN',
-  `status_close` varchar(4) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT 'OPEN'
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_bin;
+  `berat` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `dibayar_rp` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `debet_rp` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `card_rp` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `card_fee_rp` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `ongkos_rp` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `jml_awal_rp` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `jml_akhir_rp` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `sld_akhir_rp` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `status` varchar(4) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT 'OPEN',
+  `status_close` varchar(4) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT 'OPEN'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -6970,25 +6970,25 @@ DROP TABLE IF EXISTS `tt_persekot_detail`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tt_persekot_detail` (
-  `no_persekot` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `sales_id` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
+  `no_persekot` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `sales_id` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `no_urut` int unsigned NOT NULL DEFAULT '1',
-  `kode_group` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `deskripsi_short` varchar(60) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `nama_atribut` varchar(60) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `deskripsi` varchar(600) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `berat` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `berat_akhir` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `kadar` varchar(6) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0.00',
-  `kadar_akhir` varchar(6) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `qty` varchar(5) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `harga` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `harga_atribut` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `ongkos_detail` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `jml_detail_rp` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `status_close` varchar(4) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT 'OPEN',
+  `kode_group` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `deskripsi_short` varchar(60) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `nama_atribut` varchar(60) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `deskripsi` varchar(600) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `berat` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `berat_akhir` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `kadar` varchar(6) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0.00',
+  `kadar_akhir` varchar(6) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `qty` varchar(5) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `harga` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `harga_atribut` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `ongkos_detail` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `jml_detail_rp` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `status_close` varchar(4) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT 'OPEN',
   PRIMARY KEY (`no_persekot`,`no_urut`,`kode_group`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_bin;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -7008,33 +7008,33 @@ DROP TABLE IF EXISTS `tt_persekot_head`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tt_persekot_head` (
-  `no_persekot` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
+  `no_persekot` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
   `tgl_system` date DEFAULT '2008-01-01',
   `tgl_persekot` date NOT NULL DEFAULT '2008-01-01',
   `jam_persekot` time NOT NULL DEFAULT '01:01:01',
   `tgl_selesai` date DEFAULT '2008-01-01',
   `tgl_serah` date DEFAULT NULL,
-  `kode_customer` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `sales_id` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
+  `kode_customer` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `sales_id` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `tgl_ambil` date NOT NULL DEFAULT '2008-01-01',
-  `input_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
+  `input_by` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
   `input_date` datetime NOT NULL DEFAULT '2008-01-01 01:01:01',
-  `berat` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `dibayar_rp` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `debet_rp` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `card_rp` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `card_fee_rp` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `ongkos_rp` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `jml_awal_rp` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `jml_akhir_rp` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `sld_akhir_rp` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `status` varchar(4) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT 'OPEN',
-  `status_close` varchar(4) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT 'OPEN',
+  `berat` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `dibayar_rp` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `debet_rp` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `card_rp` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `card_fee_rp` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `ongkos_rp` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `jml_awal_rp` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `jml_akhir_rp` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `sld_akhir_rp` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `status` varchar(4) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT 'OPEN',
+  `status_close` varchar(4) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT 'OPEN',
   PRIMARY KEY (`no_persekot`),
   KEY `tgl_system` (`tgl_system`),
   KEY `tgl_persekot` (`tgl_persekot`),
   KEY `kode_customer` (`kode_customer`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_bin;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -7054,20 +7054,20 @@ DROP TABLE IF EXISTS `tt_pindah_detail`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tt_pindah_detail` (
-  `no_pindah` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `no_urut` varchar(4) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '1',
-  `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `qty` varchar(6) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `berat` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `jml_detail` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `gudang_asal` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `lokasi_asal` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `gudang_to` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `lokasi_to` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `status_close` varchar(4) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT 'OPEN',
+  `no_pindah` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `no_urut` varchar(4) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '1',
+  `kode_barang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `qty` varchar(6) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `berat` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `jml_detail` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `gudang_asal` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `lokasi_asal` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `gudang_to` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `lokasi_to` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `status_close` varchar(4) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT 'OPEN',
   PRIMARY KEY (`no_pindah`,`no_urut`,`kode_barang`),
   KEY `kode_barang` (`kode_barang`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_bin;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -7087,18 +7087,18 @@ DROP TABLE IF EXISTS `tt_pindah_head`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tt_pindah_head` (
-  `no_pindah` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
+  `no_pindah` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
   `tgl_system` date DEFAULT '2008-01-01',
   `tgl_pindah` date NOT NULL DEFAULT '2008-01-01',
   `jam_pindah` time NOT NULL DEFAULT '01:01:01',
-  `jml_berat` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `input_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
+  `jml_berat` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `input_by` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
   `input_date` datetime NOT NULL DEFAULT '2008-01-01 01:01:01',
-  `status_close` varchar(4) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT 'OPEN',
+  `status_close` varchar(4) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT 'OPEN',
   PRIMARY KEY (`no_pindah`),
   KEY `tgl_system` (`tgl_system`),
   KEY `tgl_pindah` (`tgl_pindah`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_bin;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -7122,7 +7122,7 @@ CREATE TABLE `tt_poin` (
   `kode_member` varchar(10) DEFAULT NULL,
   `deskripsi` varchar(20) DEFAULT NULL,
   `poin` varchar(10) DEFAULT '0'
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -7144,21 +7144,21 @@ DROP TABLE IF EXISTS `tt_saldo_kasir`;
 CREATE TABLE `tt_saldo_kasir` (
   `tgl_system` date NOT NULL DEFAULT '2008-01-01',
   `jam` time NOT NULL DEFAULT '01:01:01',
-  `user_id` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_trx` varchar(3) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT 'STR',
-  `100ribu` varchar(3) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `50ribu` varchar(3) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `20ribu` varchar(5) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `10ribu` varchar(5) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `5ribu` varchar(5) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `1ribu` varchar(5) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `5ratus` varchar(5) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `1ratus` varchar(5) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `jml_rp` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `input_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
+  `user_id` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_trx` varchar(3) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT 'STR',
+  `100ribu` varchar(3) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `50ribu` varchar(3) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `20ribu` varchar(5) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `10ribu` varchar(5) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `5ribu` varchar(5) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `1ribu` varchar(5) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `5ratus` varchar(5) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `1ratus` varchar(5) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `jml_rp` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `input_by` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
   `input_date` datetime NOT NULL DEFAULT '2008-01-01 01:01:01',
   PRIMARY KEY (`tgl_system`,`user_id`,`kode_trx`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_bin;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -7180,12 +7180,12 @@ DROP TABLE IF EXISTS `tt_saldo_kasir_selisih`;
 CREATE TABLE `tt_saldo_kasir_selisih` (
   `tgl_system` date NOT NULL DEFAULT '2008-01-01',
   `jam` time NOT NULL DEFAULT '00:00:00',
-  `user_id` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `jml_rp` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `input_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
+  `user_id` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `jml_rp` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `input_by` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
   `input_date` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`tgl_system`,`user_id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_bin;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -7205,18 +7205,18 @@ DROP TABLE IF EXISTS `tt_service_batal_detail`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tt_service_batal_detail` (
-  `no_service` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `sales_id` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
+  `no_service` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `sales_id` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `no_urut` int unsigned NOT NULL DEFAULT '1',
-  `nama_barang` varchar(60) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `deskripsi` varchar(50) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `berat` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `qty` varchar(5) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `ongkos_detail` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `jml_detail_rp` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `status` varchar(4) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT 'OPEN',
-  `status_close` varchar(4) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT 'OPEN'
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_bin;
+  `nama_barang` varchar(60) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `deskripsi` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `berat` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `qty` varchar(5) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `ongkos_detail` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `jml_detail_rp` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `status` varchar(4) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT 'OPEN',
+  `status_close` varchar(4) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT 'OPEN'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -7236,28 +7236,28 @@ DROP TABLE IF EXISTS `tt_service_batal_head`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tt_service_batal_head` (
-  `no_service` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
+  `no_service` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
   `tgl_system` date DEFAULT '2008-01-01',
   `tgl_service` date NOT NULL DEFAULT '2008-01-01',
   `jam_service` time NOT NULL DEFAULT '01:01:01',
-  `kode_customer` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `sales_id` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
+  `kode_customer` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `sales_id` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `tgl_selesai` date DEFAULT '2008-01-01',
   `tgl_ambil` date NOT NULL DEFAULT '2008-01-01',
-  `input_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
+  `input_by` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
   `input_date` datetime NOT NULL DEFAULT '2008-01-01 01:01:01',
-  `berat` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `dibayar_rp` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `debet_rp` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `card_rp` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `card_fee_rp` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `ongkos_rp` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `jml_awal_rp` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `jml_akhir_rp` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `sld_akhir_rp` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `status` varchar(4) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT 'OPEN',
-  `status_close` varchar(4) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT 'OPEN'
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_bin;
+  `berat` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `dibayar_rp` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `debet_rp` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `card_rp` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `card_fee_rp` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `ongkos_rp` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `jml_awal_rp` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `jml_akhir_rp` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `sld_akhir_rp` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `status` varchar(4) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT 'OPEN',
+  `status_close` varchar(4) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT 'OPEN'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -7277,19 +7277,19 @@ DROP TABLE IF EXISTS `tt_service_detail`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tt_service_detail` (
-  `no_service` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `sales_id` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
+  `no_service` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `sales_id` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `no_urut` int unsigned NOT NULL DEFAULT '1',
-  `nama_barang` varchar(60) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `deskripsi` varchar(500) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `berat` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `qty` varchar(5) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `ongkos_detail` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `jml_detail_rp` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `status` varchar(4) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT 'OPEN',
-  `status_close` varchar(4) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT 'OPEN',
+  `nama_barang` varchar(60) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `deskripsi` varchar(500) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `berat` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `qty` varchar(5) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `ongkos_detail` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `jml_detail_rp` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `status` varchar(4) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT 'OPEN',
+  `status_close` varchar(4) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT 'OPEN',
   PRIMARY KEY (`no_service`,`no_urut`,`nama_barang`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_bin;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -7309,31 +7309,31 @@ DROP TABLE IF EXISTS `tt_service_head`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tt_service_head` (
-  `no_service` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
+  `no_service` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
   `tgl_system` date DEFAULT '2008-01-01',
   `tgl_service` date NOT NULL DEFAULT '2008-01-01',
   `jam_service` time NOT NULL DEFAULT '01:01:01',
-  `kode_customer` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `sales_id` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
+  `kode_customer` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `sales_id` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `tgl_selesai` date DEFAULT '2008-01-01',
   `tgl_ambil` date NOT NULL DEFAULT '2008-01-01',
-  `input_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
+  `input_by` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
   `input_date` datetime NOT NULL DEFAULT '2008-01-01 01:01:01',
-  `berat` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `dibayar_rp` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `debet_rp` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `card_rp` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `card_fee_rp` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `ongkos_rp` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `jml_awal_rp` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `jml_akhir_rp` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `sld_akhir_rp` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `status` varchar(4) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT 'OPEN',
-  `status_close` varchar(4) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT 'OPEN',
+  `berat` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `dibayar_rp` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `debet_rp` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `card_rp` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `card_fee_rp` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `ongkos_rp` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `jml_awal_rp` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `jml_akhir_rp` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `sld_akhir_rp` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `status` varchar(4) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT 'OPEN',
+  `status_close` varchar(4) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT 'OPEN',
   PRIMARY KEY (`no_service`),
   KEY `tgl_system` (`tgl_system`),
   KEY `kode_customer` (`kode_customer`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_bin;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -7353,25 +7353,25 @@ DROP TABLE IF EXISTS `tt_titip_batal_detail`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tt_titip_batal_detail` (
-  `no_titip` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `input_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `no_urut` varchar(4) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '1',
-  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `kode_group` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `kode_dept` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `nama_barang` varchar(60) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `nama_atribut` varchar(60) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `berat` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `qty` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '1',
-  `harga_beli` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `harga_jual` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `ongkos_detail` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `jml_detail_rp` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `sales_id` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `status_close` varchar(4) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT 'OPEN'
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_bin;
+  `no_titip` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `input_by` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `no_urut` varchar(4) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '1',
+  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `kode_group` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `kode_dept` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `kode_barang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `nama_barang` varchar(60) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `nama_atribut` varchar(60) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `berat` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `qty` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '1',
+  `harga_beli` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `harga_jual` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `ongkos_detail` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `jml_detail_rp` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `sales_id` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `status_close` varchar(4) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT 'OPEN'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -7391,28 +7391,28 @@ DROP TABLE IF EXISTS `tt_titip_batal_head`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tt_titip_batal_head` (
-  `no_titip` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
+  `no_titip` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
   `tgl_system` date DEFAULT '2008-01-01',
   `tgl_titip` date NOT NULL DEFAULT '2008-01-01',
   `jam_titip` time NOT NULL DEFAULT '01:01:01',
-  `sales_id` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `kode_customer` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
+  `sales_id` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `kode_customer` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
   `tgl_ambil` date DEFAULT '2008-01-01',
-  `berat` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `dpp_rp` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `ongkos_rp` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `jml_jual_rp` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `dibayar_rp` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `debet_rp` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `card_rp` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `card_fee_rp` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `jml_awal_rp` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `jml_akhir_rp` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `sld_akhir_rp` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `input_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
+  `berat` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `dpp_rp` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `ongkos_rp` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `jml_jual_rp` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `dibayar_rp` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `debet_rp` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `card_rp` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `card_fee_rp` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `jml_awal_rp` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `jml_akhir_rp` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `sld_akhir_rp` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `input_by` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
   `input_date` datetime NOT NULL DEFAULT '2008-01-01 01:01:01',
-  `status` varchar(4) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT 'OPEN'
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_bin;
+  `status` varchar(4) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT 'OPEN'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -7432,27 +7432,27 @@ DROP TABLE IF EXISTS `tt_titip_detail`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tt_titip_detail` (
-  `no_titip` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `input_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `no_urut` varchar(4) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '1',
-  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_group` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_dept` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `nama_barang` varchar(60) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `nama_atribut` varchar(60) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `berat` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `qty` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '1',
-  `harga_beli` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `harga_jual` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `ongkos_detail` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `jml_detail_rp` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `sales_id` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `status_close` varchar(4) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT 'OPEN',
+  `no_titip` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `input_by` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `no_urut` varchar(4) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '1',
+  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_group` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_dept` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_barang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `nama_barang` varchar(60) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `nama_atribut` varchar(60) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `berat` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `qty` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '1',
+  `harga_beli` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `harga_jual` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `ongkos_detail` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `jml_detail_rp` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `sales_id` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `status_close` varchar(4) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT 'OPEN',
   PRIMARY KEY (`no_titip`,`no_urut`,`kode_lokasi_gudang`,`kode_lokasi_toko`,`kode_group`,`kode_dept`,`kode_barang`),
   KEY `kode` (`kode_barang`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_bin;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -7472,30 +7472,30 @@ DROP TABLE IF EXISTS `tt_titip_head`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tt_titip_head` (
-  `no_titip` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
+  `no_titip` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
   `tgl_system` date DEFAULT '2008-01-01',
   `tgl_titip` date NOT NULL DEFAULT '2008-01-01',
   `jam_titip` time NOT NULL DEFAULT '01:01:01',
-  `sales_id` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `kode_customer` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
+  `sales_id` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `kode_customer` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
   `tgl_ambil` date DEFAULT '2008-01-01',
-  `berat` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `dpp_rp` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `ongkos_rp` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `jml_jual_rp` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `dibayar_rp` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `debet_rp` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `card_rp` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `card_fee_rp` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `jml_awal_rp` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `jml_akhir_rp` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `sld_akhir_rp` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `input_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
+  `berat` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `dpp_rp` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `ongkos_rp` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `jml_jual_rp` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `dibayar_rp` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `debet_rp` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `card_rp` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `card_fee_rp` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `jml_awal_rp` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `jml_akhir_rp` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `sld_akhir_rp` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `input_by` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
   `input_date` datetime NOT NULL DEFAULT '2008-01-01 01:01:01',
-  `status` varchar(4) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT 'OPEN',
+  `status` varchar(4) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT 'OPEN',
   PRIMARY KEY (`no_titip`),
   KEY `kode_customer` (`kode_customer`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_bin;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -7515,17 +7515,17 @@ DROP TABLE IF EXISTS `tt_transfer`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tt_transfer` (
-  `no_trx` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
+  `no_trx` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
   `tgl_system` date DEFAULT '2008-01-01',
   `tgl_trx` datetime NOT NULL DEFAULT '2008-01-01 01:01:01',
-  `deskripsi` varchar(150) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `id_card` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `jml_cash_rp` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
+  `deskripsi` varchar(150) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `id_card` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `jml_cash_rp` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
   `transfer_rp` varchar(20) NOT NULL DEFAULT '0',
-  `card_fee_rp` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `nama_bank` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
+  `card_fee_rp` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `nama_bank` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `keterangan` varchar(100) DEFAULT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -7557,7 +7557,7 @@ CREATE TABLE `tt_tukar_batal_detail` (
   `sales_id` varchar(10) DEFAULT NULL,
   `status_close` varchar(4) DEFAULT 'OPEN',
   `alasan` varchar(50) NOT NULL DEFAULT ''
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -7588,7 +7588,7 @@ CREATE TABLE `tt_tukar_batal_head` (
   `status_update` char(1) NOT NULL DEFAULT '0',
   `status_return` varchar(4) DEFAULT 'OPEN',
   `status_tukar` varchar(10) DEFAULT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -7610,12 +7610,12 @@ DROP TABLE IF EXISTS `tt_tukarpoin`;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tt_tukarpoin` (
   `tanggal` date DEFAULT '2008-01-01',
-  `kode_customer` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `deskripsi` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `poin` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `input_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
+  `kode_customer` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `deskripsi` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `poin` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `input_by` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `input_date` datetime DEFAULT '2008-01-01 00:00:00'
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_bin;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -7635,26 +7635,26 @@ DROP TABLE IF EXISTS `tt_waste_detail`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tt_waste_detail` (
-  `no_waste` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `no_urut` varchar(4) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '1',
-  `kode_barang` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `nama_barang` varchar(60) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
-  `berat` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `qty_waste` varchar(6) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `harga_beli_rp` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `biaya_produksi_rp` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT '0',
-  `jml_beli_waste_rp` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `harga_skrg` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `harga_jual_rp` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `jml_jual_waste_rp` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `kondisi_barang` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
-  `status_close` varchar(4) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT 'OPEN',
+  `no_waste` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `no_urut` varchar(4) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '1',
+  `kode_barang` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `kode_lokasi_gudang` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `kode_lokasi_toko` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `nama_barang` varchar(60) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `berat` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `qty_waste` varchar(6) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `harga_beli_rp` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `biaya_produksi_rp` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0',
+  `jml_beli_waste_rp` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `harga_skrg` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `harga_jual_rp` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `jml_jual_waste_rp` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `kondisi_barang` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `status_close` varchar(4) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT 'OPEN',
   PRIMARY KEY (`no_waste`,`kode_barang`),
   KEY `kode_lokasi_gudang` (`kode_lokasi_gudang`),
   KEY `kode_lokasi_toko` (`kode_lokasi_toko`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_bin;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -7674,19 +7674,19 @@ DROP TABLE IF EXISTS `tt_waste_head`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `tt_waste_head` (
-  `no_waste` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
+  `no_waste` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
   `tgl_system` date DEFAULT '2008-01-01',
-  `sales_id` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
+  `sales_id` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
   `tgl_waste` date NOT NULL DEFAULT '2008-01-01',
   `jam_waste` time NOT NULL DEFAULT '01:01:01',
-  `jml_beli_waste_rp` varchar(15) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `jml_jual_waste_rp` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '0',
-  `input_by` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
+  `jml_beli_waste_rp` varchar(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `jml_jual_waste_rp` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',
+  `input_by` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
   `input_date` datetime NOT NULL DEFAULT '2008-01-01 01:01:01',
-  `status_close` varchar(4) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT 'OPEN',
+  `status_close` varchar(4) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT 'OPEN',
   PRIMARY KEY (`no_waste`),
   KEY `tgl_system` (`tgl_system`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_bin;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
