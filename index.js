@@ -238,10 +238,9 @@ const main = async () => {
             ),
           );
         } else {
-          const result = await query(
-            `DELETE FROM ${table} WHERE ${column} IS NULL OR ${column} NOT IN (${invoiceNumbers.map((i) => `'${i}'`).join(", ")})`,
-          );
-          console.log({ deleteResult: result });
+          const sql = `DELETE FROM ${table} WHERE ${column} IS NULL OR ${column} NOT IN (${invoiceNumbers.map((i) => `'${i}'`).join(", ")})`;
+          console.log(sql);
+          const result = await query(sql);
           summary.deleted += result.affectedRows;
           console.log(
             color.green(`[DELETE] ${table}: removed=${result.affectedRows}`),
