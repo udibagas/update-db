@@ -239,8 +239,7 @@ const main = async () => {
           );
         } else {
           const result = await query(
-            `DELETE FROM ${table} WHERE ${column} IS NULL OR ${column} NOT IN (${placeholders})`,
-            invoiceNumbers,
+            `DELETE FROM ${table} WHERE ${column} IS NULL OR ${column} NOT IN (${invoiceNumbers.map((i) => `'${i}'`).join(", ")})`,
           );
           console.log({ deleteResult: result });
           summary.deleted += result.affectedRows;
