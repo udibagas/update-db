@@ -1,4 +1,5 @@
-const { Service } = require("node-windows");
+import { Service } from "node-windows";
+
 const svc = new Service({
   name: "Update DB App",
   description: "Update DB app as a Windows service.",
