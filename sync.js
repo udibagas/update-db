@@ -72,7 +72,7 @@ const updates = [
     matchColumn: "NO_FAKTUR_BELI",
     ...BUY,
     columns: {
-      harga: ["HARGA_BELI", "DPP_NET_RP", "JML_DET_RP"],
+      harga: ["HARGA_BELI", "DPP_DET_RP", "JML_DET_RP"],
       berat: ["BERAT"],
       barang: ["NAMA_BARANG"],
     },
