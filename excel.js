@@ -24,9 +24,13 @@ export const toSqlDate = (value) => {
   } else {
     const text = String(value ?? "").trim();
     let match;
-    if ((match = text.match(/^(\d{4})[-/.](\d{1,2})[-/.](\d{1,2})(?:[ T].*)?$/))) {
+    if (
+      (match = text.match(/^(\d{4})[-/.](\d{1,2})[-/.](\d{1,2})(?:[ T].*)?$/))
+    ) {
       [y, m, d] = [match[1], match[2], match[3]].map(Number);
-    } else if ((match = text.match(/^(\d{1,2})[-/.](\d{1,2})[-/.](\d{4})(?:[ T].*)?$/))) {
+    } else if (
+      (match = text.match(/^(\d{1,2})[-/.](\d{1,2})[-/.](\d{4})(?:[ T].*)?$/))
+    ) {
       [d, m, y] = [match[1], match[2], match[3]].map(Number);
     } else {
       return null;
@@ -41,11 +45,11 @@ export const readExcel = (path) => {
   return XLSX.utils
     .sheet_to_json(sheet, { header: 1 })
     .slice(1)
-    .map(([no_faktur, tgl, berat, price]) => ({
+    .map(([no_faktur, tgl, price, kadar]) => ({
       no_faktur: String(no_faktur || "").trim(),
       tgl: toSqlDate(tgl),
-      berat: Number(berat),
-      price,
+      price: Number(price),
+      kadar,
     }))
     .filter((row) => row.no_faktur);
 };

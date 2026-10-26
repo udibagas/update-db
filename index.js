@@ -3,7 +3,7 @@ import { pathToFileURL } from "node:url";
 import { createInterface } from "node:readline/promises";
 import { connect } from "./db.js";
 import { readExcel } from "./excel.js";
-import { synchronize } from "./sync.js";
+import { synchronize, FIELDS } from "./sync.js";
 
 const color = {
   green: (text) => `\x1b[32m${text}\x1b[0m`,
@@ -36,13 +36,21 @@ const confirmChanges = async (database) => {
 
 export const main = async (args = process.argv.slice(2)) => {
   const dryRun = args.includes("--dry-run");
+  const fieldsArg = args.find((arg) => arg.startsWith("--fields="));
+  const fields = fieldsArg
+    ? fieldsArg.slice(9).split(",").map((f) => f.trim())
+    : FIELDS;
+  const invalid = fields.filter((f) => !FIELDS.includes(f));
+  if (invalid.length || !fields.length) {
+    throw new Error(`Invalid --fields. Choose from: ${FIELDS.join(",")}`);
+  }
   const [user, password, database, filePath] = args.filter(
-    (arg) => arg !== "--dry-run",
+    (arg) => arg !== "--dry-run" && !arg.startsWith("--fields="),
   );
 
   if (!user || !password || !database || !filePath) {
     throw new Error(
-      "Usage: node index.js [--dry-run] <user> <password> <database> <excelFile>",
+      "Usage: node index.js [--dry-run] [--fields=tgl,price,kadar] <user> <password> <database> <excelFile>",
     );
   }
 
@@ -57,7 +65,7 @@ export const main = async (args = process.argv.slice(2)) => {
 
   const connection = await connect(user, password, database);
   try {
-    const summary = await synchronize({ connection, rows, dryRun, log });
+    const summary = await synchronize({ connection, rows, dryRun, log, fields });
     log("cyan", "\n===== Summary =====");
     console.log(`Rows read        : ${rows.length}`);
     const updateLabel = dryRun ? "Updates planned  " : "Updates applied  ";

@@ -6,7 +6,7 @@ import express from "express";
 import multer from "multer";
 import { connect } from "./db.js";
 import { readExcel } from "./excel.js";
-import { synchronize } from "./sync.js";
+import { synchronize, FIELDS } from "./sync.js";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ALLOWED_EXT = [".xlsx", ".xls", ".csv"];
@@ -26,18 +26,23 @@ export const createApp = () => {
   app.use(express.urlencoded({ extended: false }));
 
   app.get("/", (req, res) => {
-    res.render("index", { error: null, form: {} });
+    res.render("index", { error: null, form: { fields: FIELDS } });
   });
 
   app.post("/sync", upload.single("file"), async (req, res) => {
     const { user, password, database } = req.body;
     const dryRun = req.body.dryRun === "on";
-    const form = { user, database, dryRun };
+    const raw = req.body.fields ?? [];
+    const fields = [].concat(raw).filter((f) => FIELDS.includes(f));
+    const form = { user, database, dryRun, fields };
     const fail = (error) => res.status(400).render("index", { error, form });
 
     try {
       if (!req.file) {
         return fail("Please upload an Excel file (.xlsx, .xls or .csv).");
+      }
+      if (!fields.length) {
+        return fail("Select at least one field to update.");
       }
       if (!user || !password || !database) {
         return fail("User, password and database are required.");
@@ -52,7 +57,13 @@ export const createApp = () => {
 
       const connection = await connect(user, password, database);
       try {
-        const summary = await synchronize({ connection, rows, dryRun, log });
+        const summary = await synchronize({
+          connection,
+          rows,
+          dryRun,
+          log,
+          fields,
+        });
         res.render("result", {
           database,
           dryRun,
@@ -73,7 +84,7 @@ export const createApp = () => {
 
   // eslint-disable-next-line no-unused-vars
   app.use((err, req, res, next) => {
-    res.status(400).render("index", { error: err.message, form: {} });
+    res.status(400).render("index", { error: err.message, form: { fields: FIELDS } });
   });
 
   return app;

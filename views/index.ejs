@@ -30,6 +30,14 @@
       </div>
     </div>
 
+    <fieldset class="field" style="margin-bottom: 20px;">
+      <legend>Kolom yang di update</legend>
+      <% const sel = form.fields || ['tgl', 'price', 'kadar']; %>
+      <% [['tgl', 'Tanggal'], ['price', 'Harga'], ['kadar', 'Kadar']].forEach(([k, label]) => { %>
+        <label><input type="checkbox" name="fields" value="<%= k %>" <%= sel.includes(k) ? 'checked' : '' %>> <%= label %></label>
+      <% }) %>
+    </fieldset>
+
     <label class="switch">
       <input type="checkbox" name="dryRun" id="dryRun" <%= form.dryRun ? 'checked' : '' %>>
       <span class="track"></span>
