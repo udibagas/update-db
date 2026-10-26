@@ -7,11 +7,16 @@ import { readExcel } from "./excel.js";
 const tables = [
   ["TT_JUAL_DETAIL", "NO_FAKTUR_JUAL", "no_faktur"],
   ["TT_JUAL_HEAD", "NO_FAKTUR_JUAL", "no_faktur"],
-  ["TH_CASH_DAILY", "DESKRIPSI", "no_faktur"],
+  ["TH_CASH_DAILY", "DESKRIPSI", "no_faktur", "no_faktur_beli"],
   ["TT_JUAL_SALES", "NO_FAKTUR_JUAL", "no_faktur"],
   ["TT_BELI_HEAD", "NO_FAKTUR_BELI", "no_faktur_beli"],
   ["TT_BELI_DETAIL", "NO_FAKTUR_BELI", "no_faktur_beli"],
 ];
+
+// Extra restriction on which DB rows are considered for deletion.
+const filters = {
+  TH_CASH_DAILY: "DESKRIPSI LIKE 'FB%' OR DESKRIPSI LIKE 'FJ%'",
+};
 
 const color = {
   green: (text) => `\x1b[32m${text}\x1b[0m`,
@@ -50,9 +55,9 @@ export const deleteNonexistentInvoices = async ({
 }) => {
   const summary = { deleted: 0, failed: 0 };
 
-  for (const [table, column, rowKey] of tables) {
+  for (const [table, column, ...rowKeys] of tables) {
     const invoiceNumbers = new Set(
-      rows.map((row) => row[rowKey]).filter(Boolean),
+      rows.flatMap((row) => rowKeys.map((key) => row[key])).filter(Boolean),
     );
     if (invoiceNumbers.size === 0) {
       writeLog(
@@ -62,7 +67,10 @@ export const deleteNonexistentInvoices = async ({
       continue;
     }
     try {
-      const dbRows = await query(connection, `SELECT ${column} FROM ${table}`);
+      const dbRows = await query(
+        connection,
+        `SELECT ${column} FROM ${table}${filters[table] ? ` WHERE ${filters[table]}` : ""}`,
+      );
       writeLog("cyan", `[COUNT] ${table}: current rows=${dbRows.length}`);
 
       // Group missing rows by their original column value (NULL included).
