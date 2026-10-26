@@ -38,7 +38,10 @@ export const main = async (args = process.argv.slice(2)) => {
   const dryRun = args.includes("--dry-run");
   const fieldsArg = args.find((arg) => arg.startsWith("--fields="));
   const fields = fieldsArg
-    ? fieldsArg.slice(9).split(",").map((f) => f.trim())
+    ? fieldsArg
+        .slice(9)
+        .split(",")
+        .map((f) => f.trim())
     : FIELDS;
   const invalid = fields.filter((f) => !FIELDS.includes(f));
   if (invalid.length || !fields.length) {
@@ -50,7 +53,7 @@ export const main = async (args = process.argv.slice(2)) => {
 
   if (!user || !password || !database || !filePath) {
     throw new Error(
-      "Usage: node index.js [--dry-run] [--fields=tgl,price,kadar] <user> <password> <database> <excelFile>",
+      "Usage: node index.js [--dry-run] [--fields=tgl,harga,berat,barang] <user> <password> <database> <excelFile>",
     );
   }
 
@@ -65,7 +68,13 @@ export const main = async (args = process.argv.slice(2)) => {
 
   const connection = await connect(user, password, database);
   try {
-    const summary = await synchronize({ connection, rows, dryRun, log, fields });
+    const summary = await synchronize({
+      connection,
+      rows,
+      dryRun,
+      log,
+      fields,
+    });
     log("cyan", "\n===== Summary =====");
     console.log(`Rows read        : ${rows.length}`);
     const updateLabel = dryRun ? "Updates planned  " : "Updates applied  ";

@@ -6,7 +6,7 @@ import express from "express";
 import multer from "multer";
 import { connect } from "./db.js";
 import { readExcel } from "./excel.js";
-import { synchronize, FIELDS } from "./sync.js";
+import { synchronize, FIELDS, FIELD_LABELS } from "./sync.js";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ALLOWED_EXT = [".xlsx", ".xls", ".csv"];
@@ -26,7 +26,11 @@ export const createApp = () => {
   app.use(express.urlencoded({ extended: false }));
 
   app.get("/", (req, res) => {
-    res.render("index", { error: null, form: { fields: FIELDS } });
+    res.render("index", {
+      error: null,
+      form: { fields: FIELDS },
+      fieldLabels: FIELD_LABELS,
+    });
   });
 
   app.post("/sync", upload.single("file"), async (req, res) => {
@@ -35,7 +39,10 @@ export const createApp = () => {
     const raw = req.body.fields ?? [];
     const fields = [].concat(raw).filter((f) => FIELDS.includes(f));
     const form = { user, database, dryRun, fields };
-    const fail = (error) => res.status(400).render("index", { error, form });
+    const fail = (error) =>
+      res
+        .status(400)
+        .render("index", { error, form, fieldLabels: FIELD_LABELS });
 
     try {
       if (!req.file) {
@@ -48,7 +55,7 @@ export const createApp = () => {
         return fail("User, password and database are required.");
       }
       if (!dryRun && req.body.confirm !== "YES") {
-        return fail('Type YES to confirm changes to the database.');
+        return fail("Type YES to confirm changes to the database.");
       }
 
       const rows = readExcel(req.file.path);
@@ -84,7 +91,13 @@ export const createApp = () => {
 
   // eslint-disable-next-line no-unused-vars
   app.use((err, req, res, next) => {
-    res.status(400).render("index", { error: err.message, form: { fields: FIELDS } });
+    res
+      .status(400)
+      .render("index", {
+        error: err.message,
+        form: { fields: FIELDS },
+        fieldLabels: FIELD_LABELS,
+      });
   });
 
   return app;

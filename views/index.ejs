@@ -32,8 +32,8 @@
 
     <fieldset class="field" style="margin-bottom: 20px;">
       <legend>Kolom yang di update</legend>
-      <% const sel = form.fields || ['tgl', 'price', 'kadar']; %>
-      <% [['tgl', 'Tanggal'], ['price', 'Harga'], ['kadar', 'Kadar']].forEach(([k, label]) => { %>
+      <% const sel = form.fields || Object.keys(fieldLabels); %>
+      <% Object.entries(fieldLabels).forEach(([k, label]) => { %>
         <label><input type="checkbox" name="fields" value="<%= k %>" <%= sel.includes(k) ? 'checked' : '' %>> <%= label %></label>
       <% }) %>
     </fieldset>

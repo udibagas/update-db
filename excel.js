@@ -45,11 +45,31 @@ export const readExcel = (path) => {
   return XLSX.utils
     .sheet_to_json(sheet, { header: 1 })
     .slice(1)
-    .map(([no_faktur, tgl, price, kadar]) => ({
-      no_faktur: String(no_faktur || "").trim(),
-      tgl: toSqlDate(tgl),
-      price: Number(price),
-      kadar,
-    }))
-    .filter((row) => row.no_faktur);
+    .map(
+      ([
+        no_faktur,
+        tgl,
+        berat,
+        harga,
+        nama_barang,
+        ,
+        no_faktur_beli,
+        tgl_beli,
+        berat_beli,
+        harga_beli,
+        nama_barang_beli,
+      ]) => ({
+        no_faktur: String(no_faktur || "").trim(),
+        tgl: toSqlDate(tgl),
+        berat: Number(berat),
+        harga: Number(harga),
+        nama_barang: String(nama_barang || "").trim(),
+        no_faktur_beli: String(no_faktur_beli || "").trim(),
+        tgl_beli: toSqlDate(tgl_beli),
+        berat_beli: Number(berat_beli),
+        harga_beli: Number(harga_beli),
+        nama_barang_beli: String(nama_barang_beli || "").trim(),
+      }),
+    )
+    .filter((row) => row.no_faktur || row.no_faktur_beli);
 };

@@ -5,10 +5,12 @@ import { connect, query } from "./db.js";
 import { readExcel } from "./excel.js";
 
 const tables = [
-  ["TT_JUAL_DETAIL", "NO_FAKTUR_JUAL"],
-  ["TT_JUAL_HEAD", "NO_FAKTUR_JUAL"],
-  ["TH_CASH_DAILY", "DESKRIPSI"],
-  ["TT_JUAL_SALES", "NO_FAKTUR_JUAL"],
+  ["TT_JUAL_DETAIL", "NO_FAKTUR_JUAL", "no_faktur"],
+  ["TT_JUAL_HEAD", "NO_FAKTUR_JUAL", "no_faktur"],
+  ["TH_CASH_DAILY", "DESKRIPSI", "no_faktur"],
+  ["TT_JUAL_SALES", "NO_FAKTUR_JUAL", "no_faktur"],
+  ["TT_BELI_HEAD", "NO_FAKTUR_BELI", "no_faktur_beli"],
+  ["TT_BELI_DETAIL", "NO_FAKTUR_BELI", "no_faktur_beli"],
 ];
 
 const color = {
@@ -47,14 +49,18 @@ export const deleteNonexistentInvoices = async ({
   log: writeLog,
 }) => {
   const summary = { deleted: 0, failed: 0 };
-  const invoiceNumbers = new Set(rows.map(({ no_faktur }) => no_faktur));
 
-  if (invoiceNumbers.size === 0) {
-    writeLog("yellow", "Skipping deletion: no invoice numbers found in Excel");
-    return summary;
-  }
-
-  for (const [table, column] of tables) {
+  for (const [table, column, rowKey] of tables) {
+    const invoiceNumbers = new Set(
+      rows.map((row) => row[rowKey]).filter(Boolean),
+    );
+    if (invoiceNumbers.size === 0) {
+      writeLog(
+        "yellow",
+        `Skipping ${table}: no invoice numbers found in Excel`,
+      );
+      continue;
+    }
     try {
       const dbRows = await query(connection, `SELECT ${column} FROM ${table}`);
       writeLog("cyan", `[COUNT] ${table}: current rows=${dbRows.length}`);
@@ -97,7 +103,10 @@ export const deleteNonexistentInvoices = async ({
           }
         } catch (err) {
           summary.failed++;
-          writeLog("red", `[FAIL] deleting ${label} from ${table}: ${err.message}`);
+          writeLog(
+            "red",
+            `[FAIL] deleting ${label} from ${table}: ${err.message}`,
+          );
         }
       }
 
