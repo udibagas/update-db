@@ -5,7 +5,7 @@ import { rm } from "node:fs/promises";
 import express from "express";
 import multer from "multer";
 import { connect } from "./db.js";
-import { readExcel } from "./excel.js";
+import { EXCEL_SCHEMAS, readExcel } from "./excel.js";
 import { synchronize, FIELDS, FIELD_LABELS } from "./sync.js";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -28,21 +28,28 @@ export const createApp = () => {
   app.get("/", (req, res) => {
     res.render("index", {
       error: null,
-      form: { fields: FIELDS },
+      form: { fields: FIELDS, schema: "A" },
       fieldLabels: FIELD_LABELS,
+      schemas: EXCEL_SCHEMAS,
     });
   });
 
   app.post("/sync", upload.single("file"), async (req, res) => {
     const { user, password, database } = req.body;
+    const schema = req.body.schema ?? "A";
     const dryRun = req.body.dryRun === "on";
     const raw = req.body.fields ?? [];
     const fields = [].concat(raw).filter((f) => FIELDS.includes(f));
-    const form = { user, database, dryRun, fields };
+    const form = { user, database, dryRun, fields, schema };
     const fail = (error) =>
       res
         .status(400)
-        .render("index", { error, form, fieldLabels: FIELD_LABELS });
+        .render("index", {
+          error,
+          form,
+          fieldLabels: FIELD_LABELS,
+          schemas: EXCEL_SCHEMAS,
+        });
 
     try {
       if (!req.file) {
@@ -51,6 +58,9 @@ export const createApp = () => {
       if (!fields.length) {
         return fail("Select at least one field to update.");
       }
+      if (!EXCEL_SCHEMAS.includes(schema)) {
+        return fail(`Select a valid Excel schema: ${EXCEL_SCHEMAS.join(" or ")}.`);
+      }
       if (!user || !password || !database) {
         return fail("User, password and database are required.");
       }
@@ -58,7 +68,7 @@ export const createApp = () => {
         return fail("Type YES to confirm changes to the database.");
       }
 
-      const rows = readExcel(req.file.path);
+      const rows = readExcel(req.file.path, schema);
       const logs = [];
       const log = (level, message) => logs.push({ level, message });
 
@@ -95,8 +105,9 @@ export const createApp = () => {
       .status(400)
       .render("index", {
         error: err.message,
-        form: { fields: FIELDS },
+        form: { fields: FIELDS, schema: "A" },
         fieldLabels: FIELD_LABELS,
+        schemas: EXCEL_SCHEMAS,
       });
   });
 

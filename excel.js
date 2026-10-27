@@ -1,5 +1,7 @@
 import XLSX from "xlsx";
 
+export const EXCEL_SCHEMAS = ["A", "B"];
+
 const pad = (n) => String(n).padStart(2, "0");
 
 const isValidDate = (y, m, d) => {
@@ -104,6 +106,10 @@ function mapper(row, schema) {
 }
 
 export const readExcel = (path, schema = "A") => {
+  if (!EXCEL_SCHEMAS.includes(schema)) {
+    throw new Error(`Invalid Excel schema. Choose from: ${EXCEL_SCHEMAS.join(", ")}`);
+  }
+
   const workbook = XLSX.readFile(path);
   const sheet = workbook.Sheets[workbook.SheetNames[0]];
   return XLSX.utils

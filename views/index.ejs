@@ -16,6 +16,18 @@
     </label>
 
     <div class="grid">
+      <fieldset class="field full" style="border-radius: 8px; padding: 12px">
+        <legend>Excel schema</legend>
+        <div class="schema-options">
+          <% schemas.forEach((schema) => { %>
+            <label style="width: 150px;">
+              <input type="radio" name="schema" value="<%= schema %>" <%= (form.schema || 'A') === schema ? 'checked' : '' %>>
+              Schema <%= schema %>
+            </label>
+          <% }) %>
+        </div>
+        <small class="muted">Choose the layout used by the uploaded workbook.</small>
+      </fieldset>
       <div class="field">
         <label for="user">Database user</label>
         <input id="user" type="text" name="user" value="<%= form.user || 'root' %>" required autocomplete="off">
@@ -30,7 +42,7 @@
       </div>
     </div>
 
-    <fieldset class="field" style="margin-bottom: 20px;">
+    <fieldset class="field" style="margin-bottom: 20px; border-radius: 8px; padding: 12px">
       <legend>Kolom yang di update</legend>
       <% const sel = form.fields || Object.keys(fieldLabels); %>
       <% Object.entries(fieldLabels).forEach(([k, label]) => { %>
