@@ -6,6 +6,8 @@ export const FIELD_LABELS = {
   harga: "Harga",
   berat: "Berat",
   barang: "Nama barang",
+  kadar: "Kadar",
+  kondisi: "Kondisi",
 };
 export const FIELDS = Object.keys(FIELD_LABELS);
 
@@ -20,7 +22,9 @@ const SELL = { invoiceKey: "no_faktur", suffix: "" };
 const BUY = { invoiceKey: "no_faktur_beli", suffix: "_beli" };
 
 // Which DB columns each Excel field writes, per table.
-const updates = [
+const updates = {};
+
+updates["A"] = [
   {
     table: "TT_JUAL_DETAIL",
     matchColumn: "NO_FAKTUR_JUAL",
@@ -80,6 +84,72 @@ const updates = [
   },
 ];
 
+updates["B"] = [
+  {
+    table: "TT_JUAL_DETAIL",
+    matchColumn: "NO_FAKTUR_JUAL",
+    ...SELL,
+    columns: {
+      harga: ["HARGA_JUAL", "DPP_DETAIL"],
+      berat: ["BERAT"],
+      kadar: ["KADAR"],
+    },
+  },
+  {
+    table: "TT_JUAL_HEAD",
+    matchColumn: "NO_FAKTUR_JUAL",
+    ...SELL,
+    columns: {
+      harga: ["DPP_BRUTO_RP", "DPP_NETTO_RP", "JML_JUAL_RP", "DIBAYAR_RP"],
+      tgl: ["TGL_SYSTEM", "TGL_FAKTUR_JUAL"],
+      berat: ["BERAT"],
+    },
+  },
+  {
+    table: "TH_CASH_DAILY",
+    matchColumn: "DESKRIPSI",
+    ...SELL,
+    columns: { harga: ["JUMLAH_RP"], tgl: ["TANGGAL"] },
+  },
+  {
+    table: "TT_JUAL_SALES",
+    matchColumn: "NO_FAKTUR_JUAL",
+    ...SELL,
+    columns: {
+      harga: ["JML_JUAL_RP"],
+      tgl: ["TGL_SYSTEM", "TGL_FAKTUR_JUAL"],
+    },
+  },
+  {
+    table: "TT_BELI_HEAD",
+    matchColumn: "NO_FAKTUR_BELI",
+    ...BUY,
+    columns: {
+      harga: [
+        "DPP_NETTO_RP",
+        "DPP_BRUTO_RP",
+        "DPP_INTERN_RP",
+        "JML_BELI_RP",
+        "JML_BELI_INTERN",
+      ],
+      tgl: ["TGL_SYSTEM", "TGL_FAKTUR_BELI"],
+      berat: ["TOT_BERAT"],
+    },
+  },
+  {
+    table: "TT_BELI_DETAIL",
+    matchColumn: "NO_FAKTUR_BELI",
+    ...BUY,
+    columns: {
+      harga: ["HARGA_BELI", "DPP_DET_RP", "JML_DET_RP"],
+      berat: ["BERAT", "BERAT_NOTA"],
+      barang: ["NAMA_BARANG"],
+      kondisi: ["KONDISI"],
+      kadar: ["KADAR"],
+    },
+  },
+];
+
 const isEmpty = (value) =>
   value == null ||
   value === "" ||
@@ -119,6 +189,7 @@ export const synchronize = async ({
   dryRun,
   log,
   fields = FIELDS,
+  schema = "A",
 }) => {
   fields = fields.filter((f) => FIELDS.includes(f));
   const summary = {
@@ -130,7 +201,7 @@ export const synchronize = async ({
   };
 
   for (const row of rows) {
-    for (const def of updates) {
+    for (const def of updates[schema]) {
       const { table, matchColumn } = def;
       const update = buildUpdate(def, fields, row);
       if (!update) continue;
