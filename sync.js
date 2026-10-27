@@ -25,7 +25,7 @@ const updates = [
     table: "TT_JUAL_DETAIL",
     matchColumn: "NO_FAKTUR_JUAL",
     ...SELL,
-    columns: { harga: ["HARGA_JUAL", "DPP_DETAIL"] },
+    columns: { harga: ["HARGA_JUAL", "DPP_DETAIL"], berat: ["BERAT"] },
   },
   {
     table: "TT_JUAL_HEAD",
@@ -34,6 +34,7 @@ const updates = [
     columns: {
       harga: ["DPP_BRUTO_RP", "DPP_NETTO_RP", "JML_JUAL_RP", "DIBAYAR_RP"],
       tgl: ["TGL_SYSTEM", "TGL_FAKTUR_JUAL"],
+      berat: ["BERAT"],
     },
   },
   {
