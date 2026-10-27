@@ -96,6 +96,7 @@ const buildUpdate = (
   for (const field of fields) {
     if (!columns[field]) continue;
     const value = row[VALUE_KEYS[field] + suffix];
+    if (field === "barang" && isEmpty(value)) continue;
     if (isEmpty(value)) return { skip: `invalid ${field}` };
     for (const column of columns[field]) {
       set.push(`${column}=?`);
