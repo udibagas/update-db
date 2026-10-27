@@ -15,8 +15,7 @@
       <small class="muted">.xlsx, .xls or .csv · max 20 MB</small>
     </label>
 
-    <div class="grid">
-      <fieldset class="field full" style="border-radius: 8px; padding: 12px">
+     <fieldset class="field" style="margin-top: 20px">
         <legend>Excel schema</legend>
         <div class="schema-options">
           <% schemas.forEach((schema) => { %>
@@ -28,21 +27,28 @@
         </div>
         <small class="muted">Choose the layout used by the uploaded workbook.</small>
       </fieldset>
-      <div class="field">
-        <label for="user">Database user</label>
-        <input id="user" type="text" name="user" value="<%= form.user || 'root' %>" required autocomplete="off">
-      </div>
-      <div class="field">
-        <label for="password">Password</label>
-        <input id="password" type="password" name="password" autocomplete="off">
-      </div>
-      <div class="field full">
-        <label for="database">Database name</label>
-        <input id="database" type="text" name="database" value="<%= form.database || '' %>" required>
-      </div>
-    </div>
 
-    <fieldset class="field" style="margin-bottom: 20px; border-radius: 8px; padding: 12px">
+      <fieldset class="field" style="margin: 20px 0">
+        <legend>Database connection</legend>
+        <div class="grid">
+          <div class="field">
+            <label for="user">Database user</label>
+            <input id="user" type="text" name="user" value="<%= form.user || 'root' %>" required autocomplete="off">
+          </div>
+          <div class="field">
+            <label for="password">Password</label>
+            <input id="password" type="password" name="password" autocomplete="off">
+          </div>
+          <div class="field">
+            <label for="database">Database name</label>
+            <input id="database" type="text" name="database" value="<%= form.database || '' %>" required>
+          </div>
+        </div>
+      </fieldset>
+
+    
+
+    <fieldset class="field" style="margin-bottom: 20px">
       <legend>Kolom yang di update</legend>
       <% const sel = form.fields || Object.keys(fieldLabels); %>
       <% Object.entries(fieldLabels).forEach(([k, label]) => { %>
