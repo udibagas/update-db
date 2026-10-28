@@ -17,6 +17,8 @@ const VALUE_KEYS = {
   harga: "harga",
   berat: "berat",
   barang: "nama_barang",
+  kadar: "kadar",
+  kondisi: "kondisi",
 };
 const SELL = { invoiceKey: "no_faktur", suffix: "" };
 const BUY = { invoiceKey: "no_faktur_beli", suffix: "_beli" };
